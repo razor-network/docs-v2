@@ -67,6 +67,6 @@
 | :------------------------ | :------------------------------------------------------ | :----------------- | :---------------- |
 | **JobConfirmer**          | fullfillJob()                                           | JobManager         | BlockManager      |
 | **BlockConfirmer**        | confirmBlock()                                          | BlockManager       | VoteManager       |
-| **StakeModifier**         | slash()<br>giveBlockReward()                            | StakeManager       | BlockManager      |
-|                           | giveRewards()<br>givePenalties()                        | StakeManager       | VoteManager       |
-| **StakerActivityUpdater** | setStakerEpochLastRevealed()<br>updateCommitmentEpoch() | StakeManager       | VoteManager       |
+| **StakeModifier**         | slash()  giveBlockReward()                        | StakeManager       | BlockManager      |
+|                           | giveRewards() givePenalties()                        | StakeManager       | VoteManager       |
+| **StakerActivityUpdater** | setStakerEpochLastRevealed() updateCommitmentEpoch() | StakeManager       | VoteManager       |

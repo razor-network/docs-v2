@@ -12,7 +12,7 @@ Withdrawing your funds from Razor Network is the two Step process. The first Ste
 
 1. Change the Network to “Polygon Mumbai Testnet” 
 2. Click on “Import Tokens” 
-3. Under “Token Contract Address” input the testnet sRAZOR token contract address.<br>
+3. Under “Token Contract Address” input the testnet sRAZOR token contract address.
      Note : *You can get sRAZOR token address from the staker to whom you have delegated.*
 4. Now your wallet must be showing the sRAZOR Tokens in your wallet.
 5. Make sure to get some test MATIC on Mumbai for gas from the faucet [here](https://faucet.polygon.technology/)

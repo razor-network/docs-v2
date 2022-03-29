@@ -51,11 +51,11 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'Contracts/p1-Intro',
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/docs', label: 'Tutorial', position: 'left'},
           {
             href: 'https://github.com/razor-network/docs-v2',
             label: 'GitHub',
@@ -71,7 +71,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs',
               },
             ],
           },
