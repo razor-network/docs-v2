@@ -55,7 +55,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/docs', label: 'Documentation', position: 'left'},
+          {to: '/docs', label: 'Whitepaper', position: 'left'},
           {
             href: 'https://github.com/razor-network/docs-v2',
             label: 'GitHub',
@@ -98,7 +98,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Razor Network.`,
       },
       prism: {
         theme: lightCodeTheme,

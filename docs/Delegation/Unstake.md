@@ -6,7 +6,7 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 ## TLDR; {#tldr}
 
-Withdrawing your funds from Razor Network is the two Step process. The first Step is to Unstake and other one is to Withdraw. Any staker of delegator can unstake their funds in 5th State, also known as Confirm State. Once you have reached to confirm State you can follow the steps given in the Guide and perform Unstake. When you Unstake, the funds will be locked in the smart contracts for 48 epochs which is subjected to change based on the governance proposals. So as per current value of Withdraw lock, You can withdraw the tokens after 48 epochs by performing the Withdraw transaction. 
+Withdrawing your funds from Razor Network is the three Step process. The first Step is to Unstake and other two are to Initiate Withdraw and unlock Withdraw. Any staker of delegator can unstake their funds in 5th State, also known as Confirm State. Once you have reached to confirm State you can follow the steps given in the Guide and perform Unstake. When you Unstake, the funds will be locked in the smart contracts for 48 epochs which is subjected to change based on the governance proposals. So as per current value of Withdraw lock, You can withdraw the tokens after 48 epochs by performing the Withdraw transaction. 
 
 ## Metamask Setup {#metamask-setup}
 
