@@ -55,7 +55,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/docs', label: 'Whitepaper', position: 'left'},
+          {to: '/docs/whitepaper/abstract', label: 'Whitepaper', position: 'left'},
           {
             href: 'https://github.com/razor-network/docs-v2',
             label: 'GitHub',
