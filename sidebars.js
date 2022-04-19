@@ -37,8 +37,19 @@ const sidebars = {
     'Governance',
     'PenaltiesAndRewards',
     'FAQ',
-    'IncentivisedTestnet'
+    'IncentivisedTestnet',
+    {
+      type: 'category',
+      label: 'whitepaper',
+      items: [
+        'whitepaper/abstract',
+        'whitepaper/design_goals',
+        'whitepaper/intro',
+        'whitepaper/previous_work'
+      ],
+    }
   ],
+  
 
   // But you can create a sidebar manually
   /*
