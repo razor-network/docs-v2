@@ -1,39 +1,38 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Razor Network Documentation',
-  tagline: 'Razor Network Documentation',
-  url: 'https://razor-docs-v2.netlify.app',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'razor-network', // Usually your GitHub org/user name.
-  projectName: 'docs-v2', // Usually your repo name.
+  title: "Razor Network | Documentation",
+  tagline: "Razor Network Documentation",
+  url: "https://razor-docs-v2.netlify.app",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "razor-network", // Usually your GitHub org/user name.
+  projectName: "docs-v2", // Usually your repo name.
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/razor-network/docs-v2',
+          editUrl: "https://github.com/razor-network/docs-v2",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/razor-network/docs-v2',
+          editUrl: "https://github.com/razor-network/docs-v2",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -43,57 +42,75 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Razor Network Docs',
+        title: "Razor Network",
         logo: {
-          alt: 'Razor Network',
-          src: 'img/logo.svg',
+          alt: "Razor Network",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'Contracts/p1-Intro',
-            position: 'left',
-            label: 'Documentation',
+            type: "doc",
+            docId: "Contracts/p1-Intro",
+            position: "left",
+            label: "Core Concepts",
           },
-          {to: '/docs', label: 'Whitepaper', position: 'left'},
+          { to: "/docs", label: "Whitepaper", position: "left" },
           {
-            href: 'https://github.com/razor-network/docs-v2',
-            label: 'GitHub',
-            position: 'right',
+            to: "/docs/incentivised-testnet/intro",
+            label: "Incentivised Testnet",
+            position: "left",
+          },
+          {
+            to: "/docs/razor-go/installation",
+            label: "Razor Go",
+            position: "left",
+          },
+          {
+            href: "https://github.com/razor-network/docs-v2",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Documentation',
-                to: '/docs',
+                label: "Documentation",
+                to: "/docs",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Discord',
-                href: 'https://discord.gg/EC53qp2kJ6',
+                label: "Discord",
+                to: "https://discord.gg/EC53qp2kJ6",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/razor_network',
+                label: "Twitter",
+                to: "https://twitter.com/razor_network",
+              },
+              {
+                label: "GitHub",
+                to: "https://github.com/razor-network/docs-v2",
+              },
+              {
+                label: "Telegram",
+                to: "https://t.me/razornetwork",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/razor-network/docs-v2',
+                label: "GitHub",
+                to: "https://github.com/razor-network/docs-v2",
               },
             ],
           },
