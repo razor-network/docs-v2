@@ -188,7 +188,7 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "Deployment Details",
+      label: "Dev Environment",
       id: "razor-go/dev-environment",
     },
   ],
