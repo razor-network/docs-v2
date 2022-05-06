@@ -54,7 +54,11 @@ const config = {
             position: "left",
             label: "Core Concepts",
           },
-          { to: "/docs", label: "Whitepaper", position: "left" },
+          {
+            to: "/docs/whitepaper/intro",
+            label: "Whitepaper",
+            position: "left",
+          },
           {
             to: "/docs/incentivised-testnet/intro",
             label: "Incentivised Testnet",
