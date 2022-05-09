@@ -86,6 +86,10 @@ const config = {
                 label: "Documentation",
                 to: "/docs",
               },
+              {
+                label: "Medium",
+                to: "https://razornetwork.medium.com/",
+              },
             ],
           },
           {
@@ -101,6 +105,10 @@ const config = {
               },
               {
                 label: "GitHub",
+                to: "https://www.linkedin.com/company/razor-network/",
+              },
+              {
+                label: "LinkedIn",
                 to: "https://github.com/razor-network/docs-v2",
               },
               {
@@ -113,8 +121,12 @@ const config = {
             title: "More",
             items: [
               {
-                label: "GitHub",
-                to: "https://github.com/razor-network/docs-v2",
+                label: "Razorscan",
+                to: "https://razorscan.io/",
+              },
+              {
+                label: "Razor Go",
+                to: "https://github.com/razor-network/razor-go",
               },
             ],
           },
