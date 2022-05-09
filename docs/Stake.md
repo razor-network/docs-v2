@@ -6,7 +6,7 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 ## Get tokens {#get-tokens}
 
-You will need some MATIC Tokens to pay for transaction fees.
+You will need some Skale ETH Tokens to pay for transaction fees. A faucet will be provided in the future.
 
 You can get some here:
 

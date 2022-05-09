@@ -1,6 +1,6 @@
 ## Quick start - Delegate {#quick-start---delegate}
 
-Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
+Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
 > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only.
 

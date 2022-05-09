@@ -1,23 +1,32 @@
 ## Quick start - Unstake {#quick-start---unstake}
 
-Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
+Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
 > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only.
 
-## TLDR; {#tldr}
+## In Short: {#in-short}
 
-Withdrawing your funds from Razor Network is the three Step process. The first Step is to Unstake and other two are to Initiate Withdraw and unlock Withdraw. Any staker of delegator can unstake their funds in 5th State, also known as Confirm State. Once you have reached to confirm State you can follow the steps given in the Guide and perform Unstake. When you Unstake, the funds will be locked in the smart contracts for 48 epochs which is subjected to change based on the governance proposals. So as per current value of Withdraw lock, You can withdraw the tokens after 48 epochs by performing the Withdraw transaction.
+Unstaking and withdrawing funds from Razor Network is a 3 step process.
+
+1.  Unstake:
+    After unstaking, the users sRAZOR tokens are locked in the Stake Manager contract. There is a time period set in which the user must call Initiate Withdraw and proceed to the next phase of the lock. Currently, the `withdrawInitiationPeriod` set is 5 epochs(Check Governance Parameters). If user Unstaked in epoch `T` the user must call Initiate Withdraw after epoch `T + 1` and before `T + 6` epoch.
+    _Note_ : _Failing to call Initiate Withdraw within the specified epochs will result in a penalty via <ins>Reset Lock</ins>_.
+
+2.  Initiate Withdraw:
+    This call is _**not**_ allowed in _Propose_ and _Dispute_ States. If the current state is Propose or Dispute, wait for a few minutes before making the call. The initiate withdraw call will only succeed if the User has locked RAZOR and if the current epoch is within the `withdrawInitiationPeriod`. The users sRAZOR are burnt for RAZOR tokens, and locked for `withdrawLockPeriod` which is currently 1 epoch.
+3.  Withdraw:
+    Lastly, withdraw can be called anytime after the `withdrawLockPeriod` epoch has passed.
 
 ## Metamask Setup {#metamask-setup}
 
-1. Change the Network to “Polygon Mumbai Testnet”
-2. Click on “Import Tokens”
-3. Under “Token Contract Address” input the testnet sRAZOR token contract address.
-   Note : _You can get sRAZOR token address from the staker to whom you have delegated._
-4. Now your wallet must be showing the sRAZOR Tokens in your wallet.
-5. Make sure to get some test MATIC on Mumbai for gas from the faucet [here](https://faucet.polygon.technology/)
+1. Click on `Connect Wallet` on the official Razor Network client <https://razorscan.io/>.
+2. Switch to the Skale Testnet Network and connect Metamask wallet.
+3. Click on the `+` icon to add the RAZOR contract address.
+4. Alternatively, contract addresses and network details can be found [here](http://localhost:3000/docs/incentivised-testnet/deployment-details) if you would like to verify the addresses manually.
 
-# Unstaking your delegated Amount
+Note : _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
+
+# Unstaking
 
 ### Step 1 {#step-1}
 
@@ -29,56 +38,28 @@ Visit <https://razorscan.io/>
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Polygon Mumbai Testnet”.
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”.:
 
 ![Screenshot](/img/2.png)
 
 ### Step 3 {#step-3}
 
-Once your wallet is connected, visit [https://razorscan.io/staking](https://razorscan.io/staking) or click on “Participants” from the menu bar on the left and you should see the screen below:
-
-![Screenshot](/img/3.png)
-
-### Step 4 {#step-4}
-
-Unstake function works in only Confirm State. To check the current state of an Epoch go to the “Participants” tab from the menu on the left side on RazorScan and you will see the state, like in the picture below:
-
-![Screenshot](/img/8.png)
-
-### Step 5 {#step-5}
-
-Once the Epoch is in the state where the “unstake” function is allowed, navigate to your address by clicking on the Metamask icon on the top right corner of the screen.
+Navigate to your address by clicking on it on the top right corner of the screen. Click on the `Unstake` action from the Actions dropdown on the Delegated Table.
+_Note: This can also be done on [https://razorscan.io/staking](https://razorscan.io/staking) or the particular stakers page._
 
 ![Screenshot](/img/9.png)
 
-### Step 6 {#step-6}
+### Step 4 {#step-4}
 
-Click on the “Delegate” button and choose “unstake”.
-
-![Screenshot](/img/10.png)
-
-### Step 7 {#step-7}
-
-Once you click on “Unstake” a dialogue box will appear. Enter the amount that you want to unstake, and click on the “Unstake” button.
+Once you click on “Unstake” a modal will appear, enter the amount of sRAZOR that you want to unstake, and click on the “Unstake” button. There will be two transactions, Approve and Unstake respectively.
+_Note: Users can add the stakers sRAZOR address using the `+` icon near the stakers address._
 
 ![Screenshot](/img/11.png)
 
 ### Step 8 {#step-8}
 
-Sign the unstake transaction on the Metamask popup to successfully complete unstaking.
-
-To withdraw the unstaked funds into your wallet, you will need to wait for a certain amount of epochs. You can check the current epoch on the participants' page.
+Once both transactions are successful, [Initiate Withdraw](/Delegation/delegate) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
 
 ![Screenshot](/img/12.png)
 
-### Step 9 {#step-9}
-
-Once the Epoch moves to the appropriate one, navigate to your account by clicking on the Metamask icon on the top right corner on RazorScan. Click on the “Delegate” button corresponding to the staker address where you unstaked your funds and then click on “Withdraw.”
-
-![Screenshot](/img/13.png)
-
-### Step 10 {#step-10}
-
-Choose the amount you wish to withdraw from the unstaked amount and sign the transaction. Once completed, you will be able to view the amount in your wallet.
-
-**Note** : _We have restricted the unstaking functionality to only Confirm State. Once you have unstaked, you need to wait for some epochs, so the withdrawal lock period gets completed and you can withdraw. To get the exact details of Withdraw Lock Period you can visit [https://razorscan.io/governance/values](https://razorscan.io/governance/values)_
+**Note** : _To get the exact values of the lock periods check Governance [here](https://razorscan.io/governance/values)_.
