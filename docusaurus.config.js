@@ -105,11 +105,11 @@ const config = {
               },
               {
                 label: "GitHub",
-                to: "https://www.linkedin.com/company/razor-network/",
+                to: "https://github.com/razor-network/",
               },
               {
                 label: "LinkedIn",
-                to: "https://github.com/razor-network/docs-v2",
+                to: "https://www.linkedin.com/company/razor-network/",
               },
               {
                 label: "Telegram",
