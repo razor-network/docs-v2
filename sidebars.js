@@ -15,7 +15,11 @@
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
-    "index",
+    {
+      type: "doc",
+      label: "What is an Oracle",
+      id: "what-is-an-oracle",
+    },
     "explainer",
     {
       type: "category",
