@@ -2,62 +2,55 @@
 
 Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
 
-> Warning: Razor network is in alpha state and is deployed on Matic Mumbai testnet. Please don't use assets with value.
+> Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only.
 
 ## Metamask Setup {#metamask-setup}
 
-1. Change the Network to “Polygon Mumbai Testnet” 
-2. Click on “Import Tokens” 
-3. Under “Token Contract Address” input the testnet RAZOR token contract address.
-4. Now your wallet must be showing the Test RAZOR in your wallet.
-5. Make sure to get some test MATIC on Mumbai for gas from the faucet [here](https://faucet.polygon.technology/)
-
+1. Click on `Connect Wallet` on the official Razor Network client <https://razorscan.io/>.
+2. Switch to the Skale Testnet Network and connect Metamask wallet.
+3. Click on the `+` icon to add the RAZOR contract address.
+4. Alternatively, contract addresses and network details can be found [here](http://localhost:3000/docs/incentivised-testnet/deployment-details) if you would like to verify the addresses manually.
 
 ## Delegation on Razorscan {#delegation-on-razorscan}
 
 ### Step 1 {#step-1}
 
- Visit <https://razorscan.io/>
+Visit <https://razorscan.io/>
 
- **Note** : *We recommend all the Delegators to bookmark this specific URL to prevent any phishing Attacks*
+**Note** : _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
 ![Screenshot](/img/1.png)
 
 ### Step 2 {#step-2}
- Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Polygon Mumbai Testnet”.
+
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”. Next, visit [https://razorscan.io/staking](https://razorscan.io/staking) or click on “Participants” from the sidebar on the left and you should see the screen below:
 
 ![Screenshot](/img/2.png)
 
 ### Step 3 {#step-3}
- Once your wallet is connected, visit [https://razorscan.io/staking](https://razorscan.io/staking) or click on “Participants” from the menu bar on the left and you should see the screen below: 
 
-![Screenshot](/img/3.png)
+Click on the “Action” button next to the staker of your choice to delegate your RAZOR tokens to them. You can choose a staker based on activity, commission, stake, APR, age, etc.
+
+**Note** - _Commission here refers to the percentage of the rewards earned on the delegated funds charged by the staker._
 
 ### Step 4 {#step-4}
- Click on the “Delegate” button next to the staker of your choice to delegate your tokens to them. You can choose a staker based on activity, commission, stake, APR, age, etc.
 
-**Note** - *Commissions here refer to the percentage of the rewards earned on your delegated funds a staker would receive/charge for including your finds in their stake.*
+Click on the Delegate action, you will be shown a modal with more information on the staker. Input the number of RAZOR tokens you want to delegate and click on “Approve & Delegate”.
 
-### Step 5 {#step-5}
- Once you click on Delegate, you will be shown a box with more info around the staker’s performance. Input the number of tokens you want to delegate and click on “Approve & Delegate”.
+**Note** - _Make sure the network is correct and the connected wallet has RAZOR and enough tokens for gas as required._
 
 ![Screenshot](/img/4.png)
 
-### Step 7 {#step-7}
+### Step 5 {#step-5}
 
- You will have a Metamask popup asking for approval. Verify the transaction and click on “Confirm”.
+On the Metamask popup click on “Confirm”. There will be an update on the web application once the transactions are successful.
+
+**Note** - _Two transactions, the first to Approve and the second to Delegate tokens. Make sure to confirm both._
 
 ![Screenshot](/img/5.png)
 
-### Step 8 {#step-8}
+### Step 6 {#step-6}
 
- Once you sign the transaction, your tokens will be delegated and you will see a small pop up on the bottom of the screen on RazorScan confirming the tokens delegated.
-
-![Screenshot](/img/6.png)
-
-### Step 9 {#step-9}
-
- By clicking on the Metamask icon on the RazorScan, you will be able to see your delegated stake. 
+Click on your connected wallet address to get information on your actions.
 
 ![Screenshot](/img/7.png)
-
