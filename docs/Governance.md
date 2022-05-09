@@ -2,14 +2,38 @@
 
 Governance aims to enable the oracle network to do subjective decision making based on acceptions and rejections of the proposals. The proposals will be mostly around
 
-1. Acception or Rjection of Data soruces collections.
+1. Acception or Rejection of Data soruces collections.
 2. Change in the parameters of the Validation layer.
 
 It is quite important to whitelist of backlist the data sources to prevent any misinformation and DOS attacks.
 
 ## Governance Parameters {#governance-parameters}
 
-1. Withdraw Lock Period
+| Parameter                         | Description                                                                                                                                 | Default value     |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| Withdraw Lock Period              | The number of epochs for which the RAZORs are locked after initiating withdraw                                                              | 1                 |
+| Max Alt Blocks                    | Maximum number of best proposed blocks to be considered for dispute                                                                         | 5                 |
+| Max Commission                    | Maximum commission stakers can charge from delegators on their profits                                                                      | 20                |
+| Penalty Not Reveal Num            | Percentage stake penalty to be given out for inactivity                                                                                     | 1000              |
+| Grace Period                      | The number of epochs for which the staker wont be given inactivity penalties. Stakers inactive for more than grace period will be penalized | 8                 |
+| Max Age                           | Maximum age a staker can have                                                                                                               | 100\*10000        |
+| Min Stake                         | Minimum amount of stake required to participate                                                                                             | 20000\*(10\*\*18) |
+| Block Reward                      | Reward given to staker whose block is confirmed                                                                                             | 100\*(10\*\*18)   |
+| Escape Hatch Enabled              | The default admin role can remove all the funds incase of emergency                                                                         | true              |
+| MaxTolerance                      | Maximum percentage deviation allowed from medians for all collections                                                                       | 1_000_000         |
+| Epoch Limit For Update Commission | The number of epochs for which a staker cant change commission once set/change                                                              | 100               |
+| Delta Commission                  | Maximum commission change a staker can do                                                                                                   | 20                |
+| Unstake Lock Period               | The number of epochs for which the sRZRs are locked for calling `unstake`                                                                   | 1                 |
+| Withdraw Initiation Period        | The number of epochs where staker/delegator needs to initiate withdraw                                                                      | 5                 |
+| Reset Unstake Lock Penalty        | Percentage stake penalty from the locked amount for extending unstake lock incase withdrawInitiationPeriod was missed                       | 1                 |
+| Min Safe Razor                    | Minimum amount of stake required to become a staker                                                                                         | 10000\*(10\*\*18) |
+| To Assign                         | Maximum number of collections that can be assigned to the staker                                                                            | 5                 |
+| Buffer                            | Delay between states                                                                                                                        | 5                 |
+| SlashNums.bounty                  | Percent bounty from staker's stake to be received by the bounty hunter                                                                      | 500_000           |
+| SlashNums.burn                    | Percent RAZOR burn from staker's stake                                                                                                      | 9_500_000         |
+| SlashNums.keep                    | Percent from staker's stake to be kept by staker                                                                                            | 0                 |
+
+<!-- 1. Withdraw Lock Period
 
 After unstake the funds will be locked for some time. Stakers can withdraw funds after withdraw lock period is compeleted.
 
@@ -55,6 +79,4 @@ This helps to decide the percentage calculation.
 
 12. Escape Hatch
 
-this decides, whether the admin should be allowed to unstake the funds from StakeManager contract in extreme cases.
-
-
+this decides, whether the admin should be allowed to unstake the funds from StakeManager contract in extreme cases. -->
