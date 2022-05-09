@@ -30,7 +30,7 @@ const sidebars = {
     {
       type: "category",
       label: "Delegation",
-      items: ["Delegation/Delegate", "Delegation/Unstake"],
+      items: ["Delegation/Delegate", "Delegation/Unstake", "Delegation/initiate-withdraw"],
     },
     "Governance",
     "PenaltiesAndRewards",

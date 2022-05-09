@@ -1,4 +1,4 @@
-## Quick start - Unstake {#quick-start---unstake}
+## Unstake {#unstake}
 
 Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
@@ -38,7 +38,7 @@ Visit <https://razorscan.io/>
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”.:
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”.
 
 ![Screenshot](/img/2.png)
 
