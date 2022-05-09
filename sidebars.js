@@ -31,7 +31,6 @@ const sidebars = {
     "Governance",
     "PenaltiesAndRewards",
     "FAQ",
-    "IncentivisedTestnet",
   ],
   incentivedTestnetSidebar: [
     {
