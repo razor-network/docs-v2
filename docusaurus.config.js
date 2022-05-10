@@ -131,6 +131,12 @@ const config = {
             ],
           },
         ],
+        logo: {
+          alt: "Razor Network logo",
+          src: "img/favicon.png",
+          width: 160,
+          height: 51,
+        },
         copyright: `Copyright © ${new Date().getFullYear()} Razor Network.`,
       },
       prism: {
