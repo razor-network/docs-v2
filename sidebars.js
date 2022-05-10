@@ -21,6 +21,7 @@ const sidebars = {
       id: "what-is-an-oracle",
     },
     "explainer",
+    "getting-started",
     {
       type: "category",
       label: "Contracts",
