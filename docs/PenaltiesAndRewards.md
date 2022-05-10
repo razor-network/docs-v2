@@ -1,15 +1,14 @@
-# Penalties and Reward Structure.
+# Penalties and Rewards
 
 Razor network has carefully designed ensuring that all the honest stakers get rewarded and malicous nodes get penalised. In order to prevent 51% takeover attack, the stakers with 51% of infulence are deincetivised heavily.
 
-## Influence, Reputation And Maturity. {#influence-reputation-and-maturity}
+## Influence, Reputation And Maturity {#influence-reputation-and-maturity}
 
-Razor network measures the reputation of every staker based on different factors like Stake. Whenver any staker performs stake action, it gets its reputation increased and vice versa. 
+Razor network measures the reputation of every staker based on different factors like Stake. Whenver any staker performs stake action, it gets its reputation increased and vice versa.
 
         Reputation = Minimum(Log(m+s),Rc);
 
         Here, m is the maturity and s is the smoothing factor(to prevent high rate of growth) And Rc is the upper limit of Reputation.
-
 
 With Reputation and staker's stake, Infulence of Staker is calculated.
 
@@ -45,8 +44,3 @@ A block Reward will be awarded to stakers if all the given conditions satisfy.
 4. Staker confirms the block and submits to client.
 
 The block Reward will be given in the 5th State , Confirm State.
-
-
-
-
-
