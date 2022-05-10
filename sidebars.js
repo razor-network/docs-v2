@@ -22,11 +22,6 @@ const sidebars = {
     },
     "explainer",
     "getting-started",
-    {
-      type: "category",
-      label: "Contracts",
-      items: ["Contracts/p1-Intro", "Contracts/p2-ACL"],
-    },
     "Stake",
     {
       type: "category",
@@ -36,6 +31,11 @@ const sidebars = {
         "delegation/unstake",
         "delegation/initiate-withdraw",
       ],
+    },
+    {
+      type: "category",
+      label: "Contracts",
+      items: ["Contracts/p1-Intro", "Contracts/p2-ACL"],
     },
     "Governance",
     "PenaltiesAndRewards",

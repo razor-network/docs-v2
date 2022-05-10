@@ -1,4 +1,4 @@
-# Quick start - Stake
+# Staking
 
 Razor network is a proof of stake network. In order to participate in the network as a validator, you will need to "Stake" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
 
