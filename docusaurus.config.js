@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Razor Network | Documentation",
+  title: "Razor Network",
   tagline: "Razor Network Documentation",
   url: "https://razor-docs-v2.netlify.app",
   baseUrl: "/",
@@ -50,7 +50,7 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "Contracts/p1-Intro",
+            docId: "what-is-an-oracle",
             position: "left",
             label: "Core Concepts",
           },
