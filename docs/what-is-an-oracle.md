@@ -1,5 +1,5 @@
 ---
-title: What is an Oracle
+title: What is an Oracle?
 ---
 
 An oracle is a bridge between the blockchain and the real world. They act as on-chain APIs you can query to get information into your smart contracts. This could be anything from price information to weather reports. Oracles can also be bi-directional, used to "send" data out to the real world.

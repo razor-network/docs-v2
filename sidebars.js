@@ -17,7 +17,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: "doc",
-      label: "What is an Oracle",
+      label: "What is an Oracle?",
       id: "what-is-an-oracle",
     },
     "explainer",
@@ -31,7 +31,11 @@ const sidebars = {
     {
       type: "category",
       label: "Delegation",
-      items: ["Delegation/Delegate", "Delegation/Unstake", "Delegation/initiate-withdraw"],
+      items: [
+        "delegation/delegate",
+        "delegation/unstake",
+        "delegation/initiate-withdraw",
+      ],
     },
     "Governance",
     "PenaltiesAndRewards",

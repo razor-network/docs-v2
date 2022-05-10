@@ -1,4 +1,6 @@
-## Delegate {#delegate}
+---
+title: Delegate
+---
 
 Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
