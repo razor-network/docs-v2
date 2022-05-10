@@ -60,7 +60,7 @@ _Note: Users can add the stakers sRAZOR address using the `+` icon near the stak
 
 ### Step 8 {#step-8}
 
-Once both transactions are successful, [Initiate Withdraw](/Delegation/delegate) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
+Once both transactions are successful, [Initiate Withdraw](/docs/delegation/delegate) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
 
 ![Screenshot](/img/12.png)
 
