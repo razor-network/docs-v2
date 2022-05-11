@@ -30,6 +30,8 @@ const sidebars = {
         "delegation/delegate",
         "delegation/unstake",
         "delegation/initiate-withdraw",
+        "delegation/withdraw",
+        "delegation/reset-lock",
       ],
     },
     {
