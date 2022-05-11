@@ -49,7 +49,7 @@ On the Metamask popup click on “Confirm”. There will be an update on the web
 
 **Note** - _Two transactions, the first to Approve and the second to Delegate tokens. Make sure to confirm both._
 
-![Screenshot](/img/5.png)
+![Screenshot](/img/delegate/metamask-delegate.png)
 
 ### Step 6 {#step-6}
 
