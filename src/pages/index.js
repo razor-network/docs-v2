@@ -18,7 +18,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/what-is-an-oracle"
           >
-            Check out docs
+            Go to Documentation
           </Link>
         </div>
       </div>

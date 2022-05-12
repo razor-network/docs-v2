@@ -7,7 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Razor Network",
-  tagline: "Razor Network Documentation",
+  tagline:
+    "Razor Network is a decentralized Oracle network, which provides secure and reliable real-world data feeds for various blockchain-based applications and services.",
   url: "https://razor-docs-v2.netlify.app",
   baseUrl: "/",
   onBrokenLinks: "throw",
