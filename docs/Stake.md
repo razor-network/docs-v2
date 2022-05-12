@@ -6,16 +6,12 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 ## Get tokens {#get-tokens}
 
-You will need some Skale ETH Tokens to pay for transaction fees. A faucet will be provided in the future.
+You will need some Skale Testnet ETH Tokens to pay for transaction fees. A faucet will be provided in the future.
 
-You can get some here:
-
-1. [https://faucet.polygon.technology/](https://faucet.polygon.technology/)
-
-In order to get started, you will also need some MATIC RAZORs.
+In order to get started, you will also need some RAZORs on Skale Testnet chain.
 
 1. Use an ethereum compatible browser (e.g. Chrome browser with Metamask plugin)
-2. Set the network to "Matic Mumbai Testnet" in Metamask
+2. Set the network to "Skale Testnet" in Metamask
 
 Now you are all set! Let's download the client and start staking!
 
@@ -73,7 +69,7 @@ Create an account using the following command:
 
     docker exec -it razor-go razor create
 
-Fund this account with MATIC testnet tokens and RAZOR testnet tokens to start participating in the network.
+Fund this account with Skale testnet tokens and RAZOR testnet tokens to start participating in the network.
 
 You can use the full commands (stake) or the short form (s) as shown below.
 
