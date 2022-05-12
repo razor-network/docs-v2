@@ -1,51 +1,46 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./HomepageFeatures.module.css";
+import { RiBookReadLine } from "react-icons/ri";
+import { MdLaptopMac } from "react-icons/md";
+import { FaRocket } from "react-icons/fa";
+import Link from "@docusaurus/Link";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    title: "Getting started",
+    Svg: <FaRocket size={40} />,
+    description: <>Learn how you can get started with Razor Network.</>,
+    linkURL: "/docs/what-is-an-oracle",
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    title: "Whitepaper",
+    Svg: <RiBookReadLine size={40} />,
+    description: <>Read about Razor Network Whitepaper</>,
+    linkURL: "/docs/whitepaper/intro",
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: "Running Razor Node",
+    Svg: <MdLaptopMac size={40} />,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Running Razor node allows you to participate in network and earn block
+        rewards.
       </>
     ),
+    linkURL: "/docs/razor-go/installation",
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description, linkURL }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
-      </div>
+    <Link className={clsx(`col col--4 ${styles.link}`)} to={linkURL}>
+      <div className="text--center">{Svg}</div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-    </div>
+    </Link>
   );
 }
 

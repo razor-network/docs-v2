@@ -9,3 +9,12 @@
   height: 200px;
   width: 200px;
 }
+
+.link {
+  color: inherit;
+}
+
+.link:hover {
+  color: #40429b;
+  text-decoration: none;
+}
