@@ -155,7 +155,7 @@ Smart contracts will be audited to make sure the contracts are bug-free.
 ### Smart contract/network architecture {#smart-contractnetwork-architecture}
 A simplified network and smart contract architecture is shown below. The illustration shows the case where the client application is hosted on the same blockchain as Razor Network smart contracts. The case where the application is on a different network is not shown.
 
-![Architecture](/img/contracts.jpg)
+![Architecture](/img/contracts.jpg) <br />
 *Smart contracts and network architecture*
 
 Functions of the various contracts:
