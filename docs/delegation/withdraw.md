@@ -4,15 +4,6 @@ title: Withdraw
 
 Withdrawing can be once user have "initiate withdraw". Withdraw will transfer locked $RAZOR tokens to user address.
 
-## Metamask Setup {#metamask-setup}
-
-1. Click on `Connect Wallet` on the official Razor Network client <https://razorscan.io/>.
-2. Switch to the Skale Testnet Network and connect Metamask wallet.
-3. Click on the `+` icon to add the RAZOR contract address.
-4. Alternatively, contract addresses and network details can be found [here](/docs/incentivised-testnet/deployment-details) if you would like to verify the addresses manually.
-
-## Withdraw on Razorscan {#withdraw-on-razorscan}
-
 ### Step 1 {#step-1}
 
 Visit <https://razorscan.io/>

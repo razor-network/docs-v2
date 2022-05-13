@@ -2,22 +2,13 @@
 title: Reset Lock
 ---
 
-## Reset lock needs to be done in following scenarios:
+### Reset lock needs to be done in following scenarios:
 
 1. Consider user had unstaked in `T` epoch. After unstake, user sRAZOR tokens are locked in Stake Manager contract.
 2. User needs to Initiate withdraw after epoch `T + 1` and before `T + 6`.
 3. But user didn't the initiated withdraw in `T + 1` and `T + 6` window, then user needs to reset unstake lock.
 
    _Note_ : _Penalty will be charged to user while reseting unstake lock_.
-
-## Metamask Setup {#metamask-setup}
-
-1. Click on `Connect Wallet` on the official Razor Network client <https://razorscan.io/>.
-2. Switch to the Skale Testnet Network and connect Metamask wallet.
-3. Click on the `+` icon to add the RAZOR contract address.
-4. Alternatively, contract addresses and network details can be found [here](/docs/incentivised-testnet/deployment-details) if you would like to verify the addresses manually.
-
-## Reset Lock on Razorscan {#reset-lock-on-razorscan}
 
 ### Step 1 {#step-1}
 
