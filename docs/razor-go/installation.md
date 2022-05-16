@@ -2,6 +2,32 @@
 title: Razor Go installation
 ---
 
+### Linux quick start
+
+Install `razor-go` pre build binary directly from github and configure into host.
+
+For linux-amd64
+
+```
+curl -sSL https://raw.githubusercontent.com/razor-network/razor-go/main/install.sh | bash
+```
+
+For linux-arm64
+
+```
+export PLATFORM=arm64
+
+curl -sSL https://raw.githubusercontent.com/razor-network/razor-go/main/install.sh | bash
+```
+
+Check installation
+
+```
+razor -v
+```
+
+> **_NOTE:_** To install the version you want, you can set VERSION: environment variable before running above command.
+
 ### Docker quick start
 
 One of the quickest ways to get `razor-go` up and running on your machine is by using Docker:
@@ -26,4 +52,26 @@ You can now execute razor-go cli commands by running:
 
 ```
 docker exec -it razor-go razor <command>
+```
+
+### Setting up razor-go with docker-compose
+
+You can build razor-go docker image by running:
+
+```
+docker-compose build
+```
+
+> **_NOTE:_** Add platform: linux/x86_64 for Silicon based MAC in docker-compose.yml.
+
+Run razor-go locally with:
+
+```
+docker-compose up -d
+```
+
+You can interact with razor:
+
+```
+docker exec -it razor-go razor ...
 ```
