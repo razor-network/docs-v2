@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-Razor Network is happy to announce second phase of the Razor Network incentivized testnet. Some of the details regarding incentivised testnet is mentioned below:
+Razor Network is happy to announce second phase of the incentivized testnet. Details regarding incentivised testnet is mentioned below:
 
 | Variable           | Value                                                         |
 | ------------------ | ------------------------------------------------------------- |
