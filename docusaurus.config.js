@@ -61,13 +61,13 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/incentivised-testnet/intro",
-            label: "Incentivised Testnet",
+            to: "/docs/razor-go/installation",
+            label: "Razor Go",
             position: "left",
           },
           {
-            to: "/docs/razor-go/installation",
-            label: "Razor Go",
+            to: "/docs/incentivised-testnet/intro",
+            label: "Incentivised Testnet",
             position: "left",
           },
           {
