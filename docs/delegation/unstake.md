@@ -2,9 +2,7 @@
 title: Unstake
 ---
 
-Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
-
-> Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only.
+During unstake, user sRAZOR token gets locked in contract. User can initiate withdraw for locked tokens in the next epoch.
 
 ## In Short: {#in-short}
 
@@ -19,16 +17,7 @@ Unstaking and withdrawing funds from Razor Network is a 3 step process.
 3.  Withdraw:
     Lastly, withdraw can be called anytime after the `withdrawLockPeriod` epoch has passed.
 
-## Metamask Setup {#metamask-setup}
-
-1. Click on `Connect Wallet` on the official Razor Network client <https://razorscan.io/>.
-2. Switch to the Skale Testnet Network and connect Metamask wallet.
-3. Click on the `+` icon to add the RAZOR contract address.
-4. Alternatively, contract addresses and network details can be found [here](/docs/incentivised-testnet/deployment-details) if you would like to verify the addresses manually.
-
 Note : _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
-
-# Unstaking
 
 ### Step 1 {#step-1}
 
@@ -58,7 +47,7 @@ _Note: Users can add the stakers sRAZOR address using the `+` icon near the stak
 
 ![Screenshot](/img/11.png)
 
-### Step 8 {#step-8}
+### Step 5 {#step-5}
 
 Once both transactions are successful, [Initiate Withdraw](/docs/delegation/delegate) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
 
