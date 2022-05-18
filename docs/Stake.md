@@ -6,7 +6,7 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 ## Get tokens {#get-tokens}
 
-You will need some Skale Testnet ETH Tokens to pay for transaction fees. A faucet will be provided in the future.
+You will need some Skale Testnet Tokens to pay for transaction fees. A faucet will be provided in the future.
 
 In order to get started, you will also need some RAZORs on Skale Testnet chain.
 
@@ -48,6 +48,8 @@ Add the following configuration parameters in the razor.yaml file
      gasprice: 0          # The value of gas price if you want to set manually. For automatic calculation, set 0.
      provider: <rpc-url>  # The RPC URL of the provider you are using to connect to the blockchain.
      wait: 30            # This is the number of blocks the system will wait while voting.
+
+**Note**: _To save and quit, type `:wq` and press enter_
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
