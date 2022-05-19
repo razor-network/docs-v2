@@ -17,7 +17,7 @@ Now you are all set! Let's download the client and start staking!
 
 ## Using Docker {#using-docker}
 
-It is highly recommended to run Razor Node using Docker. This is because you dont need a complete development enviroment to run a node. Also we keep on updating and deploying the code from our github repository.
+It is recommended to run a **Razor Node** using **Docker**. This is because you dont need a complete development enviroment to run a node. Since code is updated and deployed frequently from our github repository, we keep the Razor Node docker image updated.
 
 ## Hardware Requirements {#hardware-requirements}
 
@@ -27,11 +27,11 @@ It is highly recommended to run Razor Node using Docker. This is because you don
 
 ## Software dependencies {#software-dependencies}
 
-Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/)
+Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://github.com/razor-network/razor-go/releases/tag/v0.2.0-incentnet-prod-patch.1)
+Razor-Go(github): You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://github.com/razor-network/razor-go/releases/tag/v0.2.0-incentnet-prod-patch.1).
 
-You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v0.2.0-incentnet-prod-patch.1/images/sha256-d6e9d10ecc0b18ebc1e2f01c31988f6aff41b7636990c35e1002c2da925014cc?context=repo)
+You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v0.2.0-incentnet-prod-patch.1/images/sha256-d6e9d10ecc0b18ebc1e2f01c31988f6aff41b7636990c35e1002c2da925014cc?context=repo).
 
 ## Setup {#setup}
 
