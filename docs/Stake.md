@@ -6,18 +6,36 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 ## Get tokens {#get-tokens}
 
-You will need some Skale Testnet ETH Tokens to pay for transaction fees. A faucet will be provided in the future.
+You will need some Skale Testnet Tokens to pay for transaction fees.
+You can get testnet ETH tokens from here:
+https://faucet.skale.network/
+
+- Skale Endpoint: https://staging-v2.skalenodes.com/v1/whispering-turais
+- Account: address which should receive the testnet tokens.
 
 In order to get started, you will also need some RAZORs on Skale Testnet chain.
 
+## Add Skale network to metamask
+
 1. Use an ethereum compatible browser (e.g. Chrome browser with Metamask plugin)
-2. Set the network to "Skale Testnet" in Metamask
+2. In metamask, click on top right account icon > Settings > Add Network.
+3. Fill in the following details:
+
+   | Particulars        | Value                                                     |
+   | ------------------ | --------------------------------------------------------- |
+   | Network Name       | Skale Testnet v2                                          |
+   | New RPC URL        | https://staging-v2.skalenodes.com/v1/whispering-turais    |
+   | Chain ID           | 132333505628089                                           |
+   | Currency Symbol    | ETH                                                       |
+   | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
+
+   **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
 Now you are all set! Let's download the client and start staking!
 
 ## Using Docker {#using-docker}
 
-It is highly recommended to run Razor Node using Docker. This is because you dont need a complete development enviroment to run a node. Also we keep on updating and deploying the code from our github repository.
+It is recommended to run a **Razor Node** using **Docker**. This is because you dont need a complete development enviroment to run a node. Since code is updated and deployed frequently from our github repository, we keep the Razor Node docker image updated.
 
 ## Hardware Requirements {#hardware-requirements}
 
@@ -27,18 +45,21 @@ It is highly recommended to run Razor Node using Docker. This is because you don
 
 ## Software dependencies {#software-dependencies}
 
-Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/)
+Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://github.com/razor-network/razor-go/releases/tag/v0.2.0-incentnet-prod-patch.1)
+Razor-Go(github): You can download the Razor-go:v1.0.1-incentivised-testnet-phase2 from [here](https://github.com/razor-network/razor-go/releases/tag/v1.0.1-incentivised-testnet-phase2).
 
-You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v0.2.0-incentnet-prod-patch.1/images/sha256-d6e9d10ecc0b18ebc1e2f01c31988f6aff41b7636990c35e1002c2da925014cc?context=repo)
+You can download the Razor-go:v1.0.1-incentivised-testnet-phase2 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.1-incentivised-testnet-phase2/images/sha256-d6e9d10ecc0b18ebc1e2f01c31988f6aff41b7636990c35e1002c2da925014cc?context=repo).
 
 ## Setup {#setup}
 
-Create a local config file to add all the
+Create a local config file with the following commands:
 
     mkdir $HOME/.razor
-    vi $HOME/.razor/razor.yaml
+
+```
+vi $HOME/.razor/razor.yaml
+```
 
 Add the following configuration parameters in the razor.yaml file
 
@@ -46,16 +67,14 @@ Add the following configuration parameters in the razor.yaml file
      gaslimit: 2          # The value with which the gas limit will be multiplied while sending every transaction.
      gasmultiplier: 1     # The value with which the gas price will be multiplied while sending every transaction.
      gasprice: 0          # The value of gas price if you want to set manually. For automatic calculation, set 0.
-     provider: <rpc-url>  # The RPC URL of the provider you are using to connect to the blockchain.
+     provider: https://staging-v2.skalenodes.com/v1/whispering-turais  # The RPC URL of the provider you are using to connect to the blockchain.
      wait: 30            # This is the number of blocks the system will wait while voting.
+
+**Note**: _To save and quit, type `:wq` and press enter_
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
-    docker run -d \
-    -it \
-    --name razor-go \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:v0.2.0-incentnet-prod-patch.1
+    docker run -d -it --entrypoint /bin/sh  --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.1-incentivised-testnet-phase2
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
 
@@ -73,7 +92,7 @@ Fund this account with Skale testnet tokens and RAZOR testnet tokens to start pa
 
 You can use the full commands (stake) or the short form (s) as shown below.
 
-Start staking using the `stake` command
+Start staking using the `addStake` command
 
     docker exec -it razor-go razor addStake --address <account> --value <value>
 
@@ -81,7 +100,7 @@ where `address` is the address that contains RAZOR testnet tokens and `value` is
 
 An example of this command would be:
 
-    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000 --autoVote true
+    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000
 
 To start accepting delegation, use the delegation command in a new terminal:
 
@@ -105,9 +124,13 @@ An example of this command would be:
 
 View Logs
 
-    tail -f ~/.razor/razor.log
+    tail -f $HOME/.razor/[address]
 
-That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep our computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
+An example of this command for address `0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa` would be:
+
+    tail -f $HOME/.razor/0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
+
+That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
 
 For more details around all the commands of `razor-go`, please check out the `razor-go` [Readme](https://github.com/razor-network/razor-go#readme).
 

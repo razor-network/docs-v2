@@ -13,7 +13,7 @@ Razor network is a proof of stake network. In order to participate in the networ
 3. Click on the `+` icon to add the RAZOR contract address.
 4. Alternatively, contract addresses and network details can be found [here](/docs/incentivised-testnet/deployment-details) if you would like to verify the addresses manually.
 
-Note : _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
+**Note**: _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
 
 ## Delegation on Razorscan {#delegation-on-razorscan}
 
@@ -21,7 +21,7 @@ Note : _You can get the stakers sRAZOR address by clicking on the `+` icon on th
 
 Visit <https://razorscan.io/>
 
-**Note** : _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
+**Note**: _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
 ![Screenshot](/img/1.png)
 
@@ -35,13 +35,13 @@ Now, click on “Connect Wallet” from the top right corner and make sure your 
 
 Click on the “Action” button next to the staker of your choice to delegate your RAZOR tokens to them. You can choose a staker based on activity, commission, stake, APR, age, etc.
 
-**Note** - _Commission here refers to the percentage of the rewards earned on the delegated funds charged by the staker._
+**Note**: _Commission here refers to the percentage of the rewards earned on the delegated funds charged by the staker._
 
 ### Step 4 {#step-4}
 
 Click on the Delegate action, you will be shown a modal with more information on the staker. Input the number of RAZOR tokens you want to delegate and click on “Approve & Delegate”.
 
-**Note** - _Make sure the network is correct and the connected wallet has RAZOR and enough tokens for gas as required._
+**Note**: _Make sure the network is correct and the connected wallet has RAZOR and enough tokens for gas as required._
 
 ![Screenshot](/img/4.png)
 
@@ -49,7 +49,7 @@ Click on the Delegate action, you will be shown a modal with more information on
 
 On the Metamask popup click on “Confirm”. There will be an update on the web application once the transactions are successful.
 
-**Note** - _Two transactions, the first to Approve and the second to Delegate tokens. Make sure to confirm both._
+**Note**: _Two transactions, the first to Approve and the second to Delegate tokens. Make sure to confirm both._
 
 ![Screenshot](/img/delegate/metamask-delegate.png)
 

@@ -17,40 +17,42 @@ Unstaking and withdrawing funds from Razor Network is a 3 step process.
 3.  Withdraw:
     Lastly, withdraw can be called anytime after the `withdrawLockPeriod` epoch has passed.
 
-Note : _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
+**Note**: _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
 
 ### Step 1 {#step-1}
 
 Visit <https://razorscan.io/>
 
-**Note** : _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
+**Note**: _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
 ![Screenshot](/img/1.png)
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”.
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet” and navigate to https://razorscan.io/staking
 
+**Note**: _This can also be done from the particular staker or delegator page._
 ![Screenshot](/img/2.png)
 
-### Step 3 {#step-3}
+<!-- ### Step 3 {#step-3}
 
 Navigate to your address by clicking on it on the top right corner of the screen. Click on the `Unstake` action from the Actions dropdown on the Delegated Table.
 _Note: This can also be done on [https://razorscan.io/staking](https://razorscan.io/staking) or the particular stakers page._
 
-![Screenshot](/img/9.png)
+![Screenshot](/img/9.png) -->
 
-### Step 4 {#step-4}
+### Step 3 {#step-3}
 
-Once you click on “Unstake” a modal will appear, enter the amount of sRAZOR that you want to unstake, and click on the “Unstake” button. There will be two transactions, Approve and Unstake respectively.
-_Note: Users can add the stakers sRAZOR address using the `+` icon near the stakers address._
+Navigate to staker address and Click on the Unstake action from the Actions dropdown on the stakers list table.
+
+**Note**: _Users can add the stakers sRAZOR address using the `+` icon near the stakers address._
 
 ![Screenshot](/img/11.png)
 
-### Step 5 {#step-5}
+### Step 4 {#step-4}
 
-Once both transactions are successful, [Initiate Withdraw](/docs/delegation/delegate) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
+Once both transactions are successful, [Initiate Withdraw](/docs/delegation/initiate-withdraw) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
 
 ![Screenshot](/img/12.png)
 
-**Note** : _To get the exact values of the lock periods check Governance [here](https://razorscan.io/governance/values)_.
+**Note**: _To get the exact values of the lock periods check Governance [here](https://razorscan.io/governance/values)_.

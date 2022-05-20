@@ -8,7 +8,7 @@ Withdraw is only allowed after `Initiate Withdraw` is called. Withdraw will tran
 
 Visit <https://razorscan.io/>
 
-**Note** : _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
+**Note**: _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
 ![Screenshot](/img/1.png)
 
@@ -22,7 +22,7 @@ Now, click on “Connect Wallet” from the top right corner and make sure your 
 
 Click on your connected wallet address to get information on your actions. Navigate to the Delegated section on your page. Clicking on the "Action" CTA will show you list of actions that are allowed that particular staker.
 
-**Note** - _Same action can be performed from staking page by finding the staker address and clicking on Action._
+**Note**: _Same action can be performed from staking page by finding the staker address and clicking on Action._
 
 ![Screenshot](/img/7.png)
 
