@@ -6,9 +6,16 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 ## Get tokens {#get-tokens}
 
-You will need some Skale Testnet Tokens to pay for transaction fees. A faucet will be provided in the future.
+You will need some Skale Testnet Tokens to pay for transaction fees.
+You can get testnet SKL tokens from here:
+https://faucet.skale.network/
+
+- In _Skale Endpoint_, use https://staging-v2.skalenodes.com/v1/whispering-turais
+- In _Account_, use your address in which you want to receive SKL tokens.
 
 In order to get started, you will also need some RAZORs on Skale Testnet chain.
+
+## Add Skale network to metamask
 
 1. Use an ethereum compatible browser (e.g. Chrome browser with Metamask plugin)
 2. In metamask, click on top right account icon > Settings > Add Network.
@@ -17,7 +24,7 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain.
    | Particulars        | Value                                                     |
    | ------------------ | --------------------------------------------------------- |
    | Network Name       | Skale Testnet v2                                          |
-   | New RPC URL        | https://testnet-proxy.skalenodes.com/v1/whispering-turais |
+   | New RPC URL        | https://staging-v2.skalenodes.com/v1/whispering-turais    |
    | Chain ID           | 132333505628089                                           |
    | Currency Symbol    | SKL                                                       |
    | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
@@ -57,7 +64,7 @@ Add the following configuration parameters in the razor.yaml file
      gaslimit: 2          # The value with which the gas limit will be multiplied while sending every transaction.
      gasmultiplier: 1     # The value with which the gas price will be multiplied while sending every transaction.
      gasprice: 0          # The value of gas price if you want to set manually. For automatic calculation, set 0.
-     provider: https://testnet-proxy.skalenodes.com/v1/whispering-turais  # The RPC URL of the provider you are using to connect to the blockchain.
+     provider: https://staging-v2.skalenodes.com/v1/whispering-turais  # The RPC URL of the provider you are using to connect to the blockchain.
      wait: 30            # This is the number of blocks the system will wait while voting.
 
 **Note**: _To save and quit, type `:wq` and press enter_
