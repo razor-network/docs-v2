@@ -10,8 +10,8 @@ You will need some Skale Testnet Tokens to pay for transaction fees.
 You can get testnet SKL tokens from here:
 https://faucet.skale.network/
 
-- In _Skale Endpoint_, use https://staging-v2.skalenodes.com/v1/whispering-turais
-- In _Account_, use your address in which you want to receive SKL tokens.
+- Skale Endpoint: https://staging-v2.skalenodes.com/v1/whispering-turais
+- Account: address which should receive the testnet tokens.
 
 In order to get started, you will also need some RAZORs on Skale Testnet chain.
 
