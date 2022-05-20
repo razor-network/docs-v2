@@ -41,7 +41,7 @@ _Note: This can also be done on [https://razorscan.io/staking](https://razorscan
 
 ![Screenshot](/img/9.png) -->
 
-### Step 4 {#step-4}
+### Step 3 {#step-3}
 
 Navigate to staker address and Click on the Unstake action from the Actions dropdown on the stakers list table.
 
@@ -49,7 +49,7 @@ Navigate to staker address and Click on the Unstake action from the Actions drop
 
 ![Screenshot](/img/11.png)
 
-### Step 5 {#step-5}
+### Step 4 {#step-4}
 
 Once both transactions are successful, [Initiate Withdraw](/docs/delegation/initiate-withdraw) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
 

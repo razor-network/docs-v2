@@ -7,7 +7,7 @@ Razor network is a proof of stake network. In order to participate in the networ
 ## Get tokens {#get-tokens}
 
 You will need some Skale Testnet Tokens to pay for transaction fees.
-You can get testnet SKL tokens from here:
+You can get testnet ETH tokens from here:
 https://faucet.skale.network/
 
 - Skale Endpoint: https://staging-v2.skalenodes.com/v1/whispering-turais
@@ -26,7 +26,7 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain.
    | Network Name       | Skale Testnet v2                                          |
    | New RPC URL        | https://staging-v2.skalenodes.com/v1/whispering-turais    |
    | Chain ID           | 132333505628089                                           |
-   | Currency Symbol    | SKL                                                       |
+   | Currency Symbol    | ETH                                                       |
    | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
 
    **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
@@ -47,16 +47,19 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://github.com/razor-network/razor-go/releases/tag/v0.2.0-incentnet-prod-patch.1).
+Razor-Go(github): You can download the Razor-go:v1.0.1-incentivised-testnet-phase2 from [here](https://github.com/razor-network/razor-go/releases/tag/v1.0.1-incentivised-testnet-phase2).
 
-You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v0.2.0-incentnet-prod-patch.1/images/sha256-d6e9d10ecc0b18ebc1e2f01c31988f6aff41b7636990c35e1002c2da925014cc?context=repo).
+You can download the Razor-go:v1.0.1-incentivised-testnet-phase2 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.1-incentivised-testnet-phase2/images/sha256-d6e9d10ecc0b18ebc1e2f01c31988f6aff41b7636990c35e1002c2da925014cc?context=repo).
 
 ## Setup {#setup}
 
-Create a local config file with the following command:
+Create a local config file with the following commands:
 
     mkdir $HOME/.razor
-    vi $HOME/.razor/razor.yaml
+
+```
+vi $HOME/.razor/razor.yaml
+```
 
 Add the following configuration parameters in the razor.yaml file
 
@@ -71,11 +74,7 @@ Add the following configuration parameters in the razor.yaml file
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
-    docker run -d \
-    -it \
-    --name razor-go \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:v0.2.0-incentnet-prod-patch.1
+    docker run -d -it --entrypoint /bin/sh  --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.1-incentivised-testnet-phase2
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
 
@@ -125,7 +124,11 @@ An example of this command would be:
 
 View Logs
 
-    tail -f ~/.razor/razor.log
+    tail -f $HOME/.razor/[address].log
+
+An example of this command for address `0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa` would be:
+
+    tail -f $HOME/.razor/0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa.log
 
 That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
 
