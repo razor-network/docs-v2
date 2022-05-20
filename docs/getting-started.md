@@ -10,10 +10,10 @@ Razor network is a proof of stake network. There are two ways in which anyone ca
 - To participate in network, staker needs to stake $RAZOR tokens.
 - After staking, staker can start validating transactions by running [Razor Node](razor-go/installation)
 - Block reward will be awarded to staker on successful confirmation of block.
-- Detailed guide regarding staking can be found [here](Stake)
+- Detailed guide regarding staking can be found [here](Stake).
 
 ## 2. Delegator
 
 - Delegator can delegate $RAZOR tokens to existing staker to participate in network.
-- Delegator gets share of block reward when staker which delegator had delegated gets block reward.
-- Detailed guide regarding delegating can be found [here](/docs/delegation/delegate)
+- Delegator gets a share of the block reward when the staker user has delegated to confirms a block.
+- Detailed guide regarding delegating can be found [here](/docs/delegation/delegate).
