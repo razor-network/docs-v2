@@ -15,10 +15,7 @@ $ ./razor createJob --url <URL> --selector <selector_in_json_or_XHTML_selector_f
 docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    createJob --url <URL> --selector <selector_in_json_or_XHTML_selector_format> --selectorType <0_for_XHTML_or_1_for_JSON> --name <name> --address <address> --power <power> --weight <weight>
+docker exec -it razor-go razor createJob --url <URL> --selector <selector_in_json_or_XHTML_selector_format> --selectorType <0_for_XHTML_or_1_for_JSON> --name <name> --address <address> --power <power> --weight <weight>
 ```
 
 Example:

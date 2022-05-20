@@ -15,10 +15,7 @@ $ ./razor updateCollection --collectionId <collection_id> --jobIds <list_of_jobs
 docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    updateCollection --collectionId <collection_id> --jobIds <list_of_jobs> --address <address> --aggregation <aggregation_method> --power <power> --tolerance <tolerance>
+docker exec -it razor-go razor updateCollection --collectionId <collection_id> --jobIds <list_of_jobs> --address <address> --aggregation <aggregation_method> --power <power> --tolerance <tolerance>
 ```
 
 Example:

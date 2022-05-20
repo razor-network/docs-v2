@@ -13,10 +13,7 @@ $ ./razor stakerInfo --stakerId <staker_id_of_the_staker>
 docker
 
 ```
-docker run -it --rm \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    stakerInfo --stakerId <staker_id_of_the_staker>
+docker exec -it razor-go razor stakerInfo --stakerId <staker_id_of_the_staker>
 ```
 
 Example:

@@ -15,10 +15,7 @@ $ ./razor modifyCollectionStatus --collectionId <collectionId> --address <addres
 docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    modifyCollectionStatus --collectionId <collectionId> --address <address> --status <true_or_false>
+docker exec -it razor-go razor modifyCollectionStatus --collectionId <collectionId> --address <address> --status <true_or_false>
 ```
 
 Example:

@@ -7,20 +7,17 @@ If you want to become a delegator use the `delegate` command. The staker whose `
 razor cli
 
 ```
-$ ./razor delegate --address <address> --value <value> --pow <power> --stakerId <staker_id>
+$ ./razor delegate --address <address> --value <value> --pow <power> --stakerId <staker_id> --logFile <address>
 ```
 
 docker
 
 ```
-docker run -it --rm \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    delegate --address <address> --value <value> --pow <power> --stakerId <staker_id>
+docker exec -it razor-go razor delegate --address <address> --value <value> --pow <power> --stakerId <staker_id> --logFile <address>
 ```
 
 Example:
 
 ```
-$ ./razor delegate --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 1000 --pow 10 --stakerId 1
+$ ./razor delegate --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 1000 --pow 10 --stakerId 1 --logFile 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c
 ```

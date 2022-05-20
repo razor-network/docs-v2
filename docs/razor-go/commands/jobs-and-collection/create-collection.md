@@ -15,10 +15,7 @@ $ ./razor createCollection --name <collection_name> --address <address> --jobIds
 docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    createCollection --name <collection_name> --address <address> --jobIds <list_of_job_ids> --aggregation <aggregation_method> --power <power> --tolerance <tolerance>
+docker exec -it razor-go razor createCollection --name <collection_name> --address <address> --jobIds <list_of_job_ids> --aggregation <aggregation_method> --power <power> --tolerance <tolerance>
 ```
 
 Example:

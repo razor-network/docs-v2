@@ -7,20 +7,17 @@ If you want to claim your bounty after disputing a rogue staker, you can run `cl
 razor cli
 
 ```
-$ ./razor claimBounty --address <address> --bountyId <bounty_id>
+$ ./razor claimBounty --address <address> --bountyId <bounty_id>  --logFile <address>
 ```
 
 docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    claimBounty --address <address> --bountyId <bounty_id>
+docker exec -it razor-go razor claimBounty --address <address> --bountyId <bounty_id> --logFile <address>
 ```
 
 Example:
 
 ```
-$ ./razor claimBounty --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --bountyId 5
+$ ./razor claimBounty --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --bountyId 5 --logFile 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c
 ```
