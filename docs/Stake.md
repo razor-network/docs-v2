@@ -11,7 +11,18 @@ You will need some Skale Testnet Tokens to pay for transaction fees. A faucet wi
 In order to get started, you will also need some RAZORs on Skale Testnet chain.
 
 1. Use an ethereum compatible browser (e.g. Chrome browser with Metamask plugin)
-2. Set the network to "Skale Testnet" in Metamask
+2. In metamask, click on top right account icon > Settings > Add Network.
+3. Fill in the following details:
+
+   | Particulars        | Value                                                     |
+   | ------------------ | --------------------------------------------------------- |
+   | Network Name       | Skale Testnet v2                                          |
+   | New RPC URL        | https://testnet-proxy.skalenodes.com/v1/whispering-turais |
+   | Chain ID           | 132333505628089                                           |
+   | Currency Symbol    | SKL                                                       |
+   | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
+
+   **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
 Now you are all set! Let's download the client and start staking!
 
@@ -35,7 +46,7 @@ You can download the Razor-go:v0.2.0-incentnet-prod-patch.1 from [here](https://
 
 ## Setup {#setup}
 
-Create a local config file to add all the
+Create a local config file with the following command:
 
     mkdir $HOME/.razor
     vi $HOME/.razor/razor.yaml
@@ -46,7 +57,7 @@ Add the following configuration parameters in the razor.yaml file
      gaslimit: 2          # The value with which the gas limit will be multiplied while sending every transaction.
      gasmultiplier: 1     # The value with which the gas price will be multiplied while sending every transaction.
      gasprice: 0          # The value of gas price if you want to set manually. For automatic calculation, set 0.
-     provider: <rpc-url>  # The RPC URL of the provider you are using to connect to the blockchain.
+     provider: https://testnet-proxy.skalenodes.com/v1/whispering-turais  # The RPC URL of the provider you are using to connect to the blockchain.
      wait: 30            # This is the number of blocks the system will wait while voting.
 
 **Note**: _To save and quit, type `:wq` and press enter_
@@ -75,7 +86,7 @@ Fund this account with Skale testnet tokens and RAZOR testnet tokens to start pa
 
 You can use the full commands (stake) or the short form (s) as shown below.
 
-Start staking using the `stake` command
+Start staking using the `addStake` command
 
     docker exec -it razor-go razor addStake --address <account> --value <value>
 
@@ -83,7 +94,7 @@ where `address` is the address that contains RAZOR testnet tokens and `value` is
 
 An example of this command would be:
 
-    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000 --autoVote true
+    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000
 
 To start accepting delegation, use the delegation command in a new terminal:
 
@@ -109,7 +120,7 @@ View Logs
 
     tail -f ~/.razor/razor.log
 
-That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep our computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
+That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
 
 For more details around all the commands of `razor-go`, please check out the `razor-go` [Readme](https://github.com/razor-network/razor-go#readme).
 
