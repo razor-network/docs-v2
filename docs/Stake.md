@@ -94,33 +94,33 @@ You can use the full commands (stake) or the short form (s) as shown below.
 
 Start staking using the `addStake` command
 
-    docker exec -it razor-go razor addStake --address <account> --value <value>
+    docker exec -it razor-go razor addStake --address <account> --value <value> --logFile <address>
 
 where `address` is the address that contains RAZOR testnet tokens and `value` is the amount of RAZOR that you want to stake.
 
 An example of this command would be:
 
-    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000
+    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000 --logFile 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
 
 To start accepting delegation, use the delegation command in a new terminal:
 
-    docker exec -it razor-go razor setDelegation --address <address> --status <bool> --commission <commission>
+    docker exec -it razor-go razor setDelegation --address <address> --status <bool> --commission <commission> --logFile <address>
 
 where `address` is the address that contains RAZOR testnet tokens, `status` is true or false to turn on or off delegation, and `commission` is the percentage of commission that you can set.
 
 An example of this command would be:
 
-    docker exec -it razor-go razor setDelegation --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --status true --commission 1
+    docker exec -it razor-go razor setDelegation --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --status true --commission 1 --logFile 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
 
 It will enable delegation, and participants can delegate RAZOR tokens to your staker's account.
 
 Start voting using the `vote` command
 
-    docker exec -it razor-go razor vote --address <account>
+    docker exec -it razor-go razor vote --address <account> --logFile <address>
 
 An example of this command would be:
 
-    docker exec -it razor-go razor vote --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
+    docker exec -it razor-go razor vote --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
 
 View Logs
 
