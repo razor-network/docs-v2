@@ -2,15 +2,15 @@
 title: Deployment Details
 ---
 
-| Contract           | Address                                                                                                                                                |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Governance         | [0x5579439f25f5418c262557F3bAd98C9835A43080](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x5579439f25f5418c262557F3bAd98C9835A43080/) |
-| BlockManager       | [0x3937B015dA551287B046376Af66e4db4C16Ad858](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x3937B015dA551287B046376Af66e4db4C16Ad858/) |
-| CollectionManager  | [0x2AFa25FFF6Aa55f76c0fFd496e8ef559881174e7](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x2AFa25FFF6Aa55f76c0fFd496e8ef559881174e7/) |
-| StakeManager       | [0xd9167703Cf1b78AffeBeC1e1131F3A784748de8e](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0xd9167703Cf1b78AffeBeC1e1131F3A784748de8e/) |
-| RewardManager      | [0x87cb9b764B4e8398d0C9877A704E8271a29aac79](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x87cb9b764B4e8398d0C9877A704E8271a29aac79/) |
-| VoteManager        | [0x100C59234A3DA0AFe80AcD05787b7e378f885891](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x100C59234A3DA0AFe80AcD05787b7e378f885891/) |
-| Delegator          | [0x570e35f33d31D1922E673b6c4A9966B46817A25B](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x570e35f33d31D1922E673b6c4A9966B46817A25B/) |
-| RAZOR              | [0x042D4519392720F39E1FF9A59a3143e11e6248C6](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x042D4519392720F39E1FF9A59a3143e11e6248C6/) |
-| StakedTokenFactory | [0xD5B1802eC1EcdBb3816a9794c9Ef9DAb6E5e6C4B](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0xD5B1802eC1EcdBb3816a9794c9Ef9DAb6E5e6C4B/) |
-| RandomNoManager    | [0x4e4CF6039637B208D1f68872eA947d917086AaE1](http://faint-acubens.explorer.dappnet.skalenodes.com/address/0x4e4CF6039637B208D1f68872eA947d917086AaE1/) |
+| Contract           | Address                                                                                                                                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Governance         | [0x9b60808AA91FB2Dc62686e489dB16A0Cb323E514](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x9b60808AA91FB2Dc62686e489dB16A0Cb323E514/) |
+| BlockManager       | [0x59125303FDbA7Ff3EF14c94D728946581dac6A31](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x59125303FDbA7Ff3EF14c94D728946581dac6A31/) |
+| CollectionManager  | [0x854a0114e932B82a2c37A489c0010de86D9092b4](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x854a0114e932B82a2c37A489c0010de86D9092b4/) |
+| StakeManager       | [0x49e6c8F7AC2659F95d718d04C055D2672662B9bc](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x49e6c8F7AC2659F95d718d04C055D2672662B9bc/) |
+| RewardManager      | [0xF73E8aEe4524dFb5dd8F652DFD7DfbEfD7AA8151](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xF73E8aEe4524dFb5dd8F652DFD7DfbEfD7AA8151/) |
+| VoteManager        | [0xA124649df32e12abEb8EFBbc09A59E4deb73486c](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xA124649df32e12abEb8EFBbc09A59E4deb73486c/) |
+| Delegator          | [0x2D4889BD41C49B197F37bD0c589D957bFE35D758](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x2D4889BD41C49B197F37bD0c589D957bFE35D758/) |
+| RAZOR              | [0x8093C9190388Fb327B92434D32D1e41F999244Ed](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x8093C9190388Fb327B92434D32D1e41F999244Ed/) |
+| StakedTokenFactory | [0x59690a9177094830d544E9F41F7ceDbB2C8db8c4](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x59690a9177094830d544E9F41F7ceDbB2C8db8c4/) |
+| RandomNoManager    | [0xd8e6AfCC7f27301b87A77a93EeDb421fC0710703](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xd8e6AfCC7f27301b87A77a93EeDb421fC0710703/) |
