@@ -19,25 +19,19 @@ $ ./razor unlockWithdraw --address <address> --stakerId <staker_id>
 docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    initiateWithdraw --address <address> --stakerId <staker_id>
+docker exec -it razor-go razor initiateWithdraw --address <address> --stakerId <staker_id> --logFile <address>
 ```
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    unlockWithdraw --address <address> --stakerId <staker_id>
+docker exec -it razor-go razor unlockWithdraw --address <address> --stakerId <staker_id> --logFile <address>
 ```
 
 Example:
 
 ```
-$ ./razor initiateWithdraw --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --stakerId 1
+$ ./razor initiateWithdraw --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --stakerId 1 --logFile 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c
 ```
 
 ```
-$ ./razor unlockWithdraw --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --stakerId 1
+$ ./razor unlockWithdraw --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --stakerId 1 --logFile 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c
 ```

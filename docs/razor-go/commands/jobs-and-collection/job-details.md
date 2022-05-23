@@ -15,8 +15,5 @@ $ ./razor jobList
 docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    jobList
+docker exec -it razor-go razor jobList
 ```

@@ -14,19 +14,13 @@ $ ./razor create
 Docker
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest razor create
+docker exec -it razor-go razor create
 ```
 
 Docker providing password file
 
 ```
-docker run -it  \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    -v /path/of/password-file:/root/.razor/password-file \
-    razornetwork/razor-go:latest \
-   razor create --password /root/.razor/password-file
+docker exec -it razor-go razor --password /root/.razor/password-file
 ```
 
 Example:

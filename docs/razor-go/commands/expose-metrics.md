@@ -9,7 +9,7 @@ Example:
 razor cli
 
 ```
-$ ./razor setConfig --exposeMetrics 2112
+$ ./razor setConfig --exposeMetrics 2112 
 ```
 
 docker
@@ -20,8 +20,5 @@ docker
 docker network create razor_network
 
 # Expose Metrics
-docker run -it  --network razor_network\
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    setConfig --exposeMetrics 2112
+docker exec -it razor-go razor setConfig --exposeMetrics 2112
 ```

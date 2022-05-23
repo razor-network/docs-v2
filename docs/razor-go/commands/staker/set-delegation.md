@@ -7,20 +7,18 @@ If you are a staker you can accept delegation from delegators and charge a commi
 razor cli
 
 ```
-$ ./razor setDelegation --address <address> --status <true_or_false> --commission <commission_percent>
+$ ./razor setDelegation --address <address> --status <true_or_false> --commission <commission_percent> --logFile <address>
 ```
 
 docker
 
 ```
-docker run -it --rm \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    setDelegation --address <address> --status <true_or_false>
+docker exec -it razor-go razor
+    setDelegation --address <address> --status <true_or_false> --logFile <address>
 ```
 
 Example:
 
 ```
-$ ./razor setDelegation --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --status true -c 20
+$ ./razor setDelegation --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --status true -c 20 --logFile 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c
 ```

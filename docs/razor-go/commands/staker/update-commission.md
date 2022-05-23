@@ -7,21 +7,18 @@ If you are a staker and have accepted delegation, you can define your commission
 razor cli
 
 ```
-$ ./razor updateCommission --address <address> --commission <commission_percent>
+$ ./razor updateCommission --address <address> --commission <commission_percent> --logFile <address>
 
 ```
 
 docker
 
 ```
-docker run -it --rm \
-    -v "$(echo $HOME)"/.razor:/root/.razor \
-    razornetwork/razor-go:latest \
-    updateCommission --address <address> --commission <commission_percent>
+docker exec -it razor-go razor updateCommission --address <address> --commission <commission_percent> --logFile <address>
 ```
 
 Example:
 
 ```
-$ ./razor updateCommission --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --commission 10
+$ ./razor updateCommission --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --commission 10 --logFile 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c
 ```
