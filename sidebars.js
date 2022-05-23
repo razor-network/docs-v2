@@ -47,17 +47,17 @@ const sidebars = {
     {
       type: "doc",
       label: "Introduction",
-      id: "incentivised-testnet/intro",
+      id: "incentivized-testnet/intro",
     },
     {
       type: "doc",
       label: "Getting Started",
-      id: "incentivised-testnet/getting-started",
+      id: "incentivized-testnet/getting-started",
     },
     {
       type: "doc",
       label: "Deployment Details",
-      id: "incentivised-testnet/deployment-details",
+      id: "incentivized-testnet/deployment-details",
     },
   ],
   razorGo: [

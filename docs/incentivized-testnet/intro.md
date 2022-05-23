@@ -2,13 +2,13 @@
 title: Introduction
 ---
 
-Razor Network is happy to announce second phase of the incentivized testnet. Details regarding incentivised testnet is mentioned below:
+Razor Network is happy to announce second phase of the incentivized testnet. Details regarding incentivized testnet is mentioned below:
 
 | Variable           | Value                                                         |
 | ------------------ | ------------------------------------------------------------- |
 | Phase              | 2                                                             |
-| Start date         | TBA                                                           |
-| End date           | TBA                                                           |
+| Start date         | 24th May 1pm UTC                                              |
+| End date           | 14th June 1pm UTC                                             |
 | Chain name         | Skale Testnet V2                                              |
 | ChainID            | 132333505628089                                               |
 | Chain currency     | ETH                                                           |

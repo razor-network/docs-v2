@@ -66,8 +66,8 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/incentivised-testnet/intro",
-            label: "Incentivised Testnet",
+            to: "/docs/incentivized-testnet/intro",
+            label: "Incentivized Testnet",
             position: "left",
           },
           {
