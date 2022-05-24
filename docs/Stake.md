@@ -29,7 +29,7 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain.
    | Currency Symbol    | ETH                                                       |
    | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
 
-   **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
+   >**Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
 Now you are all set! Let's download the client and start staking!
 
@@ -76,14 +76,14 @@ docker
 ```
 docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
 ```
-
-
-
 ## Commands {#commands}
 
 Run the commands in following way:
 
     docker exec -it razor-go razor <command>
+
+
+>**Note**: _It is recomended to use `--logFile <address>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
 
 Create an account using the following command:
 
