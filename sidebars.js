@@ -92,6 +92,11 @@ const sidebars = {
           items: [
             {
               type: "doc",
+              label: "Set Config",
+              id: "razor-go/commands/staker/set-config",
+            },
+            {
+              type: "doc",
               label: "Stake",
               id: "razor-go/commands/staker/stake",
             },
@@ -120,11 +125,6 @@ const sidebars = {
               type: "doc",
               label: "Claim Bounty",
               id: "razor-go/commands/staker/claim-bounty",
-            },
-            {
-              type: "doc",
-              label: "Set Config",
-              id: "razor-go/commands/staker/set-config",
             },
           ],
         },
