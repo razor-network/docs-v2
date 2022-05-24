@@ -29,7 +29,7 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain.
    | Currency Symbol    | ETH                                                       |
    | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
 
-   **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
+   >**Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
 Now you are all set! Let's download the client and start staking!
 
@@ -51,38 +51,39 @@ Razor-Go(github): You can download the Razor-go:v1.0.3-incentivized-testnet-phas
 
 You can download the Razor-go:v1.0.3-incentivized-testnet-phase2 from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.3-incentivised-testnet-phase2/images/sha256-8e0585e8a153f2d083475c9adc921a8f2460715363a83de660f0fd97d17c537a?context=explore).
 
-## Setup {#setup}
-
-Create a local config file with the following commands:
-
-    mkdir $HOME/.razor
-
-```
-vi $HOME/.razor/razor.yaml
-```
-
-Add the following configuration parameters in the razor.yaml file
-
-     buffer: 20           # Buffer size determines, out of all blocks in a state, in how many blocks the voting or any other operation can be performed.
-     gaslimit: 2          # The value with which the gas limit will be multiplied while sending every transaction.
-     gasmultiplier: 1     # The value with which the gas price will be multiplied while sending every transaction.
-     gasprice: 0          # The value of gas price if you want to set manually. For automatic calculation, set 0.
-     provider: https://staging-v2.skalenodes.com/v1/whispering-turais  # The RPC URL of the provider you are using to connect to the blockchain.
-     wait: 30            # This is the number of blocks the system will wait while voting.
-
-**Note**: _To save and quit, type `:wq` and press enter_
-
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
     docker run -d -it --entrypoint /bin/sh  --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.3-incentivised-testnet-phase2
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
 
+
+
+## Set Config {#set-config}
+
+There are a set of parameters that are configurable. These include:
+
+- Provider: The RPC URL of the provider you are using to connect to the blockchain.
+- Gas Multiplier: The value with which the gas price will be multiplied while sending every transaction.
+- Buffer Size: Buffer size determines, out of all blocks in a state, in how many blocks the voting or any other operation can be performed.
+- Wait Time: This is the number of blocks the system will wait while voting.
+- Gas Price: The value of gas price if you want to set manually. If you don't provide any value or simply keep it to 1, the razor client will automatically calculate the optimum gas price and send it.
+- Log Level: Normally debug logs are not logged into the log file. But if you want you can set `logLevel` to `debug` and fetch the debug logs.
+- Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
+
+```
+docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
+```
+>**Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
+
 ## Commands {#commands}
 
 Run the commands in following way:
 
     docker exec -it razor-go razor <command>
+
+
+>**Note**: _It is recomended to use `--logFile <address>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
 
 Create an account using the following command:
 
