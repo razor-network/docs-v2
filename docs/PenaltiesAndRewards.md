@@ -30,7 +30,7 @@ Considering technical issues, we have kept a Grace Period for inactivity. If by 
 
 ## Rewards {#rewards}
 
-For every participation in each epoch, staker will be incentivised with increase in the influence of its on network. It is also known as Voting Rewards
+For every participation in each epoch, staker will be incentivized with an increase in influence on the network. It is also known as Voting Rewards
 
 If there is malicious block being created, the disputer will get some percentage of the slashed stake of the staker as a reward.
 
