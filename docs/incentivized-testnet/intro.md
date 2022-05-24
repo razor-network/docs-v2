@@ -7,8 +7,8 @@ Razor Network is happy to announce second phase of the incentivized testnet. Det
 | Variable              | Value                                                                                                                                                          |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Phase                 | 2                                                                                                                                                              |
-| Start date            | 24th May 1pm UTC                                                                                                                                               |
-| End date              | 14th June 1pm UTC                                                                                                                                              |
+| Start date            | 25th May 1pm UTC                                                                                                                                               |
+| End date              | 22th June 1pm UTC                                                                                                                                              |
 | Chain name            | Skale Testnet V2                                                                                                                                               |
 | ChainID               | 132333505628089                                                                                                                                                |
 | Chain currency        | ETH                                                                                                                                                            |
