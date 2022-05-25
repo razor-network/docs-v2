@@ -12,9 +12,9 @@ Use this guide [here](/docs/delegation/delegate) for more information about dele
 
 ## Technical Links
 
-The docker image version is [v1.0.3-incentivised-testnet-phase2](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.3-incentivised-testnet-phase2/images/sha256-8e0585e8a153f2d083475c9adc921a8f2460715363a83de660f0fd97d17c537a?context=explore).
+The docker image version is [v1.0.3-incentivised-testnet-phase2-patch](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.3-incentivised-testnet-phase2-patch/images/sha256-b6253faf1eb31aefcff6254b73834c605abbe6cfb3883ff8dd0a033b0a2065fc?context=explore).
 
-The latest `razor-go` release on GitHub is [v1.0.3-incentivised-testnet-phase2](https://github.com/razor-network/razor-go/releases/tag/v1.0.3-incentivised-testnet-phase2).
+The latest `razor-go` release on GitHub is [v1.0.3-incentivised-testnet-phase2-patch](https://github.com/razor-network/razor-go/releases/tag/v1.0.3-incentivised-testnet-phase2-patch).
 
 The latest TESTNET contract addresses are on [v1.0.1-incentivised-testnet-phase2](https://github.com/razor-network/contracts/blob/refs/tags/v1.0.1-incentivised-testnet-phase2/deployed/skale/addresses.json).
 
