@@ -83,7 +83,7 @@ Run the commands in following way:
     docker exec -it razor-go razor <command>
 
 
->**Note**: _It is recomended to use `--logFile <address>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
+>**Note**: _It is recomended to use `--logFile <filename>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
 
 Create an account using the following command:
 
@@ -95,41 +95,41 @@ You can use the full commands (stake) or the short form (s) as shown below.
 
 Start staking using the `addStake` command
 
-    docker exec -it razor-go razor addStake --address <account> --value <value> --logFile <address>
+    docker exec -it razor-go razor addStake --address <account> --value <value> --logFile <filename>
 
 where `address` is the address that contains RAZOR testnet tokens and `value` is the amount of RAZOR that you want to stake.
 
 An example of this command would be:
 
-    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000 --logFile 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
+    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000 --logFile logs
 
 To start accepting delegation, use the delegation command in a new terminal:
 
-    docker exec -it razor-go razor setDelegation --address <address> --status <bool> --commission <commission> --logFile <address>
+    docker exec -it razor-go razor setDelegation --address <address> --status <bool> --commission <commission> --logFile <filename>
 
 where `address` is the address that contains RAZOR testnet tokens, `status` is true or false to turn on or off delegation, and `commission` is the percentage of commission that you can set.
 
 An example of this command would be:
 
-    docker exec -it razor-go razor setDelegation --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --status true --commission 1 --logFile 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
+    docker exec -it razor-go razor setDelegation --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --status true --commission 1 --logFile logs
 
 It will enable delegation, and participants can delegate RAZOR tokens to your staker's account.
 
 Start voting using the `vote` command
 
-    docker exec -it razor-go razor vote --address <account> --logFile <address>
+    docker exec -it razor-go razor vote --address <account> --logFile <filename>
 
 An example of this command would be:
 
-    docker exec -it razor-go razor vote --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
+    docker exec -it razor-go razor vote --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile logs
 
 View Logs
 
     tail -f $HOME/.razor/[address]
 
-An example of this command for address `0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa` would be:
+An example of this command would be:
 
-    tail -f $HOME/.razor/0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa
+    tail -f $HOME/.razor/logs
 
 That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
 
