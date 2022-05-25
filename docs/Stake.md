@@ -47,13 +47,13 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.3-incentivized-testnet-phase2 from [here](https://github.com/razor-network/razor-go/releases/tag/v1.0.3-incentivised-testnet-phase2).
+Razor-Go(github): You can download the Razor-go:v1.0.3-incentivized-testnet-phase2-patch from [here](https://github.com/razor-network/razor-go/releases/tag/v1.0.3-incentivised-testnet-phase2-patch).
 
-You can download the Razor-go:v1.0.3-incentivized-testnet-phase2 from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.3-incentivised-testnet-phase2/images/sha256-8e0585e8a153f2d083475c9adc921a8f2460715363a83de660f0fd97d17c537a?context=explore).
+You can download the Razor-go:v1.0.3-incentivized-testnet-phase2-patch from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.3-incentivised-testnet-phase2-patch/images/sha256-b6253faf1eb31aefcff6254b73834c605abbe6cfb3883ff8dd0a033b0a2065fc?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
-    docker run -d -it --entrypoint /bin/sh  --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.3-incentivised-testnet-phase2
+    docker run -d -it --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.3-incentivised-testnet-phase2-patch
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
 
