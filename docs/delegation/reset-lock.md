@@ -16,13 +16,13 @@ Visit <https://razorscan.io/>
 
 **Note**: _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
-![Screenshot](/img/1.png)
+![Screenshot](/img/withdraw/Withdraw_step1.png)
 
 ### Step 2 {#step-2}
 
 Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”. Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
 
-![Screenshot](/img/2.png)
+![Screenshot](/img/withdraw/Withdraw_step2.png)
 
 ### Step 3 {#step-3}
 
@@ -30,7 +30,7 @@ Click on your connected wallet address to get information on your actions. In de
 
 **Note**: _Same action can be performed from staking page by clicking on staker action._
 
-![Screenshot](/img/7.png)
+![Screenshot](/img/withdraw/Withdraw_step3.png)
 
 ### Step 4 {#step-4}
 
