@@ -29,7 +29,7 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout description="Description will go into a meta tag in <head />">
+    <Layout description="This is the documentation for Razor Network. Razor Network is a decentralized Oracle network, which provides secure and reliable real-world data feeds for various blockchain-based applications and services.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
