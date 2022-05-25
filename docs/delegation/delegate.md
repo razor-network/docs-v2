@@ -23,13 +23,13 @@ Visit <https://razorscan.io/>
 
 **Note**: _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
-![Screenshot](/img/1.png)
+![Screenshot](/img/delegate/Delegation_step1.png)
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”. Next, visit [https://razorscan.io/staking](https://razorscan.io/staking) or click on “Participants” from the sidebar on the left and you should see the screen below:
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”. Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
 
-![Screenshot](/img/2.png)
+![Screenshot](/img/delegate/delegation_step2.png)
 
 ### Step 3 {#step-3}
 
@@ -57,4 +57,4 @@ On the Metamask popup click on “Confirm”. There will be an update on the web
 
 Click on your connected wallet address to get information on your actions.
 
-![Screenshot](/img/7.png)
+![Screenshot](/img//delegate/delegation_step6.png)

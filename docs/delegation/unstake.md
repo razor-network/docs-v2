@@ -25,14 +25,14 @@ Visit <https://razorscan.io/>
 
 **Note**: _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
-![Screenshot](/img/1.png)
+![Screenshot](/img/unstake/unstake_step1.png)
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet” and navigate to https://razorscan.io/staking
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to “Skale Testnet”. Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
 
 **Note**: _This can also be done from the particular staker or delegator page._
-![Screenshot](/img/2.png)
+![Screenshot](/img/unstake/unstake_step2.png)
 
 <!-- ### Step 3 {#step-3}
 
@@ -47,12 +47,12 @@ Navigate to staker address and Click on the Unstake action from the Actions drop
 
 **Note**: _Users can add the stakers sRAZOR address using the `+` icon near the stakers address._
 
-![Screenshot](/img/11.png)
+![Screenshot](/img/unstake/unstake_step3.png)
 
 ### Step 4 {#step-4}
 
 Once both transactions are successful, [Initiate Withdraw](/docs/delegation/initiate-withdraw) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
 
-![Screenshot](/img/12.png)
+![Screenshot](/img/unstake/unstake_step4.png)
 
 **Note**: _To get the exact values of the lock periods check Governance [here](https://razorscan.io/governance/values)_.
