@@ -29,7 +29,7 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain.
    | Currency Symbol    | ETH                                                       |
    | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
 
-   >**Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
+   > **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
 Now you are all set! Let's download the client and start staking!
 
@@ -47,17 +47,15 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.3-incentivized-testnet-phase2-patch from [here](https://github.com/razor-network/razor-go/releases/tag/v1.0.3-incentivised-testnet-phase2-patch).
+Razor-Go(github): You can download the Razor-go:v1.0.3-incentivised-testnet-phase2-patch2 from [here](https://github.com/razor-network/razor-go/releases/tag/v1.0.3-incentivised-testnet-phase2-patch2).
 
-You can download the Razor-go:v1.0.3-incentivized-testnet-phase2-patch from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.3-incentivised-testnet-phase2-patch/images/sha256-b6253faf1eb31aefcff6254b73834c605abbe6cfb3883ff8dd0a033b0a2065fc?context=explore).
+You can download the Razor-go:v1.0.3-incentivised-testnet-phase2-patch2 from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.3-incentivised-testnet-phase2-patch2/images/sha256-e3fc3d3abe1fad1e9ec13fec54e3419fa507dd60c00056e9c7c9215a87c9eecf?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
     docker run -d -it --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.3-incentivised-testnet-phase2-patch
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
-
-
 
 ## Set Config {#set-config}
 
@@ -74,7 +72,8 @@ There are a set of parameters that are configurable. These include:
 ```
 docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
 ```
->**Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
+
+> **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
 
 ## Commands {#commands}
 
@@ -82,8 +81,7 @@ Run the commands in following way:
 
     docker exec -it razor-go razor <command>
 
-
->**Note**: _It is recomended to use `--logFile <filename>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
+> **Note**: _It is recomended to use `--logFile <filename>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
 
 Create an account using the following command:
 
