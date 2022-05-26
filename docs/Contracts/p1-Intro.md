@@ -2,7 +2,7 @@
 
 The detailed list of our contracts can be found in our github repository [here](https://github.com/razor-network/contracts).
 
-The addresses of the latest deployed contracts can be found [here](https://github.com/razor-network/contracts/blob/v1.0.1-incentnet-phase2/deployed/skale/addresses.json).
+The addresses of the latest deployed contracts can be found [here](https://github.com/razor-network/contracts/blob/v1.0.1-incentivised-testnet-phase2-patch2/deployed/skale/addresses.json).
 
 #### List of deployed contracts and their functions within Razor Network:
 
