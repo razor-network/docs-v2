@@ -7,19 +7,19 @@ You can start voting once you've staked some razors
 razor cli
 
 ```
-$ ./razor vote --address <address> --logFile <address>
+$ ./razor vote --address <address> --logFile <filename>
 ```
 
 docker
 
 ```
-docker exec -it razor-go razor vote --address <address> --logFile <address>
+docker exec -it razor-go razor vote --address <address> --logFile <filename>
 ```
 
 Example:
 
 ```
-$ ./razor vote --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --logFile 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c 
+$ ./razor vote --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --logFile logs 
 ```
 
 If you want to claim your bounty automatically after disputing staker, you can just pass `--autoClaimBounty` flag in your vote command.
