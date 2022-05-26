@@ -17,5 +17,5 @@ Razor Network is happy to announce second phase of the incentivized testnet. Det
 | Chain Explorer        | https://whispering-turais.explorer.staging-v2.skalenodes.com/                                                                                                  |
 | Testnet token type    | ERC-20                                                                                                                                                         |
 | Testnet token name    | RAZOR                                                                                                                                                          |
-| Testnet token address | [0x8093C9190388Fb327B92434D32D1e41F999244Ed](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x8093C9190388Fb327B92434D32D1e41F999244Ed/) |
+| Testnet token address | [0xDc342De801De342EdE013C7E6e7a78Fa4f548041](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xDc342De801De342EdE013C7E6e7a78Fa4f548041/) |
 | Explorer              | https://razorscan.io/                                                                                                                                          |

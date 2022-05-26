@@ -53,7 +53,7 @@ You can download the Razor-go:v1.0.3-incentivised-testnet-phase2-patch2 from [he
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
-    docker run -d -it --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.3-incentivised-testnet-phase2-patch
+    docker run -d -it --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.3-incentivised-testnet-phase2-patch2
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
 
