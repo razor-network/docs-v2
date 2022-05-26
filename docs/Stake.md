@@ -123,7 +123,7 @@ An example of this command would be:
 
 View Logs
 
-    tail -f $HOME/.razor/[address]
+    tail -f $HOME/.razor/[filename]
 
 An example of this command would be:
 
