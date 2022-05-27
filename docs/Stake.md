@@ -121,6 +121,14 @@ Start voting using the `vote` command
 
     docker exec -it razor-go razor vote --address <account> --logFile <filename>
 
+> **Note**: _To run vote command in background you can use `tmux` for that._  
+> 
+>1. Run: `tmux new -s razor-go` 
+>2. Run  vote command
+>3. To exit from tmux session: press `ctrl+b`, release those keys and press `d` 
+>4. To list your session: `tmux ls`
+>5. To attach Session back: `tmux attach-session -t razor-go`
+
 An example of this command would be:
 
     docker exec -it razor-go razor vote --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile logs
