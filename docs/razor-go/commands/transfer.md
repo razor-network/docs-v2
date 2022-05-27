@@ -7,13 +7,13 @@ Transfers razor to other accounts.
 razor cli
 
 ```
-$ ./razor transfer --value <value> --to <transfer_to_address> --from <transfer_from_address> --logFile <transfer_from_address>
+$ ./razor transfer --value <value> --to <transfer_to_address> --from <transfer_from_address> --logFile <filename>
 ```
 
 docker
 
 ```
-docker exec -it razor-go razor transfer --value <value> --to <transfer_to_address> --from <transfer_from_address> --logFile <transfer_from_address>
+docker exec -it razor-go razor transfer --value <value> --to <transfer_to_address> --from <transfer_from_address> --logFile <filename>
 ```
 
 Example:

@@ -87,6 +87,10 @@ Create an account using the following command:
 
     docker exec -it razor-go razor create
 
+Import an account using the following command:
+
+    docker exec -it razor-go razor import
+
 Fund this account with Skale testnet tokens and RAZOR testnet tokens to start participating in the network.
 
 You can use the full commands (stake) or the short form (s) as shown below.
