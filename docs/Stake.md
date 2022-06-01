@@ -133,6 +133,14 @@ An example of this command would be:
 
     docker exec -it razor-go razor vote --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile logs
 
+If you have delegation enabled and have some commission set, then you can claim that earned commission anytime via the following command:
+
+    docker exec -it razor-go razor claimCommission --address <address> --logFile <filename>
+
+An example of this command would be:
+
+    docker exec -it razor-go razor claimCommission --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile logs
+
 View Logs
 
     tail -f $HOME/.razor/[filename].log
