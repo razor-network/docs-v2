@@ -21,6 +21,11 @@ const sidebars = {
       id: "what-is-an-oracle",
     },
     "explainer",
+    {
+      type: "category",
+      label: "Data feeds",
+      items: ["data-feeds/consuming-data-feeds"],
+    },
     "getting-started",
     "Stake",
     {
