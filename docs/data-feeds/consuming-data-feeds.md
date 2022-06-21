@@ -8,7 +8,7 @@ To consume Razor Network price feed, your contract should reference `IDelegator`
 There are two functions which can fetch price of an collection/asset:
 
 1. `getResult(bytes32 name)`: The function accept name as argument. Here the name is keccak-256 hash of collection/asset name.
-2. `getResultById(uint16 _id)`: The function accept id of the collection/asset.
+2. `getResultFromID(uint16 _id)`: The function accept id of the collection/asset.
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
@@ -43,7 +43,7 @@ contract DataFeed {
     /// @param _id collection ID
     /// @return result of the collection and its power
     /// @return power
-    function getResultById(uint16 _id) public view returns (uint256, int8) {
+    function getResultFromID(uint16 _id) public view returns (uint256, int8) {
         (uint256 result, int8 power) = delegator.getResultFromID(_id);
         return (result, power);
     }
