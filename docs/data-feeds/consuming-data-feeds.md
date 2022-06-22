@@ -17,7 +17,7 @@ Both the function returns:
 
 Consider an example:
 
-If the result of the collection is **300050** and power as **2**, which basically means that price of the collection is **3000.50**.
+If the result of the collection is **300050** and it's power is **2**, this essentially indicates that price of the collection is **3000.50**.
 
 Price of the collection can be calculated by following formula: `result` \* `10^-power`.
 
