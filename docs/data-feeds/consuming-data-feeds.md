@@ -1,14 +1,16 @@
 # Consuming Data feeds
 
-Razor Network data feeds connect the smart contract to fetch the price of an asset (collection) in a single call.
-All the collection/asset price that are currently reported by oracle can be found on [Razorscan](https://razorscan.io/).
+Razor Network Data Feeds are the easiest and most reliable way to connect any smart contracts to fetch the current real world market price of an asset (known as a collection) in a single call.
+All the assets (collections) that can currently be consumed are available here [Razorscan](https://razorscan.io/asset/ethCollectionMean).
 
-To consume Razor Network price feed, your contract should reference `IDelegator`.
+To consume the Razor Network price feeds, your contract should reference `IDelegator`. This is an interface which defines the external functions implemented by Data Feeds.
 
-There are two functions which can fetch price of an collection/asset:
+There are two functions which can fetch price of an asset:
 
-1. `getResult(bytes32 name)`: The function accept name as argument. Here the name is keccak-256 hash of collection/asset name.
-2. `getResultFromID(uint16 _id)`: The function accept id of the collection/asset.
+1. `getResult(bytes32 name)`: This function accepts the name as an argument. The name is a _keccak-256 hash_ of the collection name.
+2. `getResultFromID(uint16 _id)`: This function accepts the id of the collection.
+
+**Note** - _Names and ids of collections can be found [here](https://razorscan.io/asset/ethCollectionMean)._
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
