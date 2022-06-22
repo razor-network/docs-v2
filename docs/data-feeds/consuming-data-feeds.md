@@ -10,16 +10,16 @@ There are two functions which can fetch price of an asset:
 1. `getResult(bytes32 name)`: This function accepts the name as an argument. The name is a _keccak-256 hash_ of the collection name.
 2. `getResultFromID(uint16 _id)`: This function accepts the id of the collection.
 
-Both the functions return:
+Output:
 
-1. **result**(uint256) - Result of the collection
+1. **result**(uint256) - Current price of the collection
 2. **power**(int8) - Power of the collection. Power is used to specify the decimal shifts required on the result.
 
 Consider the following example:
 
-If the result of the collection is **300050** and it's power is **2**, this essentially indicates that price of the collection (asset) is **$3000.50**.
+If the result of the collection is **300050** and it's power is **2**, this essentially indicates that price of the collection (asset) is **$3000.50**. This adds a higher level of precision.
 
-The price of collection can be calculated by the following formula: `result \* 10^-(power)`.
+The price of collection can be calculated by the following formula: `result * 10^-(power`.
 
 **Note** - _Names and IDs of collections can be found [here](https://razorscan.io/asset/ethCollectionMean)._
 
