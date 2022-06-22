@@ -13,13 +13,13 @@ There are two functions which can fetch price of an asset:
 Both the function returns:
 
 1. **result**(uint256) - Result of the collection
-2. **power**(int8) - Power of the collection. `power` is used to specify the decimal shifts required on the result.
+2. **power**(int8) - Power of the collection. Power is used to specify the decimal shifts required on the result.
 
 Consider an example:
 
 If the result of the collection is **300050** and it's power is **2**, this essentially indicates that price of the collection is **3000.50**.
 
-Price of the collection can be calculated by following formula: `result` \* `10^-power`.
+The price of collection can be calculated by the following formula: `result` \* `10^-power`.
 
 **Note** - _Names and ids of collections can be found [here](https://razorscan.io/asset/ethCollectionMean)._
 
