@@ -7,7 +7,7 @@ To consume the Razor Network price feeds, your contract should reference `IDeleg
 
 There are two functions which can fetch price of an asset:
 
-1. `getResult(bytes32 name)`: This function accepts the name as an argument. The name is a _keccak-256 hash_ of the collection name.
+1. `getResult(bytes32 name)`: This function accepts the name as an argument. The `name` is a _keccak-256 hash_ of the collection name.
 2. `getResultFromID(uint16 _id)`: This function accepts the id of the collection.
 
 Output:
