@@ -19,7 +19,7 @@ Consider the following example:
 
 If the result of the collection is **300050** and it's power is **2**, this essentially indicates that price of the collection (asset) is **$3000.50**. This adds a higher level of precision.
 
-The price of collection can be calculated by the following formula: `result * 10^-(power`.
+The price of collection can be calculated by the following formula: `result * 10^-(power)`.
 
 **Note** - _Names and IDs of collections can be found [here](https://razorscan.io/asset/ethCollectionMean)._
 
