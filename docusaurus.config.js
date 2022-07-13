@@ -9,7 +9,7 @@ const config = {
   title: "Razor Network",
   tagline:
     "Razor Network is a decentralized Oracle network, which provides secure and reliable real-world data feeds for various blockchain-based applications and services.",
-  url: "https://razor-docs-v2.netlify.app",
+  url: "https://docs.razor.network/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
