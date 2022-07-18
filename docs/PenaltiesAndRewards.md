@@ -18,17 +18,13 @@ With Reputation and staker's stake, Infulence of Staker is calculated.
 
 ### Penalty for Wrong Block Proposed {#penalty-for-wrong-block-proposed}
 
-If staker tries to propose an invalid block, then any staker can dispute on that by calculating the correct values. We assume that each staker uses the same client and data without any modifications. hence if there is any malicious activity done, staker's stake will be slashed. In case of slashed staker's stake will be used based on governance params `SlashNums`. SlashNums has 3 component:
+If staker tries to propose an invalid block, then any staker can dispute on that by calculating the correct values. We assume that each staker uses the same client and data without any modifications. hence if there is any malicious activity done, staker's stake will be slashed. In case of slashed staker's stake will be consumed based on governance params `SlashNums`. SlashNums has 3 component:
 
 1. `bounty` - percentage of staker's stage rewarded as bounty to disputer (Default: 5%)
 2. `burn` - percentage of RAZOR burnt from staker's stake (Default: 95%)
 3. `keep` - percentage of staker's stake to be kept with staker (Default: 0%)
 
 All governance parameters and it's current value can be found on [Razorscan](https://razorscan.io/governance/values)
-
-### Voting Penalites {#voting-penalites}
-
-If any staker, does not participate in epoch and do not provide the commit, then she will get its influence reduced by 1%. And if she commits and do not reveal then there will be signigicant amount of penality on influence.
 
 ### Inactivity Penalty {#inactivity-penalty}
 
