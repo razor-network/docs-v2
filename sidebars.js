@@ -199,6 +199,11 @@ const sidebars = {
           label: "Transfer",
           id: "razor-go/commands/transfer",
         },
+        {
+          type: "doc",
+          label: "Expose Metrics",
+          id: "razor-go/commands/expose-metrics",
+        },
       ],
     },
     {

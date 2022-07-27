@@ -53,7 +53,19 @@ You can download the Razor-go:v1.0.3-incentivised-testnet-phase2-patch2 from [he
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
-    docker run -d -it --entrypoint /bin/sh --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.1.2-internal-testnet
+One of the quickest ways to get `razor-go` up and running on your machine is by using Docker:
+
+1. Create docker network
+
+```
+docker network create razor_network
+```
+
+2. Start razor-go container
+
+```
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.1.2-internal-testnet
+```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
 
@@ -121,13 +133,13 @@ Start voting using the `vote` command
 
     docker exec -it razor-go razor vote --address <account> --logFile <filename>
 
-> **Note**: _To run vote command in background you can use `tmux` for that._  
-> 
->1. Run: `tmux new -s razor-go` 
->2. Run  vote command
->3. To exit from tmux session: press `ctrl+b`, release those keys and press `d` 
->4. To list your session: `tmux ls`
->5. To attach Session back: `tmux attach-session -t razor-go`
+> **Note**: _To run vote command in background you can use `tmux` for that._
+>
+> 1.  Run: `tmux new -s razor-go`
+> 2.  Run vote command
+> 3.  To exit from tmux session: press `ctrl+b`, release those keys and press `d`
+> 4.  To list your session: `tmux ls`
+> 5.  To attach Session back: `tmux attach-session -t razor-go`
 
 An example of this command would be:
 
