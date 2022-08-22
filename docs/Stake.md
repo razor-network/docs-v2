@@ -6,12 +6,9 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 ## Get tokens {#get-tokens}
 
-You will need some Skale Testnet Tokens to pay for transaction fees.
-You can get testnet ETH tokens from here:
-https://faucet.skale.network/
-
-- Skale Endpoint: https://staging-v2.skalenodes.com/v1/whispering-turais
-- Account: address which should receive the testnet tokens.
+You will need some sFUEL to pay for transaction fees.
+You can get sFUEL from here:
+https://faucet.razorscan.io/
 
 In order to get started, you will also need some RAZORs on Skale Testnet chain.
 
@@ -21,13 +18,13 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain.
 2. In metamask, click on top right account icon > Settings > Add Network.
 3. Fill in the following details:
 
-   | Particulars        | Value                                                     |
-   | ------------------ | --------------------------------------------------------- |
-   | Network Name       | Skale Testnet v2                                          |
-   | New RPC URL        | https://staging-v2.skalenodes.com/v1/whispering-turais    |
-   | Chain ID           | 132333505628089                                           |
-   | Currency Symbol    | ETH                                                       |
-   | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
+   | Particulars        | Value                                                           |
+   | ------------------ | --------------------------------------------------------------- |
+   | Network Name       | Razor SChain                                                    |
+   | New RPC URL        | https://mainnet.skalenodes.com/v1/turbulent-unique-scheat       |
+   | Chain ID           | 278611351                                                       |
+   | Currency Symbol    | sFUEL                                                           |
+   | Block Explorer URL | https://turbulent-unique-scheat.explorer.mainnet.skalenodes.com |
 
    > **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
@@ -82,7 +79,7 @@ There are a set of parameters that are configurable. These include:
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
+docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
 ```
 
 > **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._

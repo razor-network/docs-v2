@@ -46,23 +46,32 @@ const sidebars = {
     },
     "Governance",
     "PenaltiesAndRewards",
+    {
+      type: "category",
+      label: "Incentived Testnet",
+      items: [
+        "incentivized-testnet/intro",
+        "incentivized-testnet/getting-started",
+        "incentivized-testnet/deployment-details",
+      ],
+    },
     "FAQ",
   ],
-  incentivedTestnetSidebar: [
+  mainnetSidebar: [
     {
       type: "doc",
       label: "Introduction",
-      id: "incentivized-testnet/intro",
+      id: "mainnet/intro",
     },
     {
       type: "doc",
       label: "Getting Started",
-      id: "incentivized-testnet/getting-started",
+      id: "mainnet/getting-started",
     },
     {
       type: "doc",
       label: "Deployment Details",
-      id: "incentivized-testnet/deployment-details",
+      id: "mainnet/deployment-details",
     },
   ],
   razorGo: [
