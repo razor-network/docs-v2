@@ -152,11 +152,11 @@ An example of this command would be:
 
 View Logs
 
-    tail -f $HOME/.razor/[filename].log
+    tail -f $HOME/.razor/logs/[filename].log
 
 An example of this command would be:
 
-    tail -f $HOME/.razor/logs.log
+    tail -f $HOME/.razor/logs/logs.log
 
 That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
 
