@@ -17,12 +17,6 @@ Docker
 docker exec -it razor-go razor create
 ```
 
-Docker providing password file
-
-```
-docker exec -it razor-go razor --password /root/.razor/password-file
-```
-
 Example:
 
 ```
