@@ -68,6 +68,11 @@ const config = {
             position: "left",
           },
           {
+            to: "/docs/token-bridge/intro",
+            label: "Token bridge",
+            position: "left",
+          },
+          {
             to: "/docs/mainnet/intro",
             label: "Mainnet",
             position: "left",
