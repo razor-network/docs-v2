@@ -577,7 +577,7 @@ _N_ = Number of stakers
 
 2. Then we will evaluate the following equation:
 
-_S_ / (_S<sub>M</sub>_) ≤ _PRNG_(_n_ || _S<sub>i</sub>_ || _B<sub>R</sub>_ )
+_S_ / (_S<sub>M</sub>_) >= _PRNG_(_n_ || _S<sub>i</sub>_ || _B<sub>R</sub>_)
 
 _Each block in blockchains such as Ethereum has a hash. This hash is virtually random and depends on the contents of the block and hash of the previous block._
 

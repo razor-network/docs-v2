@@ -4,14 +4,14 @@ title: Delegate
 
 Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
-> Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only.
+<!-- > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only. -->
 
 ## Metamask Setup {#metamask-setup}
 
 1. Click on `Connect Wallet` on the official Razor Network client <https://razorscan.io/>.
 2. Switch to the Skale Testnet Network and connect Metamask wallet.
 3. Click on the `+` icon to add the RAZOR contract address.
-4. Alternatively, contract addresses and network details can be found [here](/docs/incentivized-testnet/deployment-details) if you would like to verify the addresses manually.
+4. Alternatively, contract addresses and network details can be found [here](/docs/mainnet/deployment-details) if you would like to verify the addresses manually.
 
 **Note**: _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
 

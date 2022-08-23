@@ -18,6 +18,6 @@ The latest `razor-go` release on GitHub is [v1-mainnet](https://github.com/razor
 
 The latest contracts npm package is [1.0.2](https://www.npmjs.com/package/@razor-network/contracts)
 
-The latest mainnet contract addresses are on [v1.0.1-incentivised-testnet-phase2-patch2](https://github.com/razor-network/contracts/blob/v1.0.1-incentivised-testnet-phase2-patch2/deployed/skale/addresses.json).
+<!-- The latest mainnet contract addresses are on [v1.0.1-incentivised-testnet-phase2-patch2](https://github.com/razor-network/contracts/blob/v1.0.1-incentivised-testnet-phase2-patch2/deployed/skale/addresses.json). -->
 
 Please join our [discord](https://discord.gg/EC53qp2kJ6) for technical discussion in the `#validators` channel.
