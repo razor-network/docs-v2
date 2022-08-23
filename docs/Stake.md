@@ -20,7 +20,7 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain.
 
    | Particulars        | Value                                                           |
    | ------------------ | --------------------------------------------------------------- |
-   | Network Name       | Razor SChain                                                    |
+   | Network Name       | Razor Schain                                                    |
    | New RPC URL        | https://mainnet.skalenodes.com/v1/turbulent-unique-scheat       |
    | Chain ID           | 278611351                                                       |
    | Currency Symbol    | sFUEL                                                           |

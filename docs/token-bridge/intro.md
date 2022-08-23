@@ -1,12 +1,12 @@
 # Razor Token bridge
 
-[Razor Token bridge](https://bridge.razorscan.io/) allows to bridge $RAZOR tokens from Mainnet to Razor sChain and vice versa. Token bridge is powered by [Skale IMA](https://docs.skale.network/ima/1.3.x/).
+[Razor Token bridge](https://bridge.razorscan.io/) allows to bridge $RAZOR tokens from Mainnet to Razor Schain and vice versa. Token bridge is powered by [Skale IMA](https://docs.skale.network/ima/1.3.x/).
 
-## Bridge tokens from Mainnet to RAZOR sChain
+## Bridge tokens from Mainnet to RAZOR Schain
 
 1. Visit https://bridge.razorscan.io/
 2. Connect wallet and switch the network to Ethereum.
-3. Once connected to Ethereum, Enter amount of RAZOR tokens to bridge in sChain card and click "Bridge". These will trigger 2 transaction:
+3. Once connected to Ethereum, Enter amount of RAZOR tokens to bridge in Schain card and click "Bridge". These will trigger 2 transaction:
 
    - Allow amount of RAZOR tokens to be spent by Skale IMA DepositBox contract.
    - Depositing RAZOR tokens to DepositBox contract to bridge tokens from Mainnet to Schain.
@@ -15,9 +15,9 @@
 
 ![Ethereum to Schain](/img/bridge/e2s.png)
 
-## Bridge tokens from RAZOR sChain to Mainnet
+## Bridge tokens from RAZOR Schain to Mainnet
 
-Before bridging tokens from RAZOR sChain to Mainnet, make sure you have enough balance in Community Pool contract.
+Before bridging tokens from RAZOR Schain to Mainnet, make sure you have enough balance in Community Pool contract.
 
 ### What is Community Pool contract?
 
@@ -34,7 +34,7 @@ Community Pool contract is part of Skale IMA. Each user when bridge tokens from 
 2. Connect wallet and switch the network to Razor Schain.
 3. Once connected to Ethereum, Enter amount of RAZOR tokens in bridge to mainnet card and click "Bridge". These will trigger 2 transaction:
    - Allow amount of RAZOR tokens to be spent by Skale IMA DepositBoxERC20 contract.
-   - Depositing RAZOR tokens to DepositBoxERC20 contract to bridge tokens from sChain to Ethereum mainnet. Tokens will be burnt on RAZOR sChain and unlocked on Ethereum mainnet for user address.
+   - Depositing RAZOR tokens to DepositBoxERC20 contract to bridge tokens from Schain to Ethereum mainnet. Tokens will be burnt on RAZOR Schain and unlocked on Ethereum mainnet for user address.
 
 > **_NOTE:_** Bridge transfer typically takes 3-5 minutes
 
