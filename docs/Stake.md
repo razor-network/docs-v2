@@ -44,9 +44,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1-mainnet from [here](https://github.com/razor-network/razor-go/releases/tag/v1-mainnet).
+Razor-Go(github): You can download the Razor-go:v1.0.0-mainnet from [here](https://github.com/razor-network/razor-go/releases/tag/v1.0.0-mainnet).
 
-You can download the docker image of Razor-go:v1-mainnet from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1-mainnet/images/sha256-c357eeadb6ca974c5a97c62dfa69c19a67f39307a2f21e9235d9ea2a97d7295a?context=explore).
+You can download the docker image of Razor-go:v1.0.0-mainnet from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.0-mainnet/images/sha256-894c9a9823f0c64d9331f9355b8917fc20ce8ff287a97a89d82c240371b675d4?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
