@@ -69,7 +69,7 @@ const config = {
           },
           {
             to: "/docs/token-bridge/intro",
-            label: "Token bridge",
+            label: "Token Bridge",
             position: "left",
           },
           {

@@ -10,7 +10,7 @@ You will need some sFUEL to pay for transaction fees.
 You can get sFUEL from here:
 https://faucet.razorscan.io/
 
-In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/intro)
+In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/intro)
 
 ## Add Skale network to metamask
 
