@@ -23,3 +23,5 @@ Example:
 $ ./razor create
 Password:
 ```
+
+You can get the keystore files at `$HOME/.razor/keystore_files/` directory

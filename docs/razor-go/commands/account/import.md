@@ -25,4 +25,6 @@ $ ./razor import
 Password:
 ```
 
+You can get the keystore files at `$HOME/.razor/keystore_files/` directory
+
 _Before staking on Razor Network, please ensure your account has enough sFUEL and RAZOR._
