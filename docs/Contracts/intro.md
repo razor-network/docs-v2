@@ -13,4 +13,4 @@ The addresses of the latest deployed contracts can be found [here](https://githu
 5. Block Manager: Create new blocks on Razor Network.
 6. Collection Manager: This contract manager queue of pending queries and results of processed queries.
 7. Parameters : A basic contract to store all the constants used in Razor Network Contracts.
-8. Delegator: Proxy contract provides access to the latest Job Manager contract.
+8. Delegator: Proxy contract provides access to the latest Collection result.

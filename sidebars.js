@@ -42,7 +42,7 @@ const sidebars = {
     {
       type: "category",
       label: "Contracts",
-      items: ["Contracts/p1-Intro", "Contracts/p2-ACL"],
+      items: ["Contracts/intro", "Contracts/p2-ACL"],
     },
     "Governance",
     "PenaltiesAndRewards",

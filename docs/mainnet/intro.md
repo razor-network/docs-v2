@@ -6,7 +6,7 @@ Razor Network is currently live on Mainnet. Details regarding mainnet is mention
 
 | Variable                       | Value                                                                                                                                                            |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chain name                     | Razor Schain V2                                                                                                                                                  |
+| Chain name                     | Razor Schain                                                                                                                                                     |
 | ChainID                        | 278611351                                                                                                                                                        |
 | Chain currency                 | sFUEL                                                                                                                                                            |
 | Faucet                         | https://faucet.razorscan.io/                                                                                                                                     |

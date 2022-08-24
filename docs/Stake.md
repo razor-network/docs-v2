@@ -2,7 +2,7 @@
 
 Razor network is a proof of stake network. In order to participate in the network as a validator, you will need to "Stake" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
 
-> Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only.
+<!-- > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only. -->
 
 ## Get tokens {#get-tokens}
 
@@ -10,7 +10,7 @@ You will need some sFUEL to pay for transaction fees.
 You can get sFUEL from here:
 https://faucet.razorscan.io/
 
-In order to get started, you will also need some RAZORs on Skale Testnet chain.
+In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/intro)
 
 ## Add Skale network to metamask
 
