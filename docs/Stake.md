@@ -122,7 +122,7 @@ where `address` is the address that contains RAZOR testnet tokens, `status` is t
 
 An example of this command would be:
 
-    docker exec -it razor-go razor setDelegation --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --status true --commission 1 --logFile logs
+    docker exec -it razor-go razor setDelegation --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --status true --commission 20 --logFile logs
 
 It will enable delegation, and participants can delegate RAZOR tokens to your staker's account.
 
