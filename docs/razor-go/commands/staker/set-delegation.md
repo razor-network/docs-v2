@@ -14,7 +14,7 @@ docker
 
 ```
 docker exec -it razor-go razor
-    setDelegation --address <address> --status <true_or_false> --logFile <filename>
+    setDelegation --address <address> --status <true_or_false> --commission <commission_percent> --logFile <filename>
 ```
 
 Example:
