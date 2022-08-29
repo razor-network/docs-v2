@@ -126,13 +126,17 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Links",
             items: [
+              {
+                label: "Terms of Service",
+                to: "https://razor.network/tos.pdf",
+              },
               {
                 label: "Razorscan",
                 to: "https://razorscan.io/",
               },
-              {
+               {
                 label: "Razor Go",
                 to: "https://github.com/razor-network/razor-go",
               },
