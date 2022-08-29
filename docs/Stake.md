@@ -36,7 +36,7 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 ## Hardware Requirements {#hardware-requirements}
 
-4gb RAM
+16gb RAM
 
 4 Core (arm64 or amd64 architecture)
 
