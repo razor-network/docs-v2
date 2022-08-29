@@ -112,7 +112,25 @@ where `address` is the address that contains RAZOR testnet tokens and `value` is
 
 An example of this command would be:
 
-    docker exec -it razor-go razor addStake --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --value 10000 --logFile logs
+    docker exec -it razor-go razor addStake --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 10000 --logFile logs
+
+_Note: --weiRazor flag can be passed to provide values in wei_
+
+If you have a 1000.25 razors in your account, you can stake those using the stake command with weiRazor flag.
+
+Example:
+
+```
+$ razor addStake --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 1000250000000000000000 --weiRazor true
+```
+
+If you have a 5678.1001 razors in your account, you can stake those using the stake command with weiRazor flag.
+
+Example:
+
+```
+$ ./razor addStake --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 5678100100000000000000 --weiRazor true
+```
 
 To start accepting delegation, use the delegation command in a new terminal:
 
@@ -122,7 +140,7 @@ where `address` is the address that contains RAZOR testnet tokens, `status` is t
 
 An example of this command would be:
 
-    docker exec -it razor-go razor setDelegation --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --status true --commission 20 --logFile logs
+    docker exec -it razor-go razor setDelegation --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --status true --commission 20 --logFile logs
 
 It will enable delegation, and participants can delegate RAZOR tokens to your staker's account.
 
@@ -140,7 +158,7 @@ Start voting using the `vote` command
 
 An example of this command would be:
 
-    docker exec -it razor-go razor vote --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile logs
+    docker exec -it razor-go razor vote --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --logFile logs
 
 If you have delegation enabled and have some commission set, then you can claim that earned commission anytime via the following command:
 
@@ -148,7 +166,7 @@ If you have delegation enabled and have some commission set, then you can claim 
 
 An example of this command would be:
 
-    docker exec -it razor-go razor claimCommission --address 0x4561aE6Bd8aF4E6E8668C55496cF73F882CfcbFa --logFile logs
+    docker exec -it razor-go razor claimCommission --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --logFile logs
 
 View Logs
 
