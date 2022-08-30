@@ -46,15 +46,6 @@ const sidebars = {
     },
     "Governance",
     "PenaltiesAndRewards",
-    {
-      type: "category",
-      label: "Incentived Testnet",
-      items: [
-        "incentivized-testnet/intro",
-        "incentivized-testnet/getting-started",
-        "incentivized-testnet/deployment-details",
-      ],
-    },
     "FAQ",
   ],
   mainnetSidebar: [

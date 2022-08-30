@@ -100,7 +100,7 @@ Import an account using the following command:
 
     docker exec -it razor-go razor import
 
-Fund this account with Skale testnet tokens and RAZOR testnet tokens to start participating in the network.
+Fund this account with sFUEL and RAZOR tokens to start participating in the network.
 
 You can use the full commands (stake) or the short form (s) as shown below.
 
@@ -108,7 +108,7 @@ Start staking using the `addStake` command
 
     docker exec -it razor-go razor addStake --address <account> --value <value> --logFile <filename>
 
-where `address` is the address that contains RAZOR testnet tokens and `value` is the amount of RAZOR that you want to stake.
+where `address` is the address that contains RAZOR tokens and `value` is the amount of RAZOR that you want to stake.
 
 An example of this command would be:
 
@@ -136,7 +136,7 @@ To start accepting delegation, use the delegation command in a new terminal:
 
     docker exec -it razor-go razor setDelegation --address <address> --status <bool> --commission <commission> --logFile <filename>
 
-where `address` is the address that contains RAZOR testnet tokens, `status` is true or false to turn on or off delegation, and `commission` is the percentage of commission that you can set.
+where `address` is the address that contains RAZOR tokens, `status` is true or false to turn on or off delegation, and `commission` is the percentage of commission that you can set.
 
 An example of this command would be:
 
