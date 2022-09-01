@@ -8,14 +8,14 @@ During unstake, user sRAZOR token gets locked in contract. User can initiate wit
 
 Unstaking and withdrawing funds from Razor Network is a 3 step process.
 
-1.  Unstake:
-    After unstaking, the users sRAZOR tokens are locked in the Stake Manager contract. There is a time period set in which the user must call Initiate Withdraw and proceed to the next phase of the lock. Currently, the `withdrawInitiationPeriod` set is 5 epochs(Check Governance Parameters). If user Unstaked in epoch `T` the user must call Initiate Withdraw after epoch `T + 1` and before `T + 6` epoch.
+1.  **Unstake**:
+    After unstaking, the users sRAZOR tokens are locked in the Stake Manager contract for `unstakeLockPeriod` which is currently 300 epochs. There is a time period set in which the user must call Initiate Withdraw and proceed to the next phase of the lock. Currently, the `withdrawInitiationPeriod` set is 150 epochs (Check Governance Parameters [here](https://razorscan.io/governance/values)). If user Unstaked in epoch `T` the user must call Initiate Withdraw after epoch `T + 300` and before `T + 450` epoch.
     _Note_ : _Failing to call Initiate Withdraw within the specified epochs will result in a penalty via <ins>Reset Lock</ins>_.
 
-2.  Initiate Withdraw:
-    This call is _**not**_ allowed in _Propose_ and _Dispute_ States. If the current state is Propose or Dispute, wait for a few minutes before making the call. The initiate withdraw call will only succeed if the User has locked RAZOR and if the current epoch is within the `withdrawInitiationPeriod`. The users sRAZOR are burnt for RAZOR tokens, and locked for `withdrawLockPeriod` which is currently 1 epoch.
-3.  Withdraw:
-    Lastly, withdraw can be called anytime after the `withdrawLockPeriod` epoch has passed.
+2.  **Initiate Withdraw**:
+    This call is _**not**_ allowed in _Propose_ and _Dispute_ States. If the current state is Propose or Dispute, wait for a few minutes before making the call. The initiate withdraw call will only succeed if the User has locked RAZOR and if the current epoch is within the `withdrawInitiationPeriod`. The users sRAZOR are burnt for RAZOR tokens, and locked for `withdrawLockPeriod` which is currently 300 epoch.
+3.  **Withdraw**:
+    Lastly, withdraw can be called anytime after the `withdrawLockPeriod` epochs has passed.
 
 **Note**: _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
 
