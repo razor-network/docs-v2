@@ -172,18 +172,18 @@ _Smart contracts and network architecture_
 
 Functions of the various contracts:
 
-State manager: Manage the state of the network
+State manager: Manage the state of the network.
 
-Stake Manager: Staking and unstaking, penalties and rewards
+Stake Manager: Staking and unstaking, penalties and rewards.
 
-Vote Manager: Management of reported votes: commits and reveals
+Vote Manager: Management of reported votes: commits and reveals.
 
-Block Manager: Create new blocks on Razor Network
+Block Manager: Create new blocks on Razor Network.
 
-Job Manager: This contract manager queue of pending
-queries and results of processed queries
+Collection Manager: This contract manages queue of pending
+queries and results of processed queries.
 
-Delegator: Proxy contract provides access to the latest Job Manager contract.
+Delegator: Proxy contract provides access to the latest Collection manager result.
 
 Various utility libraries, storage contracts, and interfaces are not shown for clarity purposes.
 

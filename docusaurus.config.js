@@ -68,8 +68,13 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/incentivized-testnet/intro",
-            label: "Incentivized Testnet",
+            to: "/docs/token-bridge/intro",
+            label: "Token Bridge",
+            position: "left",
+          },
+          {
+            to: "/docs/mainnet/intro",
+            label: "Mainnet",
             position: "left",
           },
           {
@@ -121,13 +126,17 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Links",
             items: [
+              {
+                label: "Terms of Service",
+                to: "https://razor.network/tos.pdf",
+              },
               {
                 label: "Razorscan",
                 to: "https://razorscan.io/",
               },
-              {
+               {
                 label: "Razor Go",
                 to: "https://github.com/razor-network/razor-go",
               },

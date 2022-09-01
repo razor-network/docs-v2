@@ -33,10 +33,10 @@ import "@razor-network/contracts/contracts/IDelegator.sol";
 contract DataFeed {
     IDelegator internal delegator;
 
-    // Network: Skale testnet v2
-    // Delegator address: 0x713f5C70cD2C8590e88bF917DF7F4Cc1eB6e821F
+    // Network: Razor Schain
+    // Delegator address: 0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D
     constructor() {
-        delegator = IDelegator(0x713f5C70cD2C8590e88bF917DF7F4Cc1eB6e821F);
+        delegator = IDelegator(0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D);
     }
 
     /// @notice fetch collection result by name

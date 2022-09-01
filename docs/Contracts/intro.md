@@ -2,7 +2,7 @@
 
 The detailed list of our contracts can be found in our github repository [here](https://github.com/razor-network/contracts).
 
-The addresses of the latest deployed contracts can be found [here](https://github.com/razor-network/contracts/blob/v1.0.1-incentivised-testnet-phase2-patch2/deployed/skale/addresses.json).
+The addresses of the latest deployed contracts can be found [here](https://github.com/razor-network/releases/blob/main/skale/alpha/addresses.json).
 
 #### List of deployed contracts and their functions within Razor Network:
 
@@ -13,4 +13,4 @@ The addresses of the latest deployed contracts can be found [here](https://githu
 5. Block Manager: Create new blocks on Razor Network.
 6. Collection Manager: This contract manager queue of pending queries and results of processed queries.
 7. Parameters : A basic contract to store all the constants used in Razor Network Contracts.
-8. Delegator: Proxy contract provides access to the latest Job Manager contract.
+8. Delegator: Proxy contract provides access to the latest Collection result.

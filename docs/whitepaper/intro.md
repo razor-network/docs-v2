@@ -50,7 +50,7 @@ _1 Stakers are users who lock their funds in a smart contract. This action is kn
   - 1.3.7 Collusion and bribing attack resistance
 - 1.4 Architectural overview
   - 1.4.1 Oracle
-  - 1.4.2 Job manager
+  - 1.4.2 Collection manager
   - 1.4.3 Client Application
   - 1.4.4 User
 
@@ -254,7 +254,7 @@ Due to the layered design and possibility of disputing results, the Razor networ
 Razor network consists of 4 parts:
 
 1. Oracle
-1. Job manager
+1. Collection manager
 1. Client application
 1. User
 
@@ -270,9 +270,9 @@ Stakers must deposit their RAZOR to become a staker in the oracle platform. They
 
 The validation cycle is automatic and hence the validation client can be run by stakers with virtually no manual actions required. However, Some jobs can be manual and will require manual reporting by the stakers. Also if a result is disputed, the dispute rounds will be manual.
 
-**1.4.2 Job manager**
+**1.4.2 Collection manager**
 
-The job manager accepts queries from client applications and organizes them in the priority of the fees paid. The queries with higher fees will be prioritized to be processed by the oracle. The job manager supports single requests as well as data feed requests.
+The collection manager accepts queries from client applications and organizes them in the priority of the fees paid. The queries with higher fees will be prioritized to be processed by the oracle. The collection manager supports single requests as well as data feed requests.
 
 **1.4.3 Client Application**
 
@@ -287,7 +287,7 @@ This is any user using the client application. The user may not even know that t
 The Razor network consists of 3 layers:
 
 1. Oracle layer
-1. Job manager
+1. Collection manager
 1. Client application
 
 ![](/img/whitepaper/process-flow.jpeg)
@@ -577,7 +577,7 @@ _N_ = Number of stakers
 
 2. Then we will evaluate the following equation:
 
-_S_ / (_S<sub>M</sub>_) ≤ _PRNG_(_n_ || _S<sub>i</sub>_ || _B<sub>R</sub>_ )
+_S_ / (_S<sub>M</sub>_) >= _PRNG_(_n_ || _S<sub>i</sub>_ || _B<sub>R</sub>_)
 
 _Each block in blockchains such as Ethereum has a hash. This hash is virtually random and depends on the contents of the block and hash of the previous block._
 
