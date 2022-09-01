@@ -5,8 +5,8 @@ title: Reset Lock
 ### Reset lock needs to be done in following scenarios:
 
 1. Consider user had unstaked in epoch `T`. After unstaking, users sRAZOR tokens are locked in the Stake Manager contract.
-2. User needs to `Initiate Withdraw` after epoch `T + 1` and before `T + 6`, this is known as the `withdrawInitiationPeriod`.
-3. If the user does not call initiate withdraw within this period (`T + 1` and `T + 6` window), then the user needs to reset unstake lock.
+2. User needs to `Initiate Withdraw` after epoch `T + 1` and before `T + 151`, this is known as the `withdrawInitiationPeriod`.
+3. If the user does not call initiate withdraw within this period (`T + 1` and `T + 151` window), then the user needs to reset unstake lock.
 
    **Note**: _Penalty will be charged to the user while reseting unstake lock, this penalty is proportional to the users funds being unstaked_.
 
