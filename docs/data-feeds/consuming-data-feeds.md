@@ -27,7 +27,7 @@ The price of collection can be calculated by the following formula: `result * 10
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
-// @razor-network/contracts@1.0.1-patch3
+// @razor-network/contracts@1.0.2
 import "@razor-network/contracts/contracts/IDelegator.sol";
 
 contract DataFeed {
