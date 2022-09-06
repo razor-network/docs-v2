@@ -65,6 +65,23 @@ const sidebars = {
       id: "mainnet/deployment-details",
     },
   ],
+  testnetSidebar: [
+    {
+      type: "doc",
+      label: "Introduction",
+      id: "testnet/intro",
+    },
+    {
+      type: "doc",
+      label: "Getting Started",
+      id: "testnet/getting-started",
+    },
+    {
+      type: "doc",
+      label: "Deployment Details",
+      id: "testnet/deployment-details",
+    },
+  ],
   razorGo: [
     {
       type: "doc",

@@ -78,6 +78,11 @@ const config = {
             position: "left",
           },
           {
+            to: "/docs/testnet/intro",
+            label: "Testnet",
+            position: "left",
+          },
+          {
             href: "https://github.com/razor-network/docs-v2",
             label: "GitHub",
             position: "right",
