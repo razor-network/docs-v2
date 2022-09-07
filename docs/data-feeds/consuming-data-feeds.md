@@ -34,9 +34,9 @@ contract DataFeed {
     IDelegator internal delegator;
 
     // Network: Razor Schain
-    // Delegator address: 0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D
+    // Delegator address: 0x83DC292e959a9E89Bec308C92e89197Cea296D18
     constructor() {
-        delegator = IDelegator(0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D);
+        delegator = IDelegator(0x83DC292e959a9E89Bec308C92e89197Cea296D18);
     }
 
     /// @notice fetch collection result by name
@@ -63,3 +63,5 @@ contract DataFeed {
 }
 
 ```
+
+**Note**: This example can be run on **_Attractive Merope Schain_** and **_Rinkeby_** chains **only**.
