@@ -83,6 +83,11 @@ const config = {
             position: "left",
           },
           {
+            to: "/docs/data-proxy/intro",
+            label: "Data Proxy",
+            position: "left",
+          },
+          {
             href: "https://github.com/razor-network/docs-v2",
             label: "GitHub",
             position: "right",
