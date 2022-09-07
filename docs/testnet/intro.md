@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-Razor Network is currently live on Mainnet. Details regarding mainnet is mentioned below:
+Razor Network details on Testnet are mentioned below:
 
 | Variable                       | Value                                                                                                                                                            |
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -14,6 +14,5 @@ Razor Network is currently live on Mainnet. Details regarding mainnet is mention
 | Chain Explorer                 | https://whispering-turais.explorer.staging-v2.skalenodes.com/                                                                                                 |
 | Token type                     | ERC-20                                                                                                                                                           |
 | Token name                     | RAZOR                                                                                                                                                            |
-| Token address                  | [0xAD1259343CF69a916a1A9AAf6250d2Db67606A5D](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xAD1259343CF69a916a1A9AAf6250d2Db67606A5D) |
-| Rinkeby Testnet Token address |   [0x50de6856358cc35f3a9a57eaaa34bd4cb707d2cd](https://rinkeby.etherscan.io/address/0x50de6856358cc35f3a9a57eaaa34bd4cb707d2cd)                                            |
+| Token address                  | [0xB241c0338971Cae38abC0C89C58E2cD1239E1230](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xB241c0338971Cae38abC0C89C58E2cD1239E1230) |
 | Explorer                       | https://staging.razorscan.io/                                                                                                                                            |
