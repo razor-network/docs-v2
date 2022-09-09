@@ -83,7 +83,7 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/data-proxy/intro",
+            to: "/docs/data-proxy/introduction",
             label: "Data Proxy",
             position: "left",
           },
