@@ -1,6 +1,6 @@
 # Introduction
 
-The detailed list of our contracts can be found in our github repository [here](https://github.com/razor-network/contracts).
+The detailed list of our contracts can be found in our github repository [here](https://github.com/razor-network/oracle-contracts).
 
 The addresses of the latest deployed contracts can be found [here](https://github.com/razor-network/releases/blob/main/skale/alpha/addresses.json).
 
