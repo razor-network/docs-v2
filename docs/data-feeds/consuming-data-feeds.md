@@ -24,6 +24,18 @@ The price of collection can be calculated by the following formula: `result * 10
 ## Testnet 
 All the assets (collections) that can currently be consumed are available here [Testnet Razorscan](https://staging.razorscan.io/asset/ethCollectionMedian).
 
+## Contract Address
+
+| Contract              | Address                                    | Chain Name        |
+| --------------------- | ------------------------------------------ | ----------------- |
+| ResultHandler         | 0x70B2c30B048cE877DbFD5f43Dc8431aacD947747 | attractive-merope |
+| MessageProxy  (IMA)        | 0xd2AAa00100000000000000000000000000000000 | attractive-merope |
+| ResultProxy           | 0xee150054a6c201D3a55A31Cc16e52E55DeD195b5 | whispering-turais |
+| MessageProxy  (IMA)        | 0xd2AAa00100000000000000000000000000000000 | whispering-turais |
+| ResultProxy (rinkeby) | 0x54EB375F80f6feCA26BaA49A76dc7FB35bd04a03 | whispering-turais |
+| ResultHandler         | 0x10144adD7B8cB532BE580cf508837f155416D21A | Mainnet (rinkeby) |
+| MessageProxy          | 0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4 | Mainnet (rinkeby) |
+
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
@@ -34,10 +46,10 @@ import "@razor-network/contracts/contracts/IDelegator.sol";
 contract DataFeed {
     IDelegator internal delegator;
 
-    // Network: Razor Schain
-    // Delegator address: 0x83DC292e959a9E89Bec308C92e89197Cea296D18
+    // Network: Attractive Merope
+    // ResultHandlerProxy address: 0x70B2c30B048cE877DbFD5f43Dc8431aacD947747
     constructor() {
-        delegator = IDelegator(0x83DC292e959a9E89Bec308C92e89197Cea296D18);
+        delegator = IDelegator(0x70B2c30B048cE877DbFD5f43Dc8431aacD947747);
     }
 
     /// @notice fetch collection result by name
@@ -83,7 +95,7 @@ import "@razor-network/contracts/contracts/IDelegator.sol";
 contract DataFeed {
     IDelegator internal delegator;
 
-    // Network: Razor Schain
+    // Network: Razor Schain (turbulent-unique-scheat)
     // Delegator address: 0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D
     constructor() {
         delegator = IDelegator(0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D);
