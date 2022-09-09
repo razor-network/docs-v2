@@ -15,7 +15,7 @@ For a detailed introduction, please check [What is Razor Network?](explainer.md)
 The latest version of the whitepaper is available [here](https://razor.network/whitepaper.pdf).
 
 ## Smart contracts {#smart-contracts}
-Our smart contracts are hosted on [GitHub](https://github.com/razor-network/contracts).
+Our smart contracts are hosted on [GitHub](https://github.com/razor-network/oracle-contracts).
 
 Please note that the project is in active development and breaking changes are introduced frequently.
 
