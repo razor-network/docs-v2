@@ -20,6 +20,6 @@ Our smart contracts are hosted on [GitHub](https://github.com/razor-network/cont
 Please note that the project is in active development and breaking changes are introduced frequently.
 
 ## Client {#client}
-A Golang reference client is being developed. It can be found [here](https://github.com/razor-network/razor-go).
+A Golang reference client is being developed. It can be found [here](https://github.com/razor-network/oracle-node).
 
 To set up a Razor Network client, please check our [Quick Start](Stake.md) guide.

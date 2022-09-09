@@ -142,7 +142,11 @@ const config = {
               },
               {
                 label: "Razor Go",
-                to: "https://github.com/razor-network/razor-go",
+                to: "https://github.com/razor-network/oracle-node",
+              },
+              {
+                label: "Contracts",
+                to: "https://github.com/razor-network/oracle-contracts",
               },
             ],
           },

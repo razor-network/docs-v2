@@ -30,7 +30,7 @@ Check installation
 razor -v
 ```
 
-> **_NOTE:_** To install the version you want, you can set VERSION: environment variable before running above command.
+> **_NOTE:_** To install the version you want, you can set VERSION:<git-tag\> environment variable before running above command.
 
 ### Docker quick start
 
