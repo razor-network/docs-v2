@@ -82,11 +82,11 @@ const config = {
             label: "Testnet",
             position: "left",
           },
-          {
-            to: "/docs/data-proxy/introduction",
-            label: "Data Proxy",
-            position: "left",
-          },
+          // {
+          //   to: "/docs/data-proxy/introduction",
+          //   label: "Data Proxy",
+          //   position: "left",
+          // },
           {
             href: "https://github.com/razor-network/docs-v2",
             label: "GitHub",
