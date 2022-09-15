@@ -28,13 +28,7 @@ All the assets (collections) that can currently be consumed are available here [
 
 | Contract              | Address                                    | Chain Name        |
 | --------------------- | ------------------------------------------ | ----------------- |
-| ResultHandler         | 0x70B2c30B048cE877DbFD5f43Dc8431aacD947747 | attractive-merope |
-| MessageProxy  (IMA)        | 0xd2AAa00100000000000000000000000000000000 | attractive-merope |
-| ResultProxy           | 0xee150054a6c201D3a55A31Cc16e52E55DeD195b5 | whispering-turais |
-| MessageProxy  (IMA)        | 0xd2AAa00100000000000000000000000000000000 | whispering-turais |
-| ResultProxy (rinkeby) | 0x54EB375F80f6feCA26BaA49A76dc7FB35bd04a03 | whispering-turais |
-| ResultHandler         | 0x10144adD7B8cB532BE580cf508837f155416D21A | Mainnet (rinkeby) |
-| MessageProxy          | 0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4 | Mainnet (rinkeby) |
+| Delegator           | 0x83DC292e959a9E89Bec308C92e89197Cea296D18 | whispering-turais |
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
@@ -46,10 +40,10 @@ import "@razor-network/contracts/contracts/IDelegator.sol";
 contract DataFeed {
     IDelegator internal delegator;
 
-    // Network: Attractive Merope
-    // ResultHandlerProxy address: 0x70B2c30B048cE877DbFD5f43Dc8431aacD947747
+    // Network: Whispering Turais
+    // Delegator address: 0x83DC292e959a9E89Bec308C92e89197Cea296D18
     constructor() {
-        delegator = IDelegator(0x70B2c30B048cE877DbFD5f43Dc8431aacD947747);
+        delegator = IDelegator(0x83DC292e959a9E89Bec308C92e89197Cea296D18);
     }
 
     /// @notice fetch collection result by name
@@ -77,7 +71,7 @@ contract DataFeed {
 
 ```
 
-**Note**: This example can be run on **_Attractive Merope Schain_** and **_Rinkeby_** chains **only**.
+**Note**: This example can be run on **_Whispering Turais_** chains **only** at the moment.
 
 
 
