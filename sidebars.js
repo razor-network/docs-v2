@@ -27,7 +27,11 @@ const sidebars = {
       items: ["data-feeds/consuming-data-feeds"],
     },
     "getting-started",
-    "Stake",
+    {
+      type: "category",
+      label: "Staking",
+      items: ["stake/mainnet", "stake/testnet"],
+    },
     {
       type: "category",
       label: "Delegation",
@@ -63,6 +67,23 @@ const sidebars = {
       type: "doc",
       label: "Deployment Details",
       id: "mainnet/deployment-details",
+    },
+  ],
+  testnetSidebar: [
+    {
+      type: "doc",
+      label: "Introduction",
+      id: "testnet/intro",
+    },
+    {
+      type: "doc",
+      label: "Getting Started",
+      id: "testnet/getting-started",
+    },
+    {
+      type: "doc",
+      label: "Deployment Details",
+      id: "testnet/deployment-details",
     },
   ],
   razorGo: [

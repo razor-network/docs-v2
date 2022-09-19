@@ -1,8 +1,6 @@
-# Staking
+# Mainnet
 
 Razor network is a proof of stake network. In order to participate in the network as a validator, you will need to "Stake" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
-
-<!-- > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only. -->
 
 ## Get tokens {#get-tokens}
 
@@ -12,7 +10,7 @@ https://faucet.razorscan.io/
 
 In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/intro)
 
-## Add Skale network to metamask
+## Add Razor Schain network to metamask
 
 1. Use an ethereum compatible browser (e.g. Chrome browser with Metamask plugin)
 2. In metamask, click on top right account icon > Settings > Add Network.
@@ -90,7 +88,7 @@ Run the commands in following way:
 
     docker exec -it razor-go razor <command>
 
-> **Note**: _It is recomended to use `--logFile <filename>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
+> **Note**: _It is recomended to use `--logFile <filename>` flag with every razor command this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
 
 Create an account using the following command:
 
@@ -176,10 +174,12 @@ An example of this command would be:
 
     tail -f $HOME/.razor/logs/logs.log
 
-That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
+That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [Razorscan](https://razorscan.io) to monitor your staker.
 
 For more details around all the commands of `razor-go`, please check out the `razor-go` [Readme](https://github.com/razor-network/oracle-node#readme).
 
 ## Installation From Source {#installation-from-source}
 
 If you would rather install from source, please follow Instructions here to [run a Razor Network node from source](https://github.com/razor-network/oracle-node#building-the-source).
+
+------
