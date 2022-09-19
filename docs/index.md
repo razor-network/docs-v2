@@ -22,4 +22,4 @@ Please note that the project is in active development and breaking changes are i
 ## Client {#client}
 A Golang reference client is being developed. It can be found [here](https://github.com/razor-network/oracle-node).
 
-To set up a Razor Network client, please check our [Quick Start](Stake.md) guide.
+To set up a Razor Network client, please check our [Quick Start](stake/mainnet) guide.

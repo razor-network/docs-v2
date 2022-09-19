@@ -27,7 +27,11 @@ const sidebars = {
       items: ["data-feeds/consuming-data-feeds"],
     },
     "getting-started",
-    "Stake",
+    {
+      type: "category",
+      label: "Staking",
+      items: ["stake/mainnet", "stake/testnet"],
+    },
     {
       type: "category",
       label: "Delegation",

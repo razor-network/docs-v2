@@ -4,7 +4,7 @@ title: Getting Started
 
 ## For Stakers
 
-Use this guide [here](Stake.md) for more information about staking and running a node.
+Use this guide [here](stake/mainnet) for more information about staking and running a node.
 
 ## For Delegators
 

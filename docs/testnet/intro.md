@@ -20,7 +20,7 @@ Razor Network details on Testnet are mentioned below:
 | Explorer                       | https://staging.razorscan.io/                                                                                                                                            |
 
 
-----
+<!-- ----
 ## Attractive Merope Schain:
 
 | Variable                       | Value                                                                                                                                                            |
@@ -30,4 +30,4 @@ Razor Network details on Testnet are mentioned below:
 | Chain currency                 | sFUEL                                                                                                                                                            |
 | Faucet                         | https://faucet.skale.network                                                                                                                                     |
 | RPC Endpoint                   | https://staging-v2.skalenodes.com/v1/attractive-merope                                                                                                        |
-| Chain Explorer                 | https://attractive-merope.explorer.staging-v2.skalenodes.com/                                                                                                 |
+| Chain Explorer                 | https://attractive-merope.explorer.staging-v2.skalenodes.com/                                                                                                 | -->
