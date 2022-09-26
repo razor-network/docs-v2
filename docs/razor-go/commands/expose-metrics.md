@@ -2,7 +2,8 @@
 title: Expose Metrics
 ---
 
-Expose Prometheus-based metrics for monitoring
+To place monitoring and alerting to a staker we are exposing Prometheus based metrics. Which will provide metric at `/mertics` GET endoint for prometheus to scrap.
+
 
 ### Prerequisites
 
@@ -10,17 +11,21 @@ Expose Prometheus-based metrics for monitoring
 
 razor cli
 
-#### Without TLS
+#### Without TLS/SSL (Transport Layer Security / Secure Sockets layer )
 
 ```
 $ ./razor setConfig --exposeMetrics 2112
 ```
 
-#### With TLS
+#### With TLS/SSL (Transport Layer Security / Secure Sockets layer )
 
 ```
 $ ./razor setConfig --exposeMetrics 2112 --certFile /cert/file/path/certfile.crt --certKey key/file/path/keyfile.key
 ```
+
+
+> **_NOTE:_**  If you configured domain name to access your staker metric endpoint ex: www.my-domain.com/metrics, It's highly recommded to use SSL Certificate to avoid any `Man-in-the-Middle` attack. You can get free SSL Certificate from [Certbot](https://certbot.eff.org/)
+
 
 docker
 
