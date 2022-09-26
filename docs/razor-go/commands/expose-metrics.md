@@ -24,7 +24,21 @@ $ ./razor setConfig --exposeMetrics 2112 --certFile /cert/file/path/certfile.crt
 ```
 
 
-> **_NOTE:_**  If you configured domain name to access your staker metric endpoint ex: www.my-domain.com/metrics, It's highly recommded to use SSL Certificate to avoid any `Man-in-the-Middle` attack. You can get free SSL Certificate from [Certbot](https://certbot.eff.org/)
+> **_NOTE:_**  If you configured domain name to access your staker metric endpoint ex: www.my-domain.com/metrics, It's highly recommded to use SSL Certificate to avoid any `Man-in-the-Middle` attack. You can get free SSL Certificate from [Certbot](https://certbot.eff.org/).  
+>Configure Certbot (linux):
+> 1. Install certbot  
+> ```
+> sudo add-apt-repository ppa:certbot/certbot  
+> sudo apt-get update  
+> sudo apt-get install certbot
+>```
+> 2. Get SSL Certificate from certbot
+> ```
+> sudo certbot certonly --standalone --preferred-challenges http -d example.com
+>```
+>3. Can find installed certs at `/etc/letsencrypt/live/your-domain`
+>4. Your private key will be: `privkey.pem` and certificate will be: `fullchain.pem`
+
 
 
 docker
