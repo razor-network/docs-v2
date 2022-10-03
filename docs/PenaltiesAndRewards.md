@@ -20,9 +20,9 @@ With Reputation and staker's stake, Influence of the Staker is calculated.
 
 If a Staker tries to propose an invalid block, then any staker can dispute that block by calculating the correct values. We assume that each staker uses the same client and data without any modifications. Hence if there is any malicious activity done, staker's stake will be slashed. In case of slashing of the staker's stake, stake will be consumed based on governance params `SlashNums`. SlashNums has 3 component:
 
-1. `bounty` - percentage of staker's stage rewarded as bounty to disputer (Default: 5%)
-2. `burn` - percentage of RAZOR burnt from staker's stake (Default: 95%)
-3. `keep` - percentage of staker's stake to be kept with staker (Default: 0%)
+1. `bounty` - percentage of staker's stage rewarded as bounty to disputer (Current: 1%)
+2. `burn` - percentage of RAZOR burnt from staker's stake (Current: 0%)
+3. `keep` - percentage of staker's stake to be kept with staker (Current: 4%)
 
 All governance parameters and it's current value can be found on [Razorscan](https://razorscan.io/governance/values).
 
