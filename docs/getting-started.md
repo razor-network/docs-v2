@@ -16,4 +16,4 @@ Razor network is a proof of stake network. There are two ways in which anyone ca
 
 - Delegator can delegate $RAZOR tokens to existing staker to participate in network.
 - Delegator gets a share of the block reward when the staker user has delegated to confirms a block.
-- Detailed guide regarding delegating can be found [here](/docs/delegation/delegate).
+- Detailed guide regarding delegating can be found [here](/docs/delegate).
