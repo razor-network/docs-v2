@@ -83,8 +83,8 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/data-proxy/introduction",
-            label: "Data Proxy",
+            to: "/docs/consume-data-feeds/introduction",
+            label: "Consume Data Feeds",
             position: "left",
           },
           {
