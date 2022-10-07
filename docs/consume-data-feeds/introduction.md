@@ -14,11 +14,13 @@ The SKALE IMA is flexible and modular - It can support transfer of any token sta
 
 | Contract                       | Address                                    | Chain Name        |
 | ------------------------------ | ------------------------------------------ | ----------------- |
-| ResultHandler (Proxy)          | [0x801DdA93f02C0b30E7495bCC788D51271863Ec8c](https://attractive-merope.explorer.staging-v2.skalenodes.com/address/0x801DdA93f02C0b30E7495bCC788D51271863Ec8c/) | attractive-merope |
-| ResultHandler (Implementation) | [0xA49c5C187c24c39BF99AeA75Db95599184D8FA14](https://attractive-merope.explorer.staging-v2.skalenodes.com/address/0xA49c5C187c24c39BF99AeA75Db95599184D8FA14/) | attractive-merope |
+| ResultManager (Proxy)          | [0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C](https://attractive-merope.explorer.staging-v2.skalenodes.com/address/0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C/) | attractive-merope |
+| ResultHandler (Implementation) | [0xA76EF1b69Bd552796aef2Af9417C94708eC018D0](https://attractive-merope.explorer.staging-v2.skalenodes.com/address/0xA76EF1b69Bd552796aef2Af9417C94708eC018D0/) | attractive-merope |
 | IMAProxy                       | [0xd2AAa00100000000000000000000000000000000](https://attractive-merope.explorer.staging-v2.skalenodes.com/address/0xd2AAa00100000000000000000000000000000000/) | attractive-merope |
-| ResultHandler (Proxy)          | [0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75](https://rinkeby.etherscan.io/address/0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75) | rinkeby |
-| ResultHandler (Implementation) | [0x71e95956CdF9297D5C2575c5fA86330FcF582358](https://rinkeby.etherscan.io/address/0x71e95956CdF9297D5C2575c5fA86330FcF582358) | rinkeby |
-| IMAProxy                       | [0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4](https://rinkeby.etherscan.io/address/0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4) | rinkeby |
-| ResultSender                   | [0x48F3E84e6Ffaf3f55D44D141144a424a424dB83c](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x48F3E84e6Ffaf3f55D44D141144a424a424dB83c/) | whispering-turais |
+| ResultHandler (Proxy)          | [0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75](https://rinkeby.etherscan.io/address/0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75) | rinkeby (deprecated) |
+| ResultHandler (Implementation) | [0x71e95956CdF9297D5C2575c5fA86330FcF582358](https://rinkeby.etherscan.io/address/0x71e95956CdF9297D5C2575c5fA86330FcF582358) | rinkeby (deprecated) |
+| IMAProxy                       | [0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4](https://rinkeby.etherscan.io/address/0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4) | rinkeby (deprecated) |
+| ResultSender                   | [0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99/) | whispering-turais |
 | IMAProxy                       | [0xd2AAa00100000000000000000000000000000000](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xd2AAa00100000000000000000000000000000000/) | whispering-turais |
+
+
