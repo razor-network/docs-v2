@@ -8,7 +8,7 @@ You will need some sFUEL to pay for transaction fees.
 You can get sFUEL from here:
 https://faucet.razorscan.io/
 
-In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/intro)
+In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](../token-bridge/intro.md)
 
 ## Add Razor Schain network to metamask
 
@@ -182,4 +182,4 @@ For more details around all the commands of `razor-go`, please check out the `ra
 
 If you would rather install from source, please follow Instructions here to [run a Razor Network node from source](https://github.com/razor-network/oracle-node#building-the-source).
 
-------
+---

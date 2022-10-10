@@ -4,11 +4,11 @@ title: Getting Started
 
 ## For Stakers
 
-Use this guide [here](/docs/stake/mainnet) for more information about staking and running a node.
+Use this guide [here](../stake/mainnet.md) for more information about staking and running a node.
 
 ## For Delegators
 
-Use this guide [here](/docs/delegation/delegate) for more information about delegating your RAZOR tokens.
+Use this guide [here](../delegation/delegate.md) for more information about delegating your RAZOR tokens.
 
 ## Technical Links
 
