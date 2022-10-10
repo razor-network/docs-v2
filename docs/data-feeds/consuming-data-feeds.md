@@ -28,21 +28,21 @@ All the assets (collections) that can currently be consumed are available here [
 
 | Contract              | Address                                    | Chain Name        |
 | --------------------- | ------------------------------------------ | ----------------- |
-| ResultSender           | 0x48F3E84e6Ffaf3f55D44D141144a424a424dB83c | whispering-turais |
-| ResultHandler Proxy          | 0x801DdA93f02C0b30E7495bCC788D51271863Ec8c | attractive-merope |
+| ResultSender           | 0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99 | whispering-turais |
+| ResultManager Proxy          | 0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C | attractive-merope |
 
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
-// @razor-network/contracts@1.0.2 (this will be updated once the contracts are released to npm.)
+// @razor-network/bridge-contracts@0.0.2 (this will be updated once the contracts are officially released to npm.)
 import "@razor-network/contracts/contracts/IResultHandler.sol";
 contract DataFeed {
     IResultHandler internal resultHandler;
 
     constructor() {
-        resultHandler = IResultHandler(0x801DdA93f02C0b30E7495bCC788D51271863Ec8c);
+        resultHandler = IResultHandler(0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C);
     }
 
 
@@ -98,7 +98,7 @@ contract DataFeed {
 
 **Note**: This example can be run on **_attractive-merope_** chain.
 
-### rinkeby
+<!-- ### rinkeby
 
 | Contract              | Address                                    | Chain Name        |
 | --------------------- | ------------------------------------------ | ----------------- |
@@ -170,7 +170,7 @@ contract DataFeed {
 
 ```
 
-**Note**: This example can be run on **_rinkeby_** chain.
+**Note**: This example can be run on **_rinkeby_** chain. -->
 
 
 <!-- ## Mainnet 

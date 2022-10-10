@@ -19,5 +19,5 @@ The SKALE IMA is flexible and modular - It can support transfer of any token sta
 | ResultHandler (Proxy)          | [0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75](https://rinkeby.etherscan.io/address/0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75) | rinkeby |
 | ResultHandler (Implementation) | [0x71e95956CdF9297D5C2575c5fA86330FcF582358](https://rinkeby.etherscan.io/address/0x71e95956CdF9297D5C2575c5fA86330FcF582358) | rinkeby |
 | IMAProxy                       | [0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4](https://rinkeby.etherscan.io/address/0x656fb12abab353FB1875a4e3Dc4D70179CB85BA4) | rinkeby |
-| ResultSender                   | [0x48F3E84e6Ffaf3f55D44D141144a424a424dB83c](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x48F3E84e6Ffaf3f55D44D141144a424a424dB83c/) | whispering-turais |
+| ResultSender                   | [0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99/) | whispering-turais |
 | IMAProxy                       | [0xd2AAa00100000000000000000000000000000000](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xd2AAa00100000000000000000000000000000000/) | whispering-turais |
