@@ -189,8 +189,9 @@ To update the docker image
 
 1. Get the latest docker image from [Docker Hub](https://hub.docker.com/r/razornetwork/razor-go/tags)
 
-> **Note**: - _Try to update the node in `dispute` state inorder to avoid any inacticity penalty.The process of updating node should be completed in less than 5-6 minutes. Try to do the following steps as fast as possible which would avoid inactive penalty._
-
+> **Note**: - 
+>1. _Make sure you don't use `*-alpha` and `*-beta` suffixed docker image those where for internal testing_
+>2. _Try to update the node in `dispute` state inorder to avoid any inacticity penalty.The process of updating node should be completed in less than 5-6 minutes. Try to do the following steps as fast as possible which would avoid inactive penalty._
 2. Stop the existing container  
     `docker stop razor-go`
 3. Remove the existing container  
