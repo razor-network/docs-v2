@@ -183,3 +183,20 @@ For more details around all the commands of `razor-go`, please check out the `ra
 If you would rather install from source, please follow Instructions here to [run a Razor Network node from source](https://github.com/razor-network/oracle-node#building-the-source).
 
 ---
+
+## Update docker Image
+To update the docker image
+
+1. Get the latest docker image from [Docker Hub](https://hub.docker.com/r/razornetwork/razor-go/tags)
+2. Stop the existing container  
+    `docker stop razor-go`
+3. Remove the existing container  
+    `docker rm razor-go`
+4. Run the staker with latest docker image
+    ```
+    docker run -d -it --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<latest tag from docker hub>
+    ```
+5. If you are voting, then start voting again 
+    ```
+    docker exec -it razor-go razor vote --address <account> --logFile <filename>    
+    ```
