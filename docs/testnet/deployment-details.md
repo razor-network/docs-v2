@@ -5,13 +5,13 @@ title: Deployment Details
 
 | Contract           | Address                                                                                                                                                           |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Governance         | [0x47F7bb78CD481C1A174c1a16CE9860B754ee2217](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0x47F7bb78CD481C1A174c1a16CE9860B754ee2217/) |
-| BlockManager       | [0x9B79eD6fC2F327a472d9E4BBE08dAef8b17e2962](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0x9B79eD6fC2F327a472d9E4BBE08dAef8b17e2962/) |
-| CollectionManager  | [0x13ef223c051DB6D64644e82C6E5e83CB1354a860](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0x13ef223c051DB6D64644e82C6E5e83CB1354a860/) |
-| StakeManager       | [0x69536605FebCAab2a777237F9016E3971D865890](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0x69536605FebCAab2a777237F9016E3971D865890/) |
-| RewardManager      | [0x4a9b24789253CE37117Ba9D5149F7cCd3De86d7d](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0x4a9b24789253CE37117Ba9D5149F7cCd3De86d7d/) |
-| VoteManager        | [0xd858Ed2c76d6262953caaf4F3Bd3d37D013B0d15](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0xd858Ed2c76d6262953caaf4F3Bd3d37D013B0d15/) |
-| Delegator          | [0x83DC292e959a9E89Bec308C92e89197Cea296D18](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0x83DC292e959a9E89Bec308C92e89197Cea296D18/) |
-| RAZOR              | [0xB241c0338971Cae38abC0C89C58E2cD1239E1230](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0xB241c0338971Cae38abC0C89C58E2cD1239E1230/) |
-| StakedTokenFactory | [0x6F1f636d4CE2414043Cb6D2C87c284A1866dd104](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0x6F1f636d4CE2414043Cb6D2C87c284A1866dd104/) |
-| RandomNoManager    | [0xB9FF299b07e555F030BB387CDc3E64bB9C9E247b](https://whispering-turais.explorer.staging-v2.skalenodes.com//address/0xB9FF299b07e555F030BB387CDc3E64bB9C9E247b/) |
+| Governance         | [0x6a4f5803c44D4BA6189D24718863a85783B92c57](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x6a4f5803c44D4BA6189D24718863a85783B92c57/) |
+| BlockManager       | [0x1F323d8c170bC526fbA6E30653dfdD10064FF5A0](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x1F323d8c170bC526fbA6E30653dfdD10064FF5A0/) |
+| CollectionManager  | [0x4A6d18E64AF3dC24dAA7a0abbA00670476395A2c](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x4A6d18E64AF3dC24dAA7a0abbA00670476395A2c/) |
+| StakeManager       | [0x83F3022c2Bf36423194EBAA9b66CeDD0e3dB8b06](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x83F3022c2Bf36423194EBAA9b66CeDD0e3dB8b06/) |
+| RewardManager      | [0x65eBb295F9B5871F08c57eEF0a44052aEA9f0881](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x65eBb295F9B5871F08c57eEF0a44052aEA9f0881/) |
+| VoteManager        | [0x1fA41fda5a5169deB7EB5696757D5770ce57Bf22](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x1fA41fda5a5169deB7EB5696757D5770ce57Bf22/) |
+| Delegator          | [0x4535E7486c48Df8e1121be2A31b74aBb2b0a5B8b](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x4535E7486c48Df8e1121be2A31b74aBb2b0a5B8b/) |
+| RAZOR              | [0xAD1259343CF69a916a1A9AAf6250d2Db67606A5D](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xAD1259343CF69a916a1A9AAf6250d2Db67606A5D/) |
+| StakedTokenFactory | [0x101017d94A27062f7d176d3b8d67b0C93faff40f](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x101017d94A27062f7d176d3b8d67b0C93faff40f/) |
+| RandomNoManager    | [0x49Dd8FfDB80b3480C16D8769EA47cdBb777933e2](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x49Dd8FfDB80b3480C16D8769EA47cdBb777933e2/) |
