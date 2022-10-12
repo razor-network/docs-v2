@@ -8,7 +8,7 @@ Use this guide [here](../stake/mainnet.md) for more information about staking an
 
 ## For Delegators
 
-Use this guide [here](../delegation/delegate.md) for more information about delegating your RAZOR tokens.
+Use this guide [here](../delegate.md) for more information about delegating your RAZOR tokens.
 
 ## Technical Links
 
