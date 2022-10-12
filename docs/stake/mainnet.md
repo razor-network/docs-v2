@@ -190,8 +190,8 @@ To update the docker image
 1. Get the latest docker image from [Docker Hub](https://hub.docker.com/r/razornetwork/razor-go/tags)
 
 > **Note**: - 
->1. _Make sure you don't use \*-alpha and \*-beta suffixed docker images those were for internal testing._
->2. _Try to update the node in a dispute state in order to avoid any inactivity penalty. The process of updating the node should be completed in less than 5-6 minutes. Try to do the following steps as fast as possible which would avoid any inactive penalty._
+>1. _Make sure you don't use *-alpha and *-beta suffixed docker images those are only for internal testing._
+>2. _Try to update the node in the Dispute state in order to avoid any inactivity penalty. The process of updating the node should be completed in less than 5-6 minutes. Try to do the following steps as quickly as possible to avoid any inactivity penalties._
 
 2. Stop the existing container  
     `docker stop razor-go`
@@ -201,7 +201,7 @@ To update the docker image
     ```
     docker run -d -it --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<latest tag from docker hub>
     ```
-5. If you are voting, then start voting again 
+5. Then start voting again 
     ```
     docker exec -it razor-go razor vote --address <account> --logFile <filename>    
     ```
