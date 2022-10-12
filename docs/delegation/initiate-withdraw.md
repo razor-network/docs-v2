@@ -34,7 +34,7 @@ A modal will show, with the corresponding Unstake Lock details. Use the state ba
 
 ### Step 5 {#step-5}
 
-Once the transaction is successful, [Withdraw](/docs/delegation/withdraw) will need to be called after `T + withdrawLockPeriod` epoch. Consider `T` as epoch in which initiate withdraw was called.
+Once the transaction is successful, [Withdraw](./withdraw.md) will need to be called after `T + withdrawLockPeriod` epoch. Consider `T` as epoch in which initiate withdraw was called.
 
 ![Screenshot](/img/initiate-withdraw/Initiate_Withdraw_step5.png)
 

@@ -1,32 +1,33 @@
-# Staking
+# Testnet
 
 Razor network is a proof of stake network. In order to participate in the network as a validator, you will need to "Stake" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
 
-<!-- > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only. -->
-
 ## Get tokens {#get-tokens}
 
-You will need some sFUEL to pay for transaction fees.
-You can get sFUEL from here:
-https://faucet.razorscan.io/
+You will need some Skale Testnet Tokens to pay for transaction fees.
+You can get testnet ETH tokens from here:
+https://faucet.skale.network/
 
-In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/intro)
+- Skale Endpoint: https://staging-v2.skalenodes.com/v1/whispering-turais
+- Account: address which should receive the testnet tokens.
 
-## Add Skale network to metamask
+In order to get started, you will also need some RAZORs on Skale Testnet chain. Drop a message in our [Discord server](https://discord.com/invite/Js4pBny2rw) for tokens. 
+
+## Add Skale Testnet network to metamask
 
 1. Use an ethereum compatible browser (e.g. Chrome browser with Metamask plugin)
 2. In metamask, click on top right account icon > Settings > Add Network.
 3. Fill in the following details:
 
-   | Particulars        | Value                                                           |
-   | ------------------ | --------------------------------------------------------------- |
-   | Network Name       | Razor Schain                                                    |
-   | New RPC URL        | https://mainnet.skalenodes.com/v1/turbulent-unique-scheat       |
-   | Chain ID           | 278611351                                                       |
-   | Currency Symbol    | sFUEL                                                           |
-   | Block Explorer URL | https://turbulent-unique-scheat.explorer.mainnet.skalenodes.com |
+   | Particulars        | Value                                                     |
+   | ------------------ | --------------------------------------------------------- |
+   | Network Name       | Skale Testnet v2                                          |
+   | New RPC URL        | https://staging-v2.skalenodes.com/v1/whispering-turais    |
+   | Chain ID           | 132333505628089                                           |
+   | Currency Symbol    | ETH                                                       |
+   | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
 
-   > **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
+   > **Note**: _You can also add network from https://staging.razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
 Now you are all set! Let's download the client and start staking!
 
@@ -79,7 +80,7 @@ There are a set of parameters that are configurable. These include:
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
+docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
 ```
 
 > **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
@@ -90,7 +91,7 @@ Run the commands in following way:
 
     docker exec -it razor-go razor <command>
 
-> **Note**: _It is recomended to use `--logFile <filename>` flag with every razor comand this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
+> **Note**: _It is recomended to use `--logFile <filename>` flag with every razor command this will generate logfile in `.razor` directory which will be helpfull in debuging any issue._
 
 Create an account using the following command:
 
@@ -176,7 +177,7 @@ An example of this command would be:
 
     tail -f $HOME/.razor/logs/logs.log
 
-That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [RazorScan](https://razorscan.io) to monitor your staker.
+That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [Staging Razorscan](https://staging.razorscan.io) to monitor your staker.
 
 For more details around all the commands of `razor-go`, please check out the `razor-go` [Readme](https://github.com/razor-network/oracle-node#readme).
 
