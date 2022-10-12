@@ -2,7 +2,7 @@
 title: Expose Metrics
 ---
 
-To place monitoring and alerting to a staker we are exposing Prometheus-based metrics. Which will provide metric at `/mertics` GET endpoint for Prometheus to scrap.
+To integrate monitoring and alerting for a staker we are exposing Prometheus-based metrics. Which will provide metric at /metrics GET endpoint for Prometheus to scrap.
 
 
 ### Prerequisites
@@ -91,7 +91,7 @@ cd monitoring
     docker-compose ps
     ```
 
-- You can open Grafana at `<private/public address of host>:3000`, and get 
+- You can open Grafana at <private/public address of host>:3000, then:
     1. Can check out the `Razor` dashboard to monitor your staker.
     2. Insight of host metrics at the `Node Exporter Full` dashboard.
     3. Containers Insight at the `Docker and OS metrics ( Cadvisor, node_exporter )` dashboard.
@@ -104,6 +104,6 @@ cd monitoring
 1. In `docker-compose.yml` uncomment ports for `alertmanager` and `vmalert`.
 2. Configure the firewall to allow access to ports `8880` and `9093`.
 
-3. Check you get alerts on Vmalert via `http://<host_address>:8880/vmalert/alerts`. vmalert is configured to scrap in every 2min. 
+3. Check you get alerts on Vmalert via http://<host_address>:8880/vmalert/alerts. Vmalert is configured to scrap every 2 minutes, and fetch the latest alerts.
 
-4. If you see an alert in vmalert then look into alertmanager `http://<host_address>:9093/#/alerts?`, if you see alerts in there but you didn't get one then probably you need to check your webhook.
+4. If you see an alert in vmalert then look into alertmanager http://<host_address>:9093/#/alerts?, if you see alerts there but you didn't get one this could indicate an issue with your webhook.
