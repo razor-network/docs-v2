@@ -14,7 +14,7 @@ The SKALE IMA is flexible and modular - It can support transfer of any token sta
 
 | Contract      | Address                                                                                                                                                             | Chain Name             |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
-| ResultHandler | [0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C](https://attractive-merope.explorer.staging-v2.skalenodes.com/address/0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C/)      | attractive-merope      |
-| ResultHandler | [0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566](https://actual-secret-cebalrai.explorer.staging-v2.skalenodes.com/address/0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566/) | actual-secret-cebalrai |
-| ResultHandler | [0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75](https://rinkeby.etherscan.io/address/0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75)                                       | rinkeby                |
+| ResultManager | [0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C](https://attractive-merope.explorer.staging-v2.skalenodes.com/address/0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C/)      | attractive-merope      |
+| ResultManager | [0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566](https://actual-secret-cebalrai.explorer.staging-v2.skalenodes.com/address/0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566/) | actual-secret-cebalrai |
+| ResultManager | [0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75](https://rinkeby.etherscan.io/address/0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75)                                       | rinkeby                |
 | ResultSender  | [0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99/)      | whispering-turais      |
