@@ -2,12 +2,12 @@
 
 Razor Network Data Feeds are the easiest and most reliable way to connect any smart contracts to fetch the current real world market price of an asset (called as a `collection`) in a single call.
 
-To consume the Razor Network price feeds, your contract should reference `IResultHandler`. This is an interface which defines the external functions implemented by Data Feeds.
+To consume the Razor Network price feeds, your contract should reference `IResultManager`. This is an interface which defines the external functions implemented by Data Feeds.
 
 There are two functions which can fetch price of an asset:
 
 1. `getResult(bytes32 name)`: This function accepts the name as an argument. The `name` is a _keccak-256 hash_ of the collection name. Check https://razorscan.io/governance/datafeeds for a full list of active collection names.
-2. `getResultFromID(uint16 _id)`: This function accepts the id of the collection and returns the collections price and power. 
+2. `getResultFromID(uint16 _id)`: This function accepts the id of the collection and returns the collections price and power.
 
 Output:
 
@@ -20,41 +20,50 @@ If the result of the collection is **300050** and it's power is **2**, this esse
 
 The price of collection can be calculated by the following formula: `result * 10^-(power)`.
 
+## Testnet
 
-## Testnet 
 All the assets (collections) that can currently be consumed are available here [Testnet Razorscan](https://staging.razorscan.io/governance/datafeeds).
 
+| Contract      | Address                                    | Chain Name             |
+| ------------- | ------------------------------------------ | ---------------------- |
+| ResultManager | 0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C | attractive-merope      |
+| ResultManager | 0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566 | actual-secret-cebalrai |
+
 ### attractive-merope
-
-| Contract              | Address                                    | Chain Name        |
-| --------------------- | ------------------------------------------ | ----------------- |
-| ResultSender           | 0xd59f8FcF5fC59F957DFe5855eC297f9c3d77ED99 | whispering-turais |
-| ResultManager Proxy          | 0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C | attractive-merope |
-
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
-// @razor-network/bridge-contracts@0.0.2 (this will be updated once the contracts are officially released to npm.)
-import "@razor-network/contracts/contracts/IResultHandler.sol";
+interface IResultManager {
+    function getCollectionID(bytes32 _name) external view returns (uint16);
+
+    function getResult(bytes32 _name) external view returns (uint256, int8);
+
+    function getResultFromID(uint16 _id) external view returns (uint256, int8);
+
+    function getActiveCollections() external view returns (uint16[] memory);
+
+    function getCollectionStatus(uint16 _id) external view returns (bool);
+}
+
 contract DataFeed {
-    IResultHandler internal resultHandler;
+    IResultManager internal resultManager;
 
     constructor() {
-        resultHandler = IResultHandler(0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C);
+        resultManager = IResultManager(0xF2aE9Fd8141E774A08EE3007dA76Ad9d058e713C);
     }
 
 
-    ///@dev using the hash of collection name, clients can query collection id with respect to its hash, 
+    ///@dev using the hash of collection name, clients can query collection id with respect to its hash,
     ///check https://razorscan.io/governance/datafeeds for a full list of active collection names
     ///@param _name bytes32 hash of the collection name
     ///@return collection ID
-    function getCollectionID(bytes32 _name) 
-    public 
-    view 
+    function getCollectionID(bytes32 _name)
+    public
+    view
     returns (uint16) {
-       (uint16 id) = resultHandler.getCollectionID(_name);
+       (uint16 id) = resultManager.getCollectionID(_name);
        return id;
     }
 
@@ -67,17 +76,17 @@ contract DataFeed {
         view
         returns (uint256, int8)
     {
-        (uint256 result, int8 power) = resultHandler.getResult(_name);
+        (uint256 result, int8 power) = resultManager.getResult(_name);
         return (result, power);
     }
 
 
     ///@return ids of active collections in the oracle
-    function getActiveCollections() 
+    function getActiveCollections()
     public
-    view 
+    view
     returns (uint16[] memory) {
-        (uint16[] memory activeCollectionIds) = resultHandler.getActiveCollections();
+        (uint16[] memory activeCollectionIds) = resultManager.getActiveCollections();
         return activeCollectionIds;
     }
 
@@ -85,12 +94,20 @@ contract DataFeed {
     /// @param _id collection ID
     /// @return result of the collection and its power
     /// @return power
-    function getResultFromID(uint16 _id) 
-    public 
-    view 
+    function getResultFromID(uint16 _id)
+    public
+    view
     returns (uint256, int8) {
-        (uint256 result, int8 power) = resultHandler.getResultFromID(_id);
+        (uint256 result, int8 power) = resultManager.getResultFromID(_id);
         return (result, power);
+    }
+
+
+     /// @notice fetch collection status using id
+     /// @param _id collection ID
+     /// @return status of the collection
+    function getCollectionStatus(uint16 _id) public view returns (bool) {
+        return resultManager.getCollectionStatus(_id);
     }
 }
 
@@ -98,124 +115,89 @@ contract DataFeed {
 
 **Note**: This example can be run on **_attractive-merope_** chain.
 
-<!-- ### rinkeby
-
-| Contract              | Address                                    | Chain Name        |
-| --------------------- | ------------------------------------------ | ----------------- |
-| ResultSender           | 0x48F3E84e6Ffaf3f55D44D141144a424a424dB83c | whispering-turais |
-| ResultHandler Proxy          | 0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75 | rinkeby |
-
+### actual-secret-cebalrai
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
 
-// @razor-network/contracts@1.0.2 (this will be updated once the contracts are released to npm.)
-import "@razor-network/contracts/contracts/IResultHandler.sol";
+interface IResultManager {
+    function getCollectionID(bytes32 _name) external view returns (uint16);
+
+    function getResult(bytes32 _name) external view returns (uint256, int8);
+
+    function getResultFromID(uint16 _id) external view returns (uint256, int8);
+
+    function getActiveCollections() external view returns (uint16[] memory);
+
+    function getCollectionStatus(uint16 _id) external view returns (bool);
+}
+
 contract DataFeed {
-    IResultHandler internal resultHandler;
+    IResultManager internal resultManager;
 
     constructor() {
-        resultHandler = IResultHandler(0xc0Db5ff39A1a5dA7F3dE0eBc7BC838B79A259A75);
+        resultManager = IResultManager(0x455b3ef0167ecD30Ed7E431eA7b9162b16FE9566);
     }
 
 
-    ///@dev using the hash of collection name, clients can query collection id with respect to its hash, 
+    ///@dev using the hash of collection name, clients can query collection id with respect to its hash,
     ///check https://razorscan.io/governance/datafeeds for a full list of active collection names
     ///@param _name bytes32 hash of the collection name
     ///@return collection ID
-    function getCollectionID(bytes32 _name) 
-    public 
-    view 
+    function getCollectionID(bytes32 _name)
+    public
+    view
     returns (uint16) {
-       (uint16 id) = resultHandler.getCollectionID(_name);
+       (uint16 id) = resultManager.getCollectionID(_name);
        return id;
     }
 
     /// @notice fetch collection result by name
     /// @param _name bytes32 hash of the collection name
-    /// @return result of the collection
+    /// @return result of the collection and its power
     /// @return power
     function getResult(bytes32 _name)
         public
         view
         returns (uint256, int8)
     {
-        (uint256 result, int8 power) = resultHandler.getResult(_name);
+        (uint256 result, int8 power) = resultManager.getResult(_name);
         return (result, power);
     }
 
 
     ///@return ids of active collections in the oracle
-    function getActiveCollections() 
+    function getActiveCollections()
     public
-    view 
+    view
     returns (uint16[] memory) {
-        (uint16[] memory activeCollectionIds) = resultHandler.getActiveCollections();
+        (uint16[] memory activeCollectionIds) = resultManager.getActiveCollections();
         return activeCollectionIds;
     }
 
     /// @notice fetch collection result by Id
     /// @param _id collection ID
-    /// @return result of the collection
+    /// @return result of the collection and its power
     /// @return power
-    function getResultFromID(uint16 _id) 
-    public 
-    view 
+    function getResultFromID(uint16 _id)
+    public
+    view
     returns (uint256, int8) {
-        (uint256 result, int8 power) = resultHandler.getResultFromID(_id);
+        (uint256 result, int8 power) = resultManager.getResultFromID(_id);
         return (result, power);
+    }
+
+
+     /// @notice fetch collection status using id
+     /// @param _id collection ID
+     /// @return status of the collection
+    function getCollectionStatus(uint16 _id) public view returns (bool) {
+        return resultManager.getCollectionStatus(_id);
     }
 }
 
-```
-
-**Note**: This example can be run on **_rinkeby_** chain. -->
-
-
-<!-- ## Mainnet 
-
-All the assets (collections) that can currently be consumed are available here [Razorscan](https://razorscan.io/asset/ethCollectionMedian).
-
-```solidity
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.0;
-
-// @razor-network/contracts@1.0.2
-import "@razor-network/contracts/contracts/IDelegator.sol";
-
-contract DataFeed {
-    IDelegator internal delegator;
-
-    // Network: Razor Schain (turbulent-unique-scheat)
-    // Delegator address: 0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D
-    constructor() {
-        delegator = IDelegator(0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D);
-    }
-
-    /// @notice fetch collection result by name
-    /// @param _name bytes32 hash of the collection name
-    /// @return result of the collection
-    /// @return power
-    function getResult(bytes32 _name)
-        public
-        view
-        returns (uint256, int8)
-    {
-        (uint256 result, int8 power) = delegator.getResult(_name);
-        return (result, power);
-    }
-
-    /// @notice fetch collection result by Id
-    /// @param _id collection ID
-    /// @return result of the collection
-    /// @return power
-    function getResultFromID(uint16 _id) public view returns (uint256, int8) {
-        (uint256 result, int8 power) = delegator.getResultFromID(_id);
-        return (result, power);
-    }
-}
 
 ```
 
-**Note**: This example can be run on **_Razor Mainnet Schain_**. -->
+**Note**: This example can be run on **_actual-secret-cebalrai_** chain.
