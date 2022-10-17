@@ -42,9 +42,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.0-mainnet from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.0-mainnet).
+Razor-Go(github): You can download the Razor-go:v1.0.4 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.4).
 
-You can download the docker image of Razor-go:v1.0.0-mainnet from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.0-mainnet/images/sha256-894c9a9823f0c64d9331f9355b8917fc20ce8ff287a97a89d82c240371b675d4?context=explore).
+You can download the docker image of Razor-go:v1.0.4 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.4/images/sha256-cfd5f7e2fe38c9df657d65274a99c653ebe3794b3032c668a1c5252a7bec7884?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -59,7 +59,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.0-mainnet
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.4
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -184,24 +184,44 @@ If you would rather install from source, please follow Instructions here to [run
 
 
 
-## Update Docker Image
-To update the docker image
+## Upgrade razor-go version
+To update the razor-go node version
 
 1. Get the latest docker image from [Docker Hub](https://hub.docker.com/r/razornetwork/razor-go/tags)
 
 > **Note**: - 
 >1. _Make sure you don't use *-alpha and *-beta suffixed docker images those are only for internal testing._
->2. _Try to update the node in the Dispute state in order to avoid any inactivity penalty. The process of updating the node should be completed in less than 5-6 minutes. Try to do the following steps as quickly as possible to avoid any inactivity penalties._
+>2. _Update the node in the Dispute state in order to reduce the chances of an inactivity penalty. The process of updating the node should be completed in less than 5 minutes. Do the following steps as quickly as possible to avoid any inactivity penalties._
 
-2. Stop the existing container  
+2. Check your container is running via `docker ps`, you should get an output like:
+    ```
+    CONTAINER ID   IMAGE                                  COMMAND     CREATED         STATUS         PORTS     NAMES
+    5f0b7d99a71b   razornetwork/razor-go:v1.0.0-mainnet   "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
+    ```
+3. Stop the existing container  
     `docker stop razor-go`
-3. Remove the existing container  
+4. Remove the existing container  
     `docker rm razor-go`
-4. Run the staker with latest docker image
+5. Run the staker with latest docker image:
     ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<latest tag from docker hub>
+    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
     ```
-5. Then start voting again 
+
+    example: If latest version is `v1.0.4` then the command would be:
+    ```
+    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.4
+    ```
+6. Check your container is running `docker ps`, you should get an output like: 
+    ```
+    CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
+    53ff3ce7c965   razornetwork/razor-go:v1.0.4   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+    ```
+
+> **Note**: _If you are running vote command in tmux session_    
+>1. Check your razor-go session exists: `tmux ls`
+>2. Attach existing session: `tmux a -t razor-go`
+
+7. Start voting again 
     ```
     docker exec -it razor-go razor vote --address <account> --logFile <filename>    
     ```
