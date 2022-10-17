@@ -191,7 +191,7 @@ To update the razor-go node version
 
 > **Note**: - 
 >1. _Make sure you don't use *-alpha and *-beta suffixed docker images those are only for internal testing._
->2. _Try to update the node in the Dispute state in order to avoid any inactivity penalty. The process of updating the node should be completed in less than 5-6 minutes. Try to do the following steps as quickly as possible to avoid any inactivity penalties._
+>2. _Update the node in the Dispute state in order to reduce the chances of an inactivity penalty. The process of updating the node should be completed in less than 5 minutes. Do the following steps as quickly as possible to avoid any inactivity penalties._
 
 2. Check your container is running via `docker ps`, you should get an output like:
     ```
