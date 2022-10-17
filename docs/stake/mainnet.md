@@ -199,7 +199,7 @@ To update the docker image
     `docker rm razor-go`
 4. Run the staker with latest docker image
     ```
-    docker run -d -it --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<latest tag from docker hub>
+    docker run -d -it --entrypoint /bin/sh --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<latest tag from docker hub>
     ```
 5. Then start voting again 
     ```
