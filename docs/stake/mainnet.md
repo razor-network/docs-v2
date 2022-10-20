@@ -184,7 +184,7 @@ If you would rather install from source, please follow Instructions here to [run
 
 
 
-## Upgrade razor-go version
+## Update docker image
 To update the razor-go node version
 
 1. Get the latest docker image from [Docker Hub](https://hub.docker.com/r/razornetwork/razor-go/tags)
