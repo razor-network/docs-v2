@@ -75,13 +75,23 @@ There are a set of parameters that are configurable. These include:
 - Gas Price: The value of gas price if you want to set manually. If you don't provide any value or simply keep it to 1, the razor client will automatically calculate the optimum gas price and send it.
 - Log Level: Normally debug logs are not logged into the log file. But if you want you can set `logLevel` to `debug` and fetch the debug logs.
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
+- RPC Timeout: This is the threshold number of seconds after which any contract and client calls will time out.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
+docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2  --rpcTimeout 10
 ```
 
-> **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
+>**_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
 
+>**_NOTE:_**  You can automate all razor-go commands by providing password non-interactively. There are multiple ways to do that
+>1. Provide password via file, All the commands have an additional `--password` flag that you can provide with the file path from which the password must be picked.  To run a command with a password flag with the help of docker, the password file should present in `$HOME/.razor/` directory   
+>**Example**: ```docker exec -it -d razor-go razor command  --password /root/.razor/<file_name>```
+>2. Provide password via echo command.  
+>**Example**: ```echo "your password" | docker exec -it -d razor-go razor command```  
+> Linux-based system keeps track of the previously executed command., anyone can get the detail of the previous command via the `history` command.  
+> To delete command from history:  
+>       1. List the previously executed command: `history`
+>       2. Delete command from history: `history -d <line-number>`
 ## Commands {#commands}
 
 Run the commands in following way:
