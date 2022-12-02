@@ -42,9 +42,10 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.4 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.4).
+Razor-Go(github): You can download the Razor-go:v1.0.5 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5).
 
-You can download the docker image of Razor-go:v1.0.4 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.4/images/sha256-cfd5f7e2fe38c9df657d65274a99c653ebe3794b3032c668a1c5252a7bec7884?context=explore).
+// TODO: Need to update the docker image url here once v1.0.5 is released
+You can download the docker image of Razor-go:v1.0.5 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.4/images/sha256-cfd5f7e2fe38c9df657d65274a99c653ebe3794b3032c668a1c5252a7bec7884?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -59,7 +60,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.4
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -75,7 +76,7 @@ There are a set of parameters that are configurable. These include:
 - Gas Price: The value of gas price if you want to set manually. If you don't provide any value or simply keep it to 1, the razor client will automatically calculate the optimum gas price and send it.
 - Log Level: Normally debug logs are not logged into the log file. But if you want you can set `logLevel` to `debug` and fetch the debug logs.
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
-- RPC Timeout: This is the threshold number of seconds after which any contract and client calls will time out.
+- RPC Timeout: Number of seconds after which any contract and client calls will time out if it's not responding.
 
 ```
 docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2  --rpcTimeout 10
@@ -206,7 +207,7 @@ To update the razor-go node version
 2. Check your container is running via `docker ps`, you should get an output like:
     ```
     CONTAINER ID   IMAGE                                  COMMAND     CREATED         STATUS         PORTS     NAMES
-    5f0b7d99a71b   razornetwork/razor-go:v1.0.0-mainnet   "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
+    5f0b7d99a71b   razornetwork/razor-go:v1.0.4           "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
     ```
 3. Stop the existing container  
     `docker stop razor-go`
@@ -217,14 +218,14 @@ To update the razor-go node version
     docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
     ```
 
-    example: If latest version is `v1.0.4` then the command would be:
+    example: If latest version is `v1.0.5` then the command would be:
     ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.4
+    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5
     ```
 6. Check your container is running `docker ps`, you should get an output like: 
     ```
     CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
-    53ff3ce7c965   razornetwork/razor-go:v1.0.4   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+    53ff3ce7c965   razornetwork/razor-go:v1.0.5   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
     ```
 
 > **Note**: _If you are running vote command in tmux session_    
