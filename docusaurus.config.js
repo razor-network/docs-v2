@@ -83,6 +83,11 @@ const config = {
             position: "left",
           },
           {
+            to: "/docs/consume-data-feeds/introduction",
+            label: "Consume Data Feeds",
+            position: "left",
+          },
+          {
             href: "https://github.com/razor-network/docs-v2",
             label: "GitHub",
             position: "right",

@@ -51,7 +51,7 @@ Navigate to staker address and Click on the Unstake action from the Actions drop
 
 ### Step 4 {#step-4}
 
-Once both transactions are successful, [Initiate Withdraw](/docs/delegation/initiate-withdraw) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
+Once both transactions are successful, [Initiate Withdraw](/docs/initiate-withdraw) will need to be called after the `unstakeLockPeriod` and within the `withdrawInitiationPeriod`.
 
 ![Screenshot](/img/unstake/unstake_step4.png)
 
