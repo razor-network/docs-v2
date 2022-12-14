@@ -45,9 +45,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.0-mainnet from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.0-mainnet).
+Razor-Go(github): You can download the Razor-go:v1.0.5-alpha from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5-alpha-patch2).
 
-You can download the docker image of Razor-go:v1.0.0-mainnet from [here](https://hub.docker.com/layers/razor-go/razornetwork/razor-go/v1.0.0-mainnet/images/sha256-894c9a9823f0c64d9331f9355b8917fc20ce8ff287a97a89d82c240371b675d4?context=explore).
+You can download the docker image of Razor-go:v1.0.5-alpha from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5-alpha-patch2/images/sha256-e36cb6e02caa829d984e8a431c71e1267009a2487bd0605783b25f4238b27e7e?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -62,7 +62,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.0-mainnet
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-alpha-patch2
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -78,9 +78,10 @@ There are a set of parameters that are configurable. These include:
 - Gas Price: The value of gas price if you want to set manually. If you don't provide any value or simply keep it to 1, the razor client will automatically calculate the optimum gas price and send it.
 - Log Level: Normally debug logs are not logged into the log file. But if you want you can set `logLevel` to `debug` and fetch the debug logs.
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
+- RPC Timeout: Number of seconds after which any contract and client calls will time out if it's not responding.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2
+docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10
 ```
 
 > **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
