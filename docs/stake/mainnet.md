@@ -44,8 +44,7 @@ Docker: You can find more information about installing docker [here](https://doc
 
 Razor-Go(github): You can download the Razor-go:v1.0.5 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5).
 
-// TODO: Need to update the docker image url here once v1.0.5 is released
-You can download the docker image of Razor-go:v1.0.5 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.4/images/sha256-cfd5f7e2fe38c9df657d65274a99c653ebe3794b3032c668a1c5252a7bec7884?context=explore).
+You can download the docker image of Razor-go:v1.0.5 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5/images/sha256-452308fdf01f1add28e341af676b0a8a0817b2b4eb6bcd60e69807d4cf0334cd?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
