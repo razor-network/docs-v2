@@ -230,6 +230,10 @@ To update the razor-go node version
 > **Note**: _If you are running vote command in tmux session_    
 >1. Check your razor-go session exists: `tmux ls`
 >2. Attach existing session: `tmux a -t razor-go`
+>3. To exit from tmux session: press `ctrl+b`, release those keys and press `d`
+>4. To list your session: `tmux ls`
+>5. To attach Session back: `tmux attach-session -t razor-go`
+
 
 7. Start voting again 
     ```
