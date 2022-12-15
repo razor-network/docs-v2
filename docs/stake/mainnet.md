@@ -42,9 +42,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.5 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5).
+Razor-Go(github): You can download the Razor-go:v1.0.5-patch1 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5-patch1).
 
-You can download the docker image of Razor-go:v1.0.5 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5/images/sha256-452308fdf01f1add28e341af676b0a8a0817b2b4eb6bcd60e69807d4cf0334cd?context=explore).
+You can download the docker image of Razor-go:v1.0.5-patch1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5-patch1/images/sha256-6e73d6974c8d7479563ec538cf8b9ebc4289db376c2d91ffb53cb38958e3ceda?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -59,7 +59,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-patch1
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -217,14 +217,14 @@ To update the razor-go node version
     docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
     ```
 
-    example: If latest version is `v1.0.5` then the command would be:
+    example: If latest version is `v1.0.5-patch1` then the command would be:
     ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5
+    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-patch1
     ```
 6. Check your container is running `docker ps`, you should get an output like: 
     ```
     CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
-    53ff3ce7c965   razornetwork/razor-go:v1.0.5   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+    53ff3ce7c965   razornetwork/razor-go:v1.0.5-patch1   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
     ```
 
 > **Note**: _If you are running vote command in tmux session_    
