@@ -1,17 +1,18 @@
 ---
 title: Deployment Details
 ---
-## Whispering Turais Schain:
 
-| Contract           | Address                                                                                                                                                           |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Governance         | [0x6a4f5803c44D4BA6189D24718863a85783B92c57](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x6a4f5803c44D4BA6189D24718863a85783B92c57/) |
-| BlockManager       | [0x1F323d8c170bC526fbA6E30653dfdD10064FF5A0](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x1F323d8c170bC526fbA6E30653dfdD10064FF5A0/) |
-| CollectionManager  | [0x4A6d18E64AF3dC24dAA7a0abbA00670476395A2c](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x4A6d18E64AF3dC24dAA7a0abbA00670476395A2c/) |
-| StakeManager       | [0x83F3022c2Bf36423194EBAA9b66CeDD0e3dB8b06](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x83F3022c2Bf36423194EBAA9b66CeDD0e3dB8b06/) |
-| RewardManager      | [0x65eBb295F9B5871F08c57eEF0a44052aEA9f0881](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x65eBb295F9B5871F08c57eEF0a44052aEA9f0881/) |
-| VoteManager        | [0x1fA41fda5a5169deB7EB5696757D5770ce57Bf22](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x1fA41fda5a5169deB7EB5696757D5770ce57Bf22/) |
-| Delegator          | [0x4535E7486c48Df8e1121be2A31b74aBb2b0a5B8b](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x4535E7486c48Df8e1121be2A31b74aBb2b0a5B8b/) |
-| RAZOR              | [0xAD1259343CF69a916a1A9AAf6250d2Db67606A5D](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0xAD1259343CF69a916a1A9AAf6250d2Db67606A5D/) |
-| StakedTokenFactory | [0x101017d94A27062f7d176d3b8d67b0C93faff40f](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x101017d94A27062f7d176d3b8d67b0C93faff40f/) |
-| RandomNoManager    | [0x49Dd8FfDB80b3480C16D8769EA47cdBb777933e2](https://whispering-turais.explorer.staging-v2.skalenodes.com/address/0x49Dd8FfDB80b3480C16D8769EA47cdBb777933e2/) |
+## staging-aware-chief-gianfar Schain:
+
+| Contract           | Address                                                                                                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Governance         | [0xFEb70E7Ad36b425b698184B3d5b1F856c8132a42](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0xFEb70E7Ad36b425b698184B3d5b1F856c8132a42/) |
+| BlockManager       | [0xa26232204879C4370806cA56F821b9fe97eAeF5B](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0xa26232204879C4370806cA56F821b9fe97eAeF5B/) |
+| CollectionManager  | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84/) |
+| StakeManager       | [0x03bD73afB6d3C5B86578010C099E5474aF1aABeF](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0x03bD73afB6d3C5B86578010C099E5474aF1aABeF/) |
+| RewardManager      | [0xe4371caE0ab6Fb4875BB1002c0230CB0a1423616](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0xe4371caE0ab6Fb4875BB1002c0230CB0a1423616/) |
+| VoteManager        | [0x53Df936a3594777185DF12Cd073d9033cfF348D6](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0x53Df936a3594777185DF12Cd073d9033cfF348D6/) |
+| Delegator          | [0x7f80398840D1bE49dD99609Abe405034bF97E97a](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0x7f80398840D1bE49dD99609Abe405034bF97E97a/) |
+| RAZOR              | [0x328BAc5C2be4961252041EC589A22e55Ec132010](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0x328BAc5C2be4961252041EC589A22e55Ec132010/) |
+| StakedTokenFactory | [0x36b309a9D1404a7B2Ae3429742F2967EF861606E](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0x36b309a9D1404a7B2Ae3429742F2967EF861606E/) |
+| RandomNoManager    | [0xC2d1F555168021d107bDB85380890281b3947493](https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/address/0xC2d1F555168021d107bDB85380890281b3947493/) |
