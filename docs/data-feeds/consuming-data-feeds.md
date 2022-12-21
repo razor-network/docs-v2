@@ -117,7 +117,7 @@ contract DataFeed {
 
 ### staging-utter-unripe-menkar
 
-**Note**: For **staging-utter-unripe-menkar** chain it's required to to reference `ITransparentForwarder` instead of `IResultManager` due to distinct bridging architecture.
+**Note**: For **staging-utter-unripe-menkar** chain it's required to reference `ITransparentForwarder` instead of `IResultManager` due to distinct bridging architecture.
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
