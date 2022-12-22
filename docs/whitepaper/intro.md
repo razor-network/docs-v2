@@ -306,7 +306,7 @@ The validation cycle is automatic and hence the validation client can be run by 
 
 **1.4.2 Collection manager**
 
-The collection manager accepts queries from client applications and organizes them in the priority of the fees paid. The queries with higher fees will be prioritized to be processed by the oracle. The job manager supports single requests as well as data feed requests.
+The collection manager accepts queries from client applications and organizes them in the priority of the fees paid. The queries with higher fees will be prioritized to be processed by the oracle. The collection manager supports single requests as well as data feed requests.
 
 **1.4.3 Client Application**
 
