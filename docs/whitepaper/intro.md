@@ -306,7 +306,7 @@ The validation cycle is automatic and hence the validation client can be run by 
 
 **1.4.2 Collection manager**
 
-The job manager accepts queries from client applications and organizes them in the priority of the fees paid. The queries with higher fees will be prioritized to be processed by the oracle. The job manager supports single requests as well as data feed requests.
+The collection manager accepts queries from client applications and organizes them in the priority of the fees paid. The queries with higher fees will be prioritized to be processed by the oracle. The job manager supports single requests as well as data feed requests.
 
 **1.4.3 Client Application**
 
@@ -321,7 +321,7 @@ This is any user using the client application. The user may not even know that t
 The Razor network consists of 3 layers:
 
 1. Oracle layer
-1. Job manager
+1. Collection manager
 1. Client application
 
 It is important to reiterate that the network simply comprises a set of autonomous smart contracts deployed on the relevant blockchain network, operated directly by users calling functions on it (which allows them to interact with other users in a multi-party peer-to-peer manner). There is no further control by or interaction with the original entity which had deployed the smart contract, which entity solely functions as a provider of technical tools for users, and is not offering any sort of securities product or regulated service nor does it hold any user assets on custody.
