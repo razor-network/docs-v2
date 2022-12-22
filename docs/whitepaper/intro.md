@@ -1,8 +1,6 @@
 ---
-title: Whitepaper introduction
+title: Whitepaper
 ---
-
-> Razor Network whitepaper PDF version can be found [here](https://github.com/razor-network/whitepaper/blob/master/Razor%20Network%20Whitepaper%201.4.pdf)
 
 ## LEGAL DISCLAIMER
 
@@ -86,7 +84,7 @@ _1 Stakers are users who lock their funds in a smart contract. This action is kn
   - 1.3.7 Collusion and bribing attack resistance
 - 1.4 Architectural overview
   - 1.4.1 Oracle
-  - 1.4.2 Job manager
+  - 1.4.2 Collection manager
   - 1.4.3 Client Application
   - 1.4.4 User
 
@@ -290,7 +288,7 @@ Due to the layered design and possibility of disputing results, the Razor networ
 Razor network consists of 4 parts:
 
 1. Oracle
-1. Job manager
+1. Collection manager
 1. Client application
 1. User
 
@@ -306,7 +304,7 @@ Stakers must deposit their RAZOR to become a staker in the oracle platform. They
 
 The validation cycle is automatic and hence the validation client can be run by stakers with virtually no manual actions required. However, Some jobs can be manual and will require manual reporting by the stakers. Also if a result is disputed, the dispute rounds will be manual.
 
-**1.4.2 Job manager**
+**1.4.2 Collection manager**
 
 The job manager accepts queries from client applications and organizes them in the priority of the fees paid. The queries with higher fees will be prioritized to be processed by the oracle. The job manager supports single requests as well as data feed requests.
 
