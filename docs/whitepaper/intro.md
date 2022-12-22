@@ -1,5 +1,6 @@
 ---
 title: Whitepaper
+description: Razor Network Whitepaper
 ---
 
 ## LEGAL DISCLAIMER
