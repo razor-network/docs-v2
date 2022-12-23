@@ -106,4 +106,4 @@ contract DataFeed {
 
 ```
 
-**Note**: This example can be run on chains where the Result Manager contract is deployed. Details regarding deployed contracts and chains can be found [here](/docs/consume-data-feeds/introduction#contracts-and-chain-details)
+**Note**: This example can be run on chains where the Result Manager contract is deployed. Details regarding deployed contracts and chains can be found [here](/docs/consume-data-feeds/introduction#result-manager-address-and-supported-chains)
