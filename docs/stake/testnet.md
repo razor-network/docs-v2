@@ -8,10 +8,10 @@ You will need some Skale Testnet Tokens to pay for transaction fees.
 You can get testnet ETH tokens from here:
 https://faucet.skale.network/
 
-- Skale Endpoint: https://staging-v2.skalenodes.com/v1/whispering-turais
+- Skale Endpoint: https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar
 - Account: address which should receive the testnet tokens.
 
-In order to get started, you will also need some RAZORs on Skale Testnet chain. Drop a message in our [Discord server](https://discord.com/invite/Js4pBny2rw) for tokens. 
+In order to get started, you will also need some RAZORs on Skale Testnet chain. Drop a message in our [Discord server](https://discord.com/invite/Js4pBny2rw) for tokens.
 
 ## Add Skale Testnet network to metamask
 
@@ -19,13 +19,13 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain. 
 2. In metamask, click on top right account icon > Settings > Add Network.
 3. Fill in the following details:
 
-   | Particulars        | Value                                                     |
-   | ------------------ | --------------------------------------------------------- |
-   | Network Name       | Skale Testnet v2                                          |
-   | New RPC URL        | https://staging-v2.skalenodes.com/v1/whispering-turais    |
-   | Chain ID           | 132333505628089                                           |
-   | Currency Symbol    | ETH                                                       |
-   | Block Explorer URL | https://whispering-turais.testnet-explorer.skalenodes.com |
+   | Particulars        | Value                                                                   |
+   | ------------------ | ----------------------------------------------------------------------- |
+   | Network Name       | staging-aware-chief-gianfar                                             |
+   | New RPC URL        | https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar        |
+   | Chain ID           | 1517929550                                                              |
+   | Currency Symbol    | ETH                                                                     |
+   | Block Explorer URL | https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/ |
 
    > **Note**: _You can also add network from https://staging.razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
@@ -45,9 +45,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.5-alpha from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5-alpha-patch2).
+Razor-Go(github): You can download the Razor-go:v1.0.5-alpha-patch3 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5-alpha-patch3).
 
-You can download the docker image of Razor-go:v1.0.5-alpha from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5-alpha-patch2/images/sha256-e36cb6e02caa829d984e8a431c71e1267009a2487bd0605783b25f4238b27e7e?context=explore).
+You can download the docker image of Razor-go:v1.0.5-alpha-patch3 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5-alpha-patch3/images/sha256-f3434ee1a66b796bf532f8898fe1a4b72dc87f774afece88c73c391c6d779688?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -62,7 +62,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-alpha-patch2
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-alpha-patch3
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -81,7 +81,7 @@ There are a set of parameters that are configurable. These include:
 - RPC Timeout: Number of seconds after which any contract and client calls will time out if it's not responding.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://staging-v2.skalenodes.com/v1/whispering-turais --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10
+docker exec -it razor-go razor setConfig --provider https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10
 ```
 
 > **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
