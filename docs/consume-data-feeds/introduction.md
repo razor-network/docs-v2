@@ -2,15 +2,11 @@
 title: Introduction
 ---
 
-The Razor Network Oracle runs on its own chain, the Razor Schain, together with Proof of Stake and it's consensus mechanism it gives a high level of security to the chain. Price feed data is bridged to other SKALE Chains and Ethereum Mainnet using the SKALE Interchain Messaging Agent (**IMA**).
+The Razor Network Oracle runs on its own chain, the Razor Schain, together with Proof of Stake and its consensus mechanism gives a high level of security to the chain. Price feed data is bridged to EVM-compatible chains from Razor Schain.
 
-**To learn how to use the Razor Network Oracle datafeed from other smart contracts, [click here to see it in action](/docs/data-feeds/consuming-data-feeds)**.
+Razor Network Oracle Datafeeds can be integrated into smart contracts using [Result Manager](/docs/consume-data-feeds/result-manager) or [Transparent Forwarder](/docs/consume-data-feeds/transparent-forwarder) interface depending on the chain.
 
-## Skale IMA
-
-The SKALE IMA is flexible and modular - It can support transfer of any token standard, and can also transfer any arbitrary messages between chains. To dive deeper visit the IMA docs [here](https://docs.skale.network/ima/1.3.x/).
-
-## Proxy Contract Addresses
+## Contracts and chain details
 
 | Contract             | Address                                                                                                                                                                 | Chain Name                  |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
