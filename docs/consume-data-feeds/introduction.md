@@ -14,6 +14,9 @@ Razor Network Oracle Datafeeds can be integrated into smart contracts using [Res
 
 ## Transparent Forwarder address and supported chains
 
-| Address                                                                                                                                                                 | Chain Name                  |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://staging-utter-unripe-menkar.explorer.staging-v3.skalenodes.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84) | staging-utter-unripe-menkar |
+| Address                                                                                                                                                                             | Chain Name                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
+| [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://staging-utter-unripe-menkar.explorer.staging-v3.skalenodes.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)             | staging-utter-unripe-menkar |
+| [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://staging-legal-crazy-castor.explorer.staging-v3.skalenodes.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84/transactions) | staging-legal-crazy-castor  |
+| [0x76a6AB56E27823B2175F11b0041c489bFdb13c88](https://mumbai.polygonscan.com/address/0x76a6AB56E27823B2175F11b0041c489bFdb13c88)                                                     | polygon-mumbai              |
+| [0x03bD73afB6d3C5B86578010C099E5474aF1aABeF](https://moonbase.moonscan.io/address/0x03bD73afB6d3C5B86578010C099E5474aF1aABeF)                                                       | moonbase-alpha              |
