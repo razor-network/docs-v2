@@ -4,11 +4,11 @@ title: Introduction
 
 The Razor Network Oracle runs on its own chain, the Razor Schain, together with Proof of Stake and its consensus mechanism gives a high level of security to the chain. Price feed data is bridged to EVM-compatible chains from Razor Schain.
 
-Razor Network Oracle Datafeeds can be integrated into smart contracts using [Transparent Forwarder](/docs/consume-data-feeds/transparent-forwarder) interface.
+Razor Network Oracle Datafeeds can be integrated into smart contracts using `Transparent Forwarder` interface. Details regarding Transparent Forwarder can be found [here](/docs/consume-data-feeds/transparent-forwarder).
 
-## Supported chains and transparent forwarder address
+## Supported chains and Transparent Forwarder address
 
-| Chain Name                  | Chain Name Address                                                                                                                                                                  |
+| Chain Name                  | Transparent Forwarder Address                                                                                                                                                       |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | staging-utter-unripe-menkar | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://staging-utter-unripe-menkar.explorer.staging-v3.skalenodes.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)             |
 | staging-legal-crazy-castor  | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://staging-legal-crazy-castor.explorer.staging-v3.skalenodes.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84/transactions) |
