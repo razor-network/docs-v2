@@ -56,10 +56,23 @@ One of the quickest ways to get `razor-go` up and running on your machine is by 
 docker network create razor_network
 ```
 
-2. Start razor-go container
+2. Create user
+
+```
+useradd -u 82 razor
+```
+
+>**_NOTE:_**: For the sake of security razor-go container uses docker bind mount to access the `.razor` directory of the host machine it's recommended to create a razor-go user with the least privileges. The only permission razor-go requires is read/write access to the `.razor` directory._
+
+3. Start razor-go container
 
 ```
 docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-patch1
+```
+4. Update the owner of `.razor` directory
+
+```
+ chown razor $HOME/.razor
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -202,6 +215,17 @@ To update the razor-go node version
 > **Note**: - 
 >1. _Make sure you don't use *-alpha and *-beta suffixed docker images those are only for internal testing._
 >2. _Update the node in the Dispute state in order to reduce the chances of an inactivity penalty. The process of updating the node should be completed in less than 5 minutes. Do the following steps as quickly as possible to avoid any inactivity penalties._
+>3. _Make sure you have razor user created in your host which have Read/Write access of `.razor` directory before upgrade.If not please follow the steps:
+>> 1. Create user
+>> 
+>>```
+>>  useradd -u 82 razor
+>>```
+>> 2. Update the owner of `.razor` directory
+>> 
+>>```
+>>  chown razor $HOME/.razor
+>>```
 
 2. Check your container is running via `docker ps`, you should get an output like:
     ```
