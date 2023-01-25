@@ -230,11 +230,6 @@ const sidebars = {
     },
     {
       type: "doc",
-      label: "Result Manager",
-      id: "consume-data-feeds/result-manager",
-    },
-    {
-      type: "doc",
       label: "Transparent Forwarder",
       id: "consume-data-feeds/transparent-forwarder",
     },
