@@ -230,6 +230,11 @@ const sidebars = {
     },
     {
       type: "doc",
+      label: "Deployment details",
+      id: "consume-data-feeds/deployment-details",
+    },
+    {
+      type: "doc",
       label: "Transparent Forwarder",
       id: "consume-data-feeds/transparent-forwarder",
     },
