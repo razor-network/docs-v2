@@ -22,7 +22,7 @@ The price of the collection can be calculated by the following formula: `result 
 Code snippet to integrate Datafeed with `ITransparentForwarder` interface:
 
 ```solidity
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 interface ITransparentForwarder {
