@@ -69,6 +69,7 @@ This spins up a razor-go docker image. You can find all the images on the [Razor
 There are a set of parameters that are configurable. These include:
 
 - Provider: The RPC URL of the provider you are using to connect to the blockchain.
+- Alternate Provider: This is the secondary RPC URL of the provider used to connect to the blockchain if the primary one is not working.
 - Gas Multiplier: The value with which the gas price will be multiplied while sending every transaction.
 - Buffer Size: Buffer size determines, out of all blocks in a state, in how many blocks the voting or any other operation can be performed.
 - Wait Time: This is the number of seconds the system will wait while voting.
@@ -77,9 +78,13 @@ There are a set of parameters that are configurable. These include:
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
 - Gas Limit Override: This value would be used as a gas limit for all the transactions instead of estimating for each transaction.
 - RPC Timeout: Number of seconds after which any contract and client calls will time out if it's not responding.
+- HTTP Timeout: This is the threshold number of seconds after which an HTTP request for a job will time out.
+- Maximum size of log file: This is the maximum size of log file in MB
+- Maximum number of backups of log file: This is the maximum number of old log files to retain.
+- Maximum age of log file: This is the maximum number of days to retain old log files.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2  --rpcTimeout 10
+docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --alternateProvider https://ce2m-skale.chainode.tech:10200/ --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 >**_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
