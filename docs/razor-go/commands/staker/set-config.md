@@ -23,19 +23,19 @@ The config is set while the build is generated, but if you need to change any of
 razor cli
 
 ```
-$ ./razor setConfig --provider <rpc_provider> --alternateProvider <alternate_rpc_provider> --gasmultiplier <multiplier_value> --buffer <buffer_percentage> --wait <wait_for_n_blocks> --gasprice <gas_price> --logLevel <debug_or_info> --gasLimit <gas_limit_multiplier> --rpcTimeout <rpc_timeout> --httpTimeout <http_timeout> --logFileMaxSize <file_max_size> --logFileMaxBackups <file_max_backups> --logFileMaxAge <file_max_age>
+$ ./razor setConfig --provider <rpc_provider> --alternateProvider <alternate_rpc_provider> --gasmultiplier <multiplier_value> --buffer <buffer_percentage> --wait <wait_for_n_blocks> --gasprice <gas_price> --logLevel <debug_or_info> --gasLimit <gas_limit_multiplier> --gasLimitOverride <gas_limit_override> --rpcTimeout <rpc_timeout> --httpTimeout <http_timeout> --logFileMaxSize <file_max_size> --logFileMaxBackups <file_max_backups> --logFileMaxAge <file_max_age>
 ```
 
 docker
 
 ```
-docker exec -it razor-go razor setConfig --provider <rpc_provider> --alternateProvider <alternate_rpc_provider> --gasmultiplier <multiplier_value> --buffer <buffer_percentage> --wait <wait_for_n_blocks> --gasprice <gas_price> --logLevel <debug_or_info> --gasLimit <gas_limit_multiplier> --rpcTimeout <rpc_timeout> --httpTimeout <http_timeout> --logFileMaxSize <file_max_size> --logFileMaxBackups <file_max_backups> --logFileMaxAge <file_max_age>
+docker exec -it razor-go razor setConfig --provider <rpc_provider> --alternateProvider <alternate_rpc_provider> --gasmultiplier <multiplier_value> --buffer <buffer_percentage> --wait <wait_for_n_blocks> --gasprice <gas_price> --logLevel <debug_or_info> --gasLimit <gas_limit_multiplier> --gasLimitOverride <gas_limit_override> --rpcTimeout <rpc_timeout> --httpTimeout <http_timeout> --logFileMaxSize <file_max_size> --logFileMaxBackups <file_max_backups> --logFileMaxAge <file_max_age>
 ```
 
 Example:
 
 ```
-$ ./razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --alternateProvider https://ce2m-skale.chainode.tech:10200/ --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
+$ ./razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --alternateProvider https://ce2m-skale.chainode.tech:10200/ --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 Other than setting these parameters in the config, you can use different values of these parameters in different command. Just add the same flag to any command you want to use and the new config changes will appear for that command.
