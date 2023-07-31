@@ -245,7 +245,7 @@ To update the razor-go node version
 
 7. Start voting again 
     ```
-    docker exec -it razor-go razor vote --address <account> --logFile <filename>    
+    docker exec -it razor-go razor vote --address <account> --logFile <filename> --gasLimitOverride 50000000 
     ```
 
 ---
