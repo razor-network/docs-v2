@@ -42,9 +42,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.5-patch2 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5-patch2).
+Razor-Go(github): You can download the Razor-go:1.0.6 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.6).
 
-You can download the docker image of Razor-go:v1.0.5-patch2 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5-patch2/images/sha256-29b5d9db7c0810988ba3fe0fea923e7689f648240c7789028faf5cdc272ac953?context=explore).
+You can download the docker image of Razor-go:v1.0.6 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.6/images/sha256-ce23ba6a19780ee7bf6e67fbf161b9ad89fae1c89b701054c5fb81bbff439c4e?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -59,7 +59,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-patch2
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.6
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -69,6 +69,7 @@ This spins up a razor-go docker image. You can find all the images on the [Razor
 There are a set of parameters that are configurable. These include:
 
 - Provider: The RPC URL of the provider you are using to connect to the blockchain.
+- Alternate Provider: This is the secondary RPC URL of the provider used to connect to the blockchain if the primary one is not working.
 - Gas Multiplier: The value with which the gas price will be multiplied while sending every transaction.
 - Buffer Size: Buffer size determines, out of all blocks in a state, in how many blocks the voting or any other operation can be performed.
 - Wait Time: This is the number of seconds the system will wait while voting.
@@ -77,9 +78,15 @@ There are a set of parameters that are configurable. These include:
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
 - Gas Limit Override: This value would be used as a gas limit for all the transactions instead of estimating for each transaction.
 - RPC Timeout: Number of seconds after which any contract and client calls will time out if it's not responding.
+- HTTP Timeout: This is the threshold number of seconds after which an HTTP request for a job will time out.
+- Maximum size of log file: This is the maximum size of log file in MB
+- Maximum number of backups of log file: This is the maximum number of old log files to retain.
+- Maximum age of log file: This is the maximum number of days to retain old log files.
+
+**Note**: _Make sure you input your alternate provider value as a value to alternateProvider flag
 
 ```
-docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2  --rpcTimeout 10
+docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --alternateProvider [ALTERNATE_PROVIDER] --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 >**_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
@@ -218,14 +225,14 @@ To update the razor-go node version
     docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
     ```
 
-    example: If latest version is `v1.0.5-patch2` then the command would be:
+    example: If latest version is `v1.0.6` then the command would be:
     ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-patch2
+    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.6
     ```
 6. Check your container is running `docker ps`, you should get an output like: 
     ```
     CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
-    53ff3ce7c965   razornetwork/razor-go:v1.0.5-patch2   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+    53ff3ce7c965   razornetwork/razor-go:v1.0.6   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
     ```
 
 > **Note**: _If you are running vote command in tmux session_    
