@@ -45,9 +45,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.5-alpha-patch3 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5-alpha-patch3).
+Razor-Go(github): You can download the Razor-go:1.0.6-alpha.4 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.6-alpha.4).
 
-You can download the docker image of Razor-go:v1.0.5-alpha-patch3 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5-alpha-patch3/images/sha256-f3434ee1a66b796bf532f8898fe1a4b72dc87f774afece88c73c391c6d779688?context=explore).
+You can download the docker image of Razor-go:1.0.6-alpha.4 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.6-alpha.4/images/sha256-e255a1b1ef2addcbb6c9c864d7570ba4133007f6a3b0f3801305fc3f0eac4069?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -62,7 +62,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-alpha-patch3
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.6-alpha.4
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -72,16 +72,22 @@ This spins up a razor-go docker image. You can find all the images on the [Razor
 There are a set of parameters that are configurable. These include:
 
 - Provider: The RPC URL of the provider you are using to connect to the blockchain.
+- Alternate Provider: This is the secondary RPC URL of the provider used to connect to the blockchain if the primary one is not working.
 - Gas Multiplier: The value with which the gas price will be multiplied while sending every transaction.
 - Buffer Size: Buffer size determines, out of all blocks in a state, in how many blocks the voting or any other operation can be performed.
 - Wait Time: This is the number of seconds the system will wait while voting.
 - Gas Price: The value of gas price if you want to set manually. If you don't provide any value or simply keep it to 1, the razor client will automatically calculate the optimum gas price and send it.
 - Log Level: Normally debug logs are not logged into the log file. But if you want you can set `logLevel` to `debug` and fetch the debug logs.
 - Gas Limit: The value with which the gas limit will be multiplied while sending every transaction.
+- Gas Limit Override: This value would be used as a gas limit for all the transactions instead of estimating for each transaction.
 - RPC Timeout: Number of seconds after which any contract and client calls will time out if it's not responding.
+- HTTP Timeout: This is the threshold number of seconds after which an HTTP request for a job will time out.
+- Maximum size of log file: This is the maximum size of log file in MB
+- Maximum number of backups of log file: This is the maximum number of old log files to retain.
+- Maximum age of log file: This is the maximum number of days to retain old log files.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10
+docker exec -it razor-go razor setConfig --provider https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 > **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._

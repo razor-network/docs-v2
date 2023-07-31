@@ -42,9 +42,9 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:v1.0.5-patch2 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.5-patch2).
+Razor-Go(github): You can download the Razor-go:1.0.6 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.6).
 
-You can download the docker image of Razor-go:v1.0.5-patch2 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.5-patch2/images/sha256-29b5d9db7c0810988ba3fe0fea923e7689f648240c7789028faf5cdc272ac953?context=explore).
+You can download the docker image of Razor-go:v1.0.6 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.6/images/sha256-ce23ba6a19780ee7bf6e67fbf161b9ad89fae1c89b701054c5fb81bbff439c4e?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -223,14 +223,14 @@ To update the razor-go node version
     docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
     ```
 
-    example: If latest version is `v1.0.5-patch2` then the command would be:
+    example: If latest version is `v1.0.6` then the command would be:
     ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.5-patch2
+    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.6
     ```
 6. Check your container is running `docker ps`, you should get an output like: 
     ```
     CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
-    53ff3ce7c965   razornetwork/razor-go:v1.0.5-patch2   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+    53ff3ce7c965   razornetwork/razor-go:v1.0.6   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
     ```
 
 > **Note**: _If you are running vote command in tmux session_    
