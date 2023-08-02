@@ -1,15 +1,27 @@
 # Governance
 
-Governance aims to enable the oracle network to do subjective decision making based on acceptions and rejections of the proposals. The proposals will be mostly around
+Governance aims to enable the oracle network to do subjective decision-making based on acceptions and rejections of the proposals. The proposals will be mostly around
 
-1. Acception or Rejection of Data soruces collections.
+1. Acception or Rejection of Data sources collections.
 2. Change in the parameters of the Validation layer.
 
-It is quite important to whitelist of backlist the data sources to prevent any misinformation and DOS attacks.
+It is quite important to whitelist or backlist the data sources to prevent any misinformation and DoS attacks.
 
 The Razor Network governance portal can be accessed [here](https://snapshot.org/#/raz.eth). You need to hold $RAZOR tokens on Ethereum/Polygon Mainnet or $sRZR (staked $RAZOR tokens) on Razor SKALE Chain to be able to vote.
 
-**Note** - _Updated governance parameters can be checked [here](https://razorscan.io/governance/values)._
+## Add datasource through proposal
+
+1. Please begin by visiting the [datasources](https://github.com/razor-network/datasources) repository on GitHub. Once there, proceed to fork the repository to your own GitHub account.
+
+2. Next, make the necessary changes to the forked repository, incorporating the required information based on the `contributing.md` guidelines and project requirements. Once you have completed the changes, it's time to create a pull request (PR) to the 'master' branch of the original repository.
+
+3. After submitting the PR, the proposed changes will be open for community discussion and review on [Github discussion](https://github.com/razor-network/datasources). Community members can provide feedback and votes on the proposal. The final decision will be made through a voting process on [snapshot](https://snapshot.org/#/raz.eth).
+
+4. The proposal on Snapshot will have a designated deadline by which the required number of votes must be obtained. If the proposal receives the necessary votes within the set deadline, the project's admin will proceed to add the new datasource to the contract and merge the PR into the main repository.
+
+5. However, if the required votes are not achieved within the specified deadline, the PR will be closed, and the proposed changes will not be incorporated.
+
+All the available datasources can be found [here](https://razorscan.io/governance/datafeeds)
 
 ## Governance Parameters {#governance-parameters}
 
@@ -36,6 +48,8 @@ The Razor Network governance portal can be accessed [here](https://snapshot.org/
 | SlashNums.bounty                  | Percent bounty from staker's stake to be received by the bounty hunter                                                                      | 500_000           |
 | SlashNums.burn                    | Percent RAZOR burn from staker's stake                                                                                                      | 9_500_000         |
 | SlashNums.keep                    | Percent from staker's stake to be kept by staker                                                                                            | 0                 |
+
+**Note** - _Updated governance parameters can be checked [here](https://razorscan.io/governance/values)._
 
 <!-- 1. Withdraw Lock Period
 
