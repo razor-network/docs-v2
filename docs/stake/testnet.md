@@ -45,7 +45,7 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:1.0.7-alpha from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.7-alpha).
+Oracle-Node(github): You can download the Razor-go:1.0.7-alpha from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.7-alpha).
 
 You can download the docker image of Razor-go:1.0.7-alpha from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.7-alpha/images/sha256-ad9560ae3b8dd657d8bd6a1db03bdfcfc4473bd9607f2b4e35066bbb52a68175?context=explore).
 
@@ -186,7 +186,7 @@ An example of this command would be:
 
 That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [Staging Razorscan](https://staging.razorscan.io) to monitor your staker.
 
-For more details around all the commands of `razor-go`, please check out the `razor-go` [Readme](https://github.com/razor-network/oracle-node#readme).
+For more details around all the commands of `oracle-node`, please check out the `oracle-node` [Readme](https://github.com/razor-network/oracle-node#readme).
 
 ## Installation From Source {#installation-from-source}
 
