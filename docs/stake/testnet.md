@@ -186,7 +186,7 @@ An example of this command would be:
 
 That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [Staging Razorscan](https://staging.razorscan.io) to monitor your staker.
 
-For more details around all the commands of `oracle-node`, please check out the `oracle-node` [Readme](https://github.com/razor-network/oracle-node#readme).
+For more details around all the commands of `razor-go`, please check out the `oracle-node` [Readme](https://github.com/razor-network/oracle-node#readme).
 
 ## Installation From Source {#installation-from-source}
 

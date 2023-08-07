@@ -30,7 +30,7 @@ Now you are all set! Let's download the client and start staking!
 
 ## Using Docker {#using-docker}
 
-It is recommended to run a **Razor Node** using **Docker**. This is because you dont need a complete development enviroment to run a node. Since code is updated and deployed frequently from our github repository, we keep the Razor Node docker image updated.
+It is recommended to run a **Razor Node** using **Docker**. This is because you don't need a complete development environment to run a node. Since code is updated and deployed frequently from our github repository, we keep the Razor Node docker image updated.
 
 ## Hardware Requirements {#hardware-requirements}
 
@@ -42,7 +42,7 @@ It is recommended to run a **Razor Node** using **Docker**. This is because you 
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Razor-Go(github): You can download the Razor-go:1.0.6 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.6).
+Oracle-Node(github): You can download the Oracle-Node:1.0.6 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.6).
 
 You can download the docker image of Razor-go:v1.0.6 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.6/images/sha256-ce23ba6a19780ee7bf6e67fbf161b9ad89fae1c89b701054c5fb81bbff439c4e?context=explore).
 
@@ -194,7 +194,7 @@ An example of this command would be:
 
 That's it! You should have a staker up and running. Your node will start automatically fetching and answering queries. You must keep your computer online to be able to validate without any interruptions. You can monitor the logs, and use [Razorscan](https://razorscan.io) to monitor your staker.
 
-For more details around all the commands of `razor-go`, please check out the `razor-go` [Readme](https://github.com/razor-network/oracle-node#readme).
+For more details around all the commands of `razor-go`, please check out the `oracle-node` [Readme](https://github.com/razor-network/oracle-node#readme).
 
 ## Installation From Source {#installation-from-source}
 
