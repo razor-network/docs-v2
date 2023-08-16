@@ -32,6 +32,7 @@ const sidebars = {
     "initiate-withdraw",
     "withdraw",
     "reset-lock",
+    "jobs-and-collections",
     {
       type: "category",
       label: "Contracts",
