@@ -15,7 +15,7 @@ The Razor Network governance portal can be accessed [here](https://vote.razor.ne
 
 2. Next, make the necessary changes to the forked repository, incorporating the required information based on the [contributing.md](https://github.com/razor-network/datasources/blob/master/CONTRIBUTING.md) guidelines and project requirements. Once you have completed the changes, it's time to create a pull request (PR) to the 'master' branch of the original repository.
 
-3. After submitting the PR, the proposed changes will be open for community discussion and review on [Github discussion](https://github.com/razor-network/datasources). Community members can provide feedback and votes on the proposal. The final decision will be made through a voting process on [snapshot](https://vote.razor.network/).
+3. After submitting the PR, the proposed changes will be open for community discussion and review on [Github discussion](https://github.com/razor-network/governance/discussions). Community members can provide feedback and votes on the proposal. The final decision will be made through a voting process on [snapshot](https://vote.razor.network/).
 
 4. The proposal on Snapshot will have a designated deadline by which the required number of votes must be obtained. If the proposal receives the necessary votes within the set deadline, the project's admin will proceed to add the new datasource to the contract and merge the PR into the main repository.
 
