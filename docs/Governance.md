@@ -2,7 +2,7 @@
 
 Governance aims to enable the oracle network to do subjective decision-making based on acceptions and rejections of the proposals. The proposals will be mostly around
 
-1. Acception or Rejection of Data sources collections.
+1. Acceptance or Rejection of Data sources collections.
 2. Change in the parameters of the Validation layer.
 
 It is quite important to whitelist or backlist the data sources to prevent any misinformation and DoS attacks.
