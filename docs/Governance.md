@@ -7,7 +7,7 @@ Governance aims to enable the oracle network to do subjective decision-making ba
 
 It is quite important to whitelist or backlist the data sources to prevent any misinformation and DoS attacks.
 
-The Razor Network governance portal can be accessed [here](https://vote.razor.network/). You need to hold $RAZOR tokens on Ethereum/Polygon Mainnet or $sRZR (staked $RAZOR tokens) on Razor SKALE Chain to be able to vote.
+The Razor Network governance portal can be accessed [here](https://vote.razor.network/). You need to hold $RAZOR tokens on Ethereum/Polygon Mainnet or $sRZR (staked $RAZOR tokens) on Razor SKALE Chain to be able to vote. As a delegator on the Razor Network, it's essential to note that you are responsible for casting your governance votes. Currently, stakers to whom you've delegated cannot vote on your behalf.
 
 ## Add datasource through proposal
 
