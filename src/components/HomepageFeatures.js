@@ -28,7 +28,7 @@ const FeatureList = [
         rewards.
       </>
     ),
-    linkURL: "/docs/razor-go/installation",
+    linkURL: "/docs/installation",
   },
 ];
 
