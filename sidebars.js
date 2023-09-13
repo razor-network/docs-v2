@@ -48,9 +48,40 @@ const sidebars = {
         items: ["testnet/intro", "testnet/deployment-details"],
       }],
     },
+    {
+        type: "category",
+        label: "Consume DataFeeds",
+        items: [
+            {
+                type: "doc",
+                label: "Introduction",
+                id: "consume-data-feeds/introduction",
+              },
+              {
+                type: "doc",
+                label: "Deployment details",
+                id: "consume-data-feeds/deployment-details",
+              },
+              {
+                type: "doc",
+                label: "Transparent Forwarder",
+                id: "consume-data-feeds/transparent-forwarder",
+              },
+        ],
+      },
     "Governance",
     "PenaltiesAndRewards",
     "FAQ",
+    {
+        type: "doc",
+        label: "Token Bridge",
+        id: "token-bridge/intro",
+      },
+      {
+        type: "doc",
+        label: "Whitepaper",
+        id: "whitepaper/intro",
+      },
     {
         type: "category",
         label: "Oracle Node",
@@ -237,23 +268,23 @@ const sidebars = {
 //       id: "testnet/deployment-details",
 //     },
 //   ],
-  consumeDataFeeds: [
-    {
-      type: "doc",
-      label: "Introduction",
-      id: "consume-data-feeds/introduction",
-    },
-    {
-      type: "doc",
-      label: "Deployment details",
-      id: "consume-data-feeds/deployment-details",
-    },
-    {
-      type: "doc",
-      label: "Transparent Forwarder",
-      id: "consume-data-feeds/transparent-forwarder",
-    },
-  ],
+//   consumeDataFeeds: [
+//     {
+//       type: "doc",
+//       label: "Introduction",
+//       id: "consume-data-feeds/introduction",
+//     },
+//     {
+//       type: "doc",
+//       label: "Deployment details",
+//       id: "consume-data-feeds/deployment-details",
+//     },
+//     {
+//       type: "doc",
+//       label: "Transparent Forwarder",
+//       id: "consume-data-feeds/transparent-forwarder",
+//     },
+//   ],
 
   // But you can create a sidebar manually
   /*

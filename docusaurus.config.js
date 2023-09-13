@@ -51,22 +51,22 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "doc",
-            docId: "what-is-an-oracle",
-            position: "left",
-            label: "Core Concepts",
-          },
-          {
-            to: "/docs/whitepaper/intro",
-            label: "Whitepaper",
-            position: "left",
-          },
-          {
-            to: "/docs/token-bridge/intro",
-            label: "Token Bridge",
-            position: "left",
-          },
+        //   {
+        //     type: "doc",
+        //     docId: "what-is-an-oracle",
+        //     position: "left",
+        //     label: "Core Concepts",
+        //   },
+        //   {
+        //     to: "/docs/whitepaper/intro",
+        //     label: "Whitepaper",
+        //     position: "left",
+        //   },
+        //   {
+        //     to: "/docs/token-bridge/intro",
+        //     label: "Token Bridge",
+        //     position: "left",
+        //   },
         //   {
         //     to: "/docs/mainnet/intro",
         //     label: "Mainnet",
@@ -77,11 +77,11 @@ const config = {
         //     label: "Testnet",
         //     position: "left",
         //   },
-          {
-            to: "/docs/consume-data-feeds/introduction",
-            label: "Consume Data Feeds",
-            position: "left",
-          },
+        //   {
+        //     to: "/docs/consume-data-feeds/introduction",
+        //     label: "Consume Data Feeds",
+        //     position: "left",
+        //   },
           {
             href: "https://github.com/razor-network/docs-v2",
             label: "GitHub",
