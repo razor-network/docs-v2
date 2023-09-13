@@ -224,6 +224,11 @@ const sidebars = {
       },],
     },
     "Governance",
+    {
+        type: "doc",
+        label: "Verify Validator",
+        id: "contribute-validators",
+      },
     "token-bridge/intro",
     "PenaltiesAndRewards",
     "whitepaper/intro",
