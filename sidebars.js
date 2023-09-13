@@ -17,10 +17,9 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: "doc",
-      label: "What is an Oracle?",
-      id: "what-is-an-oracle",
+      label: "Introduction",
+      id: "explainer",
     },
-    "explainer",
     "getting-started",
     {
       type: "category",
@@ -32,57 +31,7 @@ const sidebars = {
         label: "Actions",
         items: ["delegate", "unstake", "initiate-withdraw","withdraw", "reset-lock"],
       },
-      "jobs-and-collections",
-    {
-      type: "category",
-      label: "Contracts",
-      items: ["Contracts/intro", "Contracts/p2-ACL", 
       {
-        type: "category",
-        label: "Mainnet",
-        items: ["mainnet/intro", "mainnet/deployment-details"],
-      },
-      {
-        type: "category",
-        label: "Testnet",
-        items: ["testnet/intro", "testnet/deployment-details"],
-      }],
-    },
-    {
-        type: "category",
-        label: "Consume DataFeeds",
-        items: [
-            {
-                type: "doc",
-                label: "Introduction",
-                id: "consume-data-feeds/introduction",
-              },
-              {
-                type: "doc",
-                label: "Deployment details",
-                id: "consume-data-feeds/deployment-details",
-              },
-              {
-                type: "doc",
-                label: "Transparent Forwarder",
-                id: "consume-data-feeds/transparent-forwarder",
-              },
-        ],
-      },
-    "Governance",
-    "PenaltiesAndRewards",
-    "FAQ",
-    {
-        type: "doc",
-        label: "Token Bridge",
-        id: "token-bridge/intro",
-      },
-      {
-        type: "doc",
-        label: "Whitepaper",
-        id: "whitepaper/intro",
-      },
-    {
         type: "category",
         label: "Oracle Node",
         items: [
@@ -232,7 +181,62 @@ const sidebars = {
                 id: "dev-environment",
               }
         ]
-    }
+    },
+      {
+        type: "category",
+        label: "Consume DataFeeds",
+        items: [
+            {
+                type: "doc",
+                label: "Introduction",
+                id: "consume-data-feeds/introduction",
+              },
+              {
+                type: "doc",
+                label: "Deployment details",
+                id: "consume-data-feeds/deployment-details",
+              },
+              {
+                type: "doc",
+                label: "Transparent Forwarder",
+                id: "consume-data-feeds/transparent-forwarder",
+              },
+              {
+                type: "doc",
+                label: "Jobs and Collections",
+                id: "jobs-and-collections",
+              }
+        ],
+      },
+    {
+      type: "category",
+      label: "Contracts",
+      items: ["Contracts/intro", "Contracts/p2-ACL", 
+      {
+        type: "category",
+        label: "Mainnet",
+        items: ["mainnet/intro", "mainnet/deployment-details"],
+      },
+      {
+        type: "category",
+        label: "Testnet",
+        items: ["testnet/intro", "testnet/deployment-details"],
+      }],
+    },
+    "PenaltiesAndRewards",
+    "Governance",
+    {
+        type: "doc",
+        label: "Token Bridge",
+        id: "token-bridge/intro",
+      },
+      {
+        type: "doc",
+        label: "Whitepaper",
+        id: "whitepaper/intro",
+      },
+    //   "jobs-and-collections",
+    "FAQ",
   ],
 //   mainnetSidebar: [
 //     {

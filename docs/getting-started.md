@@ -8,7 +8,7 @@ Razor network is a proof of stake network. There are two ways in which anyone ca
 ## 1. Staker
 
 - To participate in network, staker needs to stake $RAZOR tokens.
-- After staking, staker can start validating transactions by running [Razor Node](./razor-go/installation.md)
+- After staking, staker can start validating transactions by running [Oracle Node](./razor-go/installation.md)
 - Block reward will be awarded to staker on successful confirmation of block.
 - Detailed guide regarding staking can be found [here](./stake/mainnet.md).
 

@@ -11,7 +11,7 @@ const FeatureList = [
     title: "Getting started",
     Svg: <FaRocket size={40} />,
     description: <>Learn how you can get started with Razor Network.</>,
-    linkURL: "/docs/what-is-an-oracle",
+    linkURL: "/docs/explainer",
   },
   {
     title: "Whitepaper",
@@ -20,7 +20,7 @@ const FeatureList = [
     linkURL: "/docs/whitepaper/intro",
   },
   {
-    title: "Running Razor Node",
+    title: "Running Oracle Node",
     Svg: <MdLaptopMac size={40} />,
     description: (
       <>
