@@ -63,25 +63,20 @@ const config = {
             position: "left",
           },
           {
-            to: "/docs/razor-go/installation",
-            label: "Razor Go",
-            position: "left",
-          },
-          {
             to: "/docs/token-bridge/intro",
             label: "Token Bridge",
             position: "left",
           },
-          {
-            to: "/docs/mainnet/intro",
-            label: "Mainnet",
-            position: "left",
-          },
-          {
-            to: "/docs/testnet/intro",
-            label: "Testnet",
-            position: "left",
-          },
+        //   {
+        //     to: "/docs/mainnet/intro",
+        //     label: "Mainnet",
+        //     position: "left",
+        //   },
+        //   {
+        //     to: "/docs/testnet/intro",
+        //     label: "Testnet",
+        //     position: "left",
+        //   },
           {
             to: "/docs/consume-data-feeds/introduction",
             label: "Consume Data Feeds",
@@ -151,7 +146,7 @@ const config = {
                 to: "https://razorscan.io/",
               },
               {
-                label: "Razor Go",
+                label: "Oracle Node",
                 to: "https://github.com/razor-network/oracle-node",
               },
               {
