@@ -62,15 +62,15 @@ const config = {
             from: '/docs/testnet/intro',
           },
       ],
-    //   createRedirects(existingPath) {
-    //     if (existingPath.includes('/community')) {
-    //       // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
-    //       return [
-    //         existingPath.replace('/community', '/docs/team'),
-    //         existingPath.replace('/community', '/docs/support'),
-    //       ];
-    //     }
-    //   },
+      createRedirects(existingPath) {
+        if (existingPath.includes('/docs/razor-go')) {
+          // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+          return [
+            existingPath.replace('/docs', '/docs/razor-go'),
+            existingPath.replace('/docs', '/docs/razor-go'),
+          ];
+        }
+      },
     },
   ],],
 
