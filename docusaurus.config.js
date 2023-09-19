@@ -39,7 +39,40 @@ const config = {
     ],
   ],
 
-  plugins: [require.resolve("docusaurus-lunr-search")],
+  plugins: [require.resolve("docusaurus-lunr-search"),
+  [
+    require.resolve("@docusaurus/plugin-client-redirects"),
+    {
+      redirects: [
+        // /docs/oldDoc -> /docs/newDoc
+        {
+            to: '/docs/mainnet/deployment-details',
+            from: '/docs/mainnet/getting-started',
+        },
+        {
+            to: '/docs/testnet/deployment-details',
+            from: '/docs/testnet/getting-started',
+        },
+        {
+          to: '/docs/mainnet/deployment-details',
+          from: '/docs/mainnet/intro',
+        },
+        {
+            to: '/docs/testnet/deployment-details',
+            from: '/docs/testnet/intro',
+          },
+      ],
+    //   createRedirects(existingPath) {
+    //     if (existingPath.includes('/community')) {
+    //       // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
+    //       return [
+    //         existingPath.replace('/community', '/docs/team'),
+    //         existingPath.replace('/community', '/docs/support'),
+    //       ];
+    //     }
+    //   },
+    },
+  ],],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
