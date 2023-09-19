@@ -60,10 +60,11 @@ const config = {
         {
             to: '/docs/testnet/deployment-details',
             from: '/docs/testnet/intro',
-          },
+        },
+        
       ],
       createRedirects(existingPath) {
-        if (existingPath.includes('/docs/razor-go')) {
+        if (existingPath.includes('/docs/')) {
           // Redirect from /docs/team/X to /community/X and /docs/support/X to /community/X
           return [
             existingPath.replace('/docs', '/docs/razor-go'),
