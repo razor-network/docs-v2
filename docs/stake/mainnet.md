@@ -30,7 +30,7 @@ Now you are all set! Let's download the client and start staking!
 
 ## Using Docker {#using-docker}
 
-It is recommended to run a **Razor Node** using **Docker**. This is because you don't need a complete development environment to run a node. Since code is updated and deployed frequently from our github repository, we keep the Razor Node docker image updated.
+It is recommended to run a **Oracle Node** using **Docker**. This is because you don't need a complete development environment to run a node. Since code is updated and deployed frequently from our github repository, we keep the Oracle Node docker image updated.
 
 ## Hardware Requirements {#hardware-requirements}
 

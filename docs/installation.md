@@ -1,5 +1,5 @@
 ---
-title: Razor Go installation
+title: Oracle Node installation
 ---
 
 ### Linux quick start
