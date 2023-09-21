@@ -25,6 +25,16 @@ The Razor Network governance portal can be accessed [here](https://vote.razor.ne
 
 All the available datasources can be found [here](https://razorscan.io/governance/datafeeds)
 
+## Update governance parameters through proposal
+
+1. Start by visiting the [governance-parameters](https://github.com/razor-network/governance-parameters) repository. From there, fork the repository to your own GitHub account.
+
+2. Navigate to the `mainnet/parameters.json` file in your forked repo. Update the necessary parameters according to the guidelines provided in [contributing.md](https://github.com/razor-network/governance-parameters/blob/main/CONTRIBUTING.md). Once you've made the changes, initiate a pull request (PR) to the main branch of the original repository.
+
+3. Upon creating the PR, the suggested changes to the parameters will be available for open discussion and review in the GitHub discussion forum. Ensure the community has an opportunity to voice their opinions. The final decision to update the parameters will be determined through a voting process on snapshot.
+
+4. If your proposal secures the necessary votes within the allocated deadline, an admin will adjust the parameters, and your PR will be merged into the main branch. On the other hand if the proposal fails to gather the required votes within the deadline, the PR will be closed without merging, and the parameters will remain unchanged.
+
 ## Governance Parameters {#governance-parameters}
 
 | Parameter                         | Description                                                                                                                                 | Default value     |
