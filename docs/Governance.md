@@ -19,7 +19,7 @@ The Razor Network governance portal can be accessed [here](https://vote.razor.ne
 
 3. After submitting the PR, the proposed changes will be open for community discussion and review on [Github discussion](https://github.com/razor-network/governance/discussions). Community members can provide feedback and votes on the proposal. The final decision will be made through a voting process on [snapshot](https://vote.razor.network/).
 
-4. The proposal on Snapshot will have a designated deadline by which the required number of votes must be obtained. If the proposal receives the necessary votes within the set deadline, the project's admin will proceed to add the new datasource to the contract and merge the PR into the main repository.
+4. The proposal on Snapshot will have a designated deadline by which the required number of votes must be obtained. If the proposal receives the necessary votes within the set deadline, new datasource will be added to the contract and the PR will be merged into the main repository.
 
 5. However, if the required votes are not achieved within the specified deadline, the PR will be closed, and the proposed changes will not be incorporated.
 
@@ -33,7 +33,7 @@ All the available datasources can be found [here](https://razorscan.io/governanc
 
 3. Upon creating the PR, the suggested changes to the parameters will be available for open discussion and review in the [GitHub discussion](https://github.com/razor-network/governance-parameters/discussions). Community members can provide feedback and votes on the proposal. The final decision to update the governance parameters will be determined through a voting process on [snapshot](https://vote.razor.network/).
 
-4. If your proposal secures the necessary votes within the allocated deadline, an admin will adjust the parameters, and your PR will be merged into the main branch. On the other hand if the proposal fails to gather the required votes within the deadline, the PR will be closed without merging, and the parameters will remain unchanged.
+4. If your proposal secures the necessary votes within the allocated deadline, parameters changed will be incorporated, and your PR will be merged into the main branch. On the other hand if the proposal fails to gather the required votes within the deadline, the PR will be closed without merging, and the parameters will remain unchanged.
 
 ## Governance Parameters {#governance-parameters}
 
