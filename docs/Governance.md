@@ -27,11 +27,11 @@ All the available datasources can be found [here](https://razorscan.io/governanc
 
 ## Update governance parameters through proposal
 
-1. Start by visiting the [governance-parameters](https://github.com/razor-network/governance-parameters) repository. From there, fork the repository to your own GitHub account.
+1. Start by visiting the [parameters](https://github.com/razor-network/parameters) repository. From there, fork the repository to your own GitHub account.
 
-2. Navigate to the `mainnet/parameters.json` file in your forked repo. Update the necessary parameters according to the guidelines provided in [contributing.md](https://github.com/razor-network/governance-parameters/blob/main/CONTRIBUTING.md). Once you've made the changes, initiate a pull request (PR) to the main branch of the original repository.
+2. Navigate to the `mainnet/parameters.json` file in your forked repo. Update the necessary parameters according to the guidelines provided in [contributing.md](https://github.com/razor-network/parameters/blob/main/CONTRIBUTING.md). Once you've made the changes, initiate a pull request (PR) to the main branch of the original repository.
 
-3. Upon creating the PR, the suggested changes to the parameters will be available for open discussion and review in the [GitHub discussion](https://github.com/razor-network/governance-parameters/discussions). Community members can provide feedback and votes on the proposal. The final decision to update the governance parameters will be determined through a voting process on [snapshot](https://vote.razor.network/).
+3. Upon creating the PR, the suggested changes to the parameters will be available for open discussion and review in the [GitHub discussion](https://github.com/razor-network/parameters/discussions). Community members can provide feedback and votes on the proposal. The final decision to update the governance parameters will be determined through a voting process on [snapshot](https://vote.razor.network/).
 
 4. If your proposal secures the necessary votes within the allocated deadline, parameters changed will be incorporated, and your PR will be merged into the main branch. On the other hand if the proposal fails to gather the required votes within the deadline, the PR will be closed without merging, and the parameters will remain unchanged.
 
