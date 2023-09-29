@@ -37,28 +37,135 @@ All the available datasources can be found [here](https://razorscan.io/governanc
 
 ## Governance Parameters {#governance-parameters}
 
-| Parameter                         | Description                                                                                                                                 |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| Withdraw Lock Period              | The number of epochs for which the RAZORs are locked after initiating withdraw                                                              |
-| Max Alt Blocks                    | Maximum number of best proposed blocks to be considered for dispute                                                                         |
-| Max Commission                    | Maximum commission stakers can charge from delegators on their profits                                                                      |
-| Penalty Not Reveal Num            | Percentage stake penalty to be given out for inactivity                                                                                     |
-| Grace Period                      | The number of epochs for which the staker wont be given inactivity penalties. Stakers inactive for more than grace period will be penalized |
-| Max Age                           | Maximum age a staker can have                                                                                                               |
-| Min Stake                         | Minimum amount of stake required to participate                                                                                             |
-| Block Reward                      | Reward given to staker whose block is confirmed                                                                                             |
-| Escape Hatch Enabled              | The default admin role can remove all the funds incase of emergency                                                                         |
-| MaxTolerance                      | Maximum percentage deviation allowed from medians for all collections                                                                       |
-| Epoch Limit For Update Commission | The number of epochs for which a staker cant change commission once set/change                                                              |
-| Delta Commission                  | Maximum commission change a staker can do                                                                                                   |
-| Unstake Lock Period               | The number of epochs for which the sRZRs are locked for calling `unstake`                                                                   |
-| Withdraw Initiation Period        | The number of epochs where staker/delegator needs to initiate withdraw                                                                      |
-| Reset Unstake Lock Penalty        | Percentage stake penalty from the locked amount for extending unstake lock incase withdrawInitiationPeriod was missed                       |
-| Min Safe Razor                    | Minimum amount of stake required to become a staker                                                                                         |
-| To Assign                         | Maximum number of collections that can be assigned to the staker                                                                            |
-| Buffer                            | Delay between states                                                                                                                        |
-| SlashNums.bounty                  | Percent bounty from staker's stake to be received by the bounty hunter                                                                      |
-| SlashNums.burn                    | Percent RAZOR burn from staker's stake                                                                                                      |
-| SlashNums.keep                    | Percent from staker's stake to be kept by staker                                                                                            |
+These are the governance parameters that govern our protocol. A thorough understanding of these parameters is essential when proposing any changes. _Updated governance parameters can be checked [here](https://razorscan.io/governance/values)._
 
-**Note** - _Updated governance parameters can be checked [here](https://razorscan.io/governance/values)._
+- [Withdraw Lock Period](#withdraw-lock-period)
+- [Max Alt Blocks](#max-alt-blocks)
+- [Max Commission](#max-commission)
+- [Penalty Not Reveal Num](#penalty-not-reveal-num)
+- [Penalty Age Not Reveal Num](#penalty-age-not-reveal-num)
+- [Grace Period](#grace-period)
+- [Max Age](#max-age)
+- [Min Stake](#min-stake)
+- [Block Reward](#block-reward)
+- [Escape Hatch Enabled](#escape-hatch-enabled)
+- [Max Tolerance](#max-tolerance)
+- [Epoch Limit For Update Commission](#epoch-limit-for-update-commission)
+- [Delta Commission](#delta-commission)
+- [Unstake Lock Period](#unstake-lock-period)
+- [Withdraw Initiation Period](#withdraw-initiation-period)
+- [Reset Unstake Lock Penalty](#reset-unstake-lock-penalty)
+- [Min Safe Razor](#min-safe-razor)
+- [To Assign](#to-assign)
+- [Buffer](#buffer)
+- [SlashNums](#slashnums)
+
+### Withdraw Lock Period
+
+The Withdraw Lock Period is the number of epochs for which the RAZORs are locked after initiating a withdraw request.
+
+### Max Alt Blocks
+
+Max Alt Blocks refers to the maximum number of best-proposed blocks that will be considered for dispute resolution.
+
+### Max Commission
+
+Max Commission represents the maximum commission that stakers can charge from delegators on the profits generated.
+
+### Penalty Not Reveal Num
+
+The Penalty Not Reveal Num denotes the percentage of the stake that will be penalized for inactivity. This penalty is applied for each epoch of inactivity.
+
+The penalty rate, represented by `penaltyNotRevealNum`, is calculated based on a predefined `BASE_DENOMINATOR` which is set to 10,000,000. The formula to determine the penalty percentage is:
+
+`Percentage = (penaltyNotRevealNum / BASE_DENOMINATOR) * 100`
+
+**Example**:
+
+If `penaltyNotRevealNum` is set to 100, the penalty rate can be calculated as:
+
+`Percentage = (100 / 10,000,000) * 100`
+
+This results in a penalty rate of 0.001%. Thus, a `penaltyNotRevealNum` value of 100 corresponds to a penalty rate of 0.001%.
+
+### Penalty Age Not Reveal Num
+
+The Penalty Age Not Reveal Num denotes the percentage of the staker's age that will be penalized for inactivity. This penalty is applied for each epoch of inactivity.
+
+The penalty age rate, represented by `penaltyAgeNotRevealNum`, is calculated based on a predefined `BASE_DENOMINATOR` which is set to 10,000,000. The formula to determine the penalty percentage is:
+
+`Percentage = (penaltyAgeNotRevealNum / BASE_DENOMINATOR) * 100`
+
+**Example**:
+
+If `penaltyAgeNotRevealNum` is set to 100000, the penalty rate can be calculated as:
+
+`Percentage = (100000 / 10,000,000) * 100`
+
+This results in a penalty age rate of 1%. Thus, a `penaltyAgeNotRevealNum` value of 100000 corresponds to a penalty rate of 1%.
+
+### Grace Period
+
+The Grace Period is the number of epochs for which a staker won't be subjected to inactivity penalties. If a staker remains inactive for more epochs than the specified grace period, they may face penalties.
+
+### Max Age
+
+Max Age sets the maximum age that a staker can have.
+
+### Min Stake
+
+Min Stake defines the minimum amount of RAZOR tokens are required for an individual or entity to participate in network. It serves as a threshold for entry into the network.
+
+### Block Reward
+
+Block Reward is the reward given to a staker whose proposed block is confirmed.
+
+### Escape Hatch Enabled
+
+Escape Hatch Enabled refers to a feature where the default admin role has the ability to remove all the funds in case of an emergency or critical situation.
+
+### Max Tolerance
+
+Max Tolerance specifies the maximum percentage deviation allowed from medians for all collections.
+
+### Epoch Limit For Update Commission
+
+The Epoch Limit For Update Commission is the number of epochs for which a staker cannot change their commission rate once it has been set or changed. It imposes a time restriction on commission rate adjustments.
+
+### Delta Commission
+
+Delta Commission represents the maximum allowable change in commission that a staker can make. It sets a limit on how much a staker can increase or decrease their commission rate in a single adjustment.
+
+### Unstake Lock Period
+
+Unstake Lock Period is the number of epochs for which the sRZRs are locked after initiating an unstake request. During this period, the locked tokens cannot be unstaked or withdrawn.
+
+### Withdraw Initiation Period
+
+The Withdraw Initiation Period specifies the number of epochs during which a staker or delegator needs to initiate a withdraw request. After this period, they may face penalties if they have not initiated the withdrawal.
+
+### Reset Unstake Lock Penalty
+
+Reset Unstake Lock Penalty represents the percentage stake penalty applied to the locked amount when extending the unstake lock period in case the Withdraw Initiation Period was missed.
+
+### Min Safe Razor
+
+Min Safe Razor sets the minimum amount of stake or tokens required for an individual to become a staker in the network.
+
+### To Assign
+
+To Assign determines the maximum number of collections that can be assigned to a staker.
+
+### Buffer
+
+Buffer is the time delay between state changes, measured in seconds.
+
+### SlashNums
+
+SlashNums is a parameter that encompasses three distinct entities:
+
+- **SlashNums.bounty:** Specifies the percentage of a bounty from a staker's stake that will be received by a bounty hunter.
+
+- **SlashNums.burn:** Represents the percentage of a staker's stake that is burned as a penalty.
+
+- **SlashNums.keep:** Indicates the percentage of a staker's stake that is retained by the staker themselves as a penalty for certain actions or violations. This parameter determines how much of the penalized stake is kept by the staker.
