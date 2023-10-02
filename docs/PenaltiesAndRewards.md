@@ -18,21 +18,21 @@ With Reputation and staker's stake, Influence of the Staker is calculated.
 
 ### Penalty for Wrong Block Proposed {#penalty-for-wrong-block-proposed}
 
-If a Staker tries to propose an invalid block, then any staker can dispute that block by calculating the correct values. We assume that each staker uses the same client and data without any modifications. Hence if there is any malicious activity done, staker's stake will be slashed. In case of slashing of the staker's stake, stake will be consumed based on governance params `SlashNums`. SlashNums has 3 component:
+If a Staker tries to propose an invalid block, then any staker can dispute that block by calculating the correct values. We assume that each staker uses the same client and data without any modifications. Hence if there is any malicious activity done, staker's stake will be slashed. In case of slashing of the staker's stake, stake will be consumed based on network params `SlashNums`. SlashNums has 3 component:
 
 1. `bounty` - percentage of staker's stage rewarded as bounty to disputer (Current: 1%)
 2. `burn` - percentage of RAZOR burnt from staker's stake (Current: 0%)
 3. `keep` - percentage of staker's stake to be kept in contract (Current: 4%)
 
-All governance parameters and it's current value can be found on [Razorscan](https://razorscan.io/governance/values).
+All network parameters and it's current value can be found on [Razorscan](https://razorscan.io/governance/values).
 
 ### Inactivity Penalty {#inactivity-penalty}
 
-If any staker, does not vote in epoch/s, then the staker will be penalised through the inactivity penalty mechanism. Inactivity penalty reduces stake and influence of the staker in the network. Stake penalty is directly proportional to staker's stake, inactive epochs and `penaltyNotRevealNum`. Similarly influence(age) penalty is directly proportional to staker influence(age), inactive epochs and `penaltyAgeNotRevealNum`, where `penaltyNotRevealNum` and `penaltyAgeNotRevealNum` are governance parameters.
+If any staker, does not vote in epoch/s, then the staker will be penalised through the inactivity penalty mechanism. Inactivity penalty reduces stake and influence of the staker in the network. Stake penalty is directly proportional to staker's stake, inactive epochs and `penaltyNotRevealNum`. Similarly influence(age) penalty is directly proportional to staker influence(age), inactive epochs and `penaltyAgeNotRevealNum`, where `penaltyNotRevealNum` and `penaltyAgeNotRevealNum` are network parameters.
 
 ### Unstake Penalty {#unstake-penalty}
 
-If the staker or delegator is not able to unstake and withdraw the funds in the window defined by the protocol then the delegator/staker will be penalised while resetting unstake lock. By default staker/delegator once they Unstake their funds, Initiate Withdraw needs to be called in the epoch window defined by the protocol, currently it is 150 epochs. Epoch window depends on `unstakeLockPeriod` and `withdrawInitiationPeriod` which are governance parameters, if the staker/delegator is not able to initiate withdraw in this epoch window, Reset Lock needs to be called to unlock the funds again during which **Unstake Penalty** will be applied to the locked funds. **Unstake Penalty** depends on `resetUnstakeLockPenalty` which is again a governance parameter. Once initiate withdraw is successfull, the staker/delegator can call Withdraw after `withdrawLockPeriod` (governance parameter) epoch. There are possible penalties only associated with the Initiate Withdraw phase, after that Withdraw can be called without facing any penalties.
+If the staker or delegator is not able to unstake and withdraw the funds in the window defined by the protocol then the delegator/staker will be penalised while resetting unstake lock. By default staker/delegator once they Unstake their funds, Initiate Withdraw needs to be called in the epoch window defined by the protocol, currently it is 150 epochs. Epoch window depends on `unstakeLockPeriod` and `withdrawInitiationPeriod` which are network parameters, if the staker/delegator is not able to initiate withdraw in this epoch window, Reset Lock needs to be called to unlock the funds again during which **Unstake Penalty** will be applied to the locked funds. **Unstake Penalty** depends on `resetUnstakeLockPenalty` which is again a network parameter. Once initiate withdraw is successfull, the staker/delegator can call Withdraw after `withdrawLockPeriod` (network parameter) epoch. There are possible penalties only associated with the Initiate Withdraw phase, after that Withdraw can be called without facing any penalties.
 
 Let's consider an example to understand how Unstake Penalty works?
 

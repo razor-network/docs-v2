@@ -25,7 +25,7 @@ The Razor Network governance portal can be accessed [here](https://vote.razor.ne
 
 All the available datasources can be found [here](https://razorscan.io/governance/datafeeds)
 
-## Update governance parameters through proposal
+## Update network parameters through proposal
 
 > **Note**: _Currently, only the parameters associated with inactivity penalties, specifically `Penalty Not Reveal Num` and `Penalty Age Not Reveal Num`, are eligible for updates through a proposal._
 
@@ -33,13 +33,13 @@ All the available datasources can be found [here](https://razorscan.io/governanc
 
 2. Navigate to the `mainnet/parameters.json` file in your forked repo. Update the necessary parameters according to the guidelines provided in [contributing.md](https://github.com/razor-network/parameters/blob/main/CONTRIBUTING.md). Once you've made the changes, initiate a pull request (PR) to the main branch of the original repository.
 
-3. Upon creating the PR, the suggested changes to the parameters will be available for open discussion and review in the [GitHub discussion](https://github.com/razor-network/parameters/discussions). Community members can provide feedback and votes on the proposal. The final decision to update the governance parameters will be determined through a voting process on [snapshot](https://vote.razor.network/).
+3. Upon creating the PR, the suggested changes to the parameters will be available for open discussion and review in the [GitHub discussion](https://github.com/razor-network/parameters/discussions). Community members can provide feedback and votes on the proposal. The final decision to update the network parameters will be determined through a voting process on [snapshot](https://vote.razor.network/).
 
 4. If your proposal secures the necessary votes within the allocated deadline, parameters changed will be incorporated, and your PR will be merged into the main branch. On the other hand if the proposal fails to gather the required votes within the deadline, the PR will be closed without merging, and the parameters will remain unchanged.
 
-## Governance Parameters {#governance-parameters}
+## Network Parameters {#network-parameters}
 
-These are the governance parameters that govern our protocol. A thorough understanding of these parameters is essential when proposing any changes. _Updated governance parameters can be checked [here](https://razorscan.io/governance/values)._
+These are the network parameters that govern our protocol. A thorough understanding of these parameters is essential when proposing any changes. _Updated network parameters can be checked [here](https://razorscan.io/governance/values)._
 
 - [Withdraw Lock Period](#withdraw-lock-period)
 - [Max Alt Blocks](#max-alt-blocks)
