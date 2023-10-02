@@ -27,6 +27,8 @@ All the available datasources can be found [here](https://razorscan.io/governanc
 
 ## Update governance parameters through proposal
 
+> **Note**: _Currently, only the parameters associated with inactivity penalties, specifically `Penalty Not Reveal Num` and `Penalty Age Not Reveal Num`, are eligible for updates through a proposal._
+
 1. Start by visiting the [parameters](https://github.com/razor-network/parameters) repository. From there, fork the repository to your own GitHub account.
 
 2. Navigate to the `mainnet/parameters.json` file in your forked repo. Update the necessary parameters according to the guidelines provided in [contributing.md](https://github.com/razor-network/parameters/blob/main/CONTRIBUTING.md). Once you've made the changes, initiate a pull request (PR) to the main branch of the original repository.
