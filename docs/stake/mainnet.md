@@ -234,6 +234,7 @@ To update the razor-go node version
     CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
     53ff3ce7c965   razornetwork/razor-go:v1.0.6   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
     ```
+7. Run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
 
 > **Note**: _If you are running vote command in tmux session_    
 >1. Check your razor-go session exists: `tmux ls`
@@ -242,8 +243,7 @@ To update the razor-go node version
 >4. To list your session: `tmux ls`
 >5. To attach Session back: `tmux attach-session -t razor-go`
 
-
-7. Start voting again 
+8. Start voting again 
     ```
     docker exec -it razor-go razor vote --address <account> --logFile <filename> --gasLimitOverride 50000000 
     ```
