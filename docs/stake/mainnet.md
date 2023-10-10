@@ -234,7 +234,7 @@ To update the razor-go node version
     CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
     53ff3ce7c965   razornetwork/razor-go:v1.0.6   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
     ```
-7. Run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
+7. If you want to update your config file, you can run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
 
 > **Note**: _If you are running vote command in tmux session_    
 >1. Check your razor-go session exists: `tmux ls`
