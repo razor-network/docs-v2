@@ -83,13 +83,13 @@ There are a set of parameters that are configurable. These include:
 - Maximum number of backups of log file: This is the maximum number of old log files to retain.
 - Maximum age of log file: This is the maximum number of days to retain old log files.
 
-**Note**: _Make sure you input your alternate provider value as a value to alternateProvider flag
-
 ```
-docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --alternateProvider [ALTERNATE_PROVIDER] --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
+docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 >**_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
+
+>**_NOTE:_**: _You can add an alternate provider by passing `--alternateProvider [ALTERNATE_PROVIDER]` in the above `setConfig` command which can act as the secondary RPC to your node._
 
 >**_NOTE:_**  You can automate all razor-go commands by providing password non-interactively. There are multiple ways to do that
 >1. Provide password via file, All the commands have an additional `--password` flag that you can provide with the file path from which the password must be picked.  To run a command with a password flag with the help of docker, the password file should present in `$HOME/.razor/` directory   
