@@ -36,6 +36,8 @@ interface ITransparentForwarder {
 
 contract DataFeed {
     ITransparentForwarder public transparentForwarder;
+    uint256 public latestResult;
+    int8 public latestPower;
 
     constructor() {
         transparentForwarder = ITransparentForwarder(
@@ -44,13 +46,15 @@ contract DataFeed {
     }
 
     /// @notice fetch collection result by name
-    /// @param _name bytes32 hash of the collection name
+    /// @param name bytes32 hash of the collection name
     /// @return result of the collection and its power
     /// @return power
     function getResult(bytes32 name) public payable returns (uint256, int8) {
         (uint256 result, int8 power) = transparentForwarder.getResult{
             value: msg.value
         }(name);
+        latestResult = result;
+        latestPower = power;
         return (result, power);
     }
 }
