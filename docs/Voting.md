@@ -8,9 +8,6 @@ To engage in Razor Network's Governance Snapshots, navigate to the official Razo
 
 ## Voting on the snapshot proposal
 
-
-<!-- > Note: If you hold $RAZOR tokens in your wallet and are not affiliated as either a staker or a delegator, kindly advance directly to [Step 2](#step-2). -->
-
 ### Steps
 
 1. For Stakers/Delegators: Add $sRAZOR to your wallet. Navigate to [razorscan.io](https://razorscan.io).
