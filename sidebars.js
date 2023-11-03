@@ -39,6 +39,7 @@ const sidebars = {
       items: ["Contracts/intro", "Contracts/p2-ACL"],
     },
     "Governance",
+    "Voting",
     "PenaltiesAndRewards",
     "FAQ",
   ],
