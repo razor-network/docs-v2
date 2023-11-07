@@ -224,6 +224,7 @@ const sidebars = {
       },],
     },
     "Governance",
+    "Voting",
     {
         type: "doc",
         label: "Verify Validator",
