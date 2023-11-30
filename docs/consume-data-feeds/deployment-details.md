@@ -43,6 +43,7 @@ import TabItem from "@theme/TabItem";
 | Arbitrum Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://sepolia.arbiscan.io/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 | Mantle         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://explorer.testnet.mantle.xyz/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 | Linea Goerli         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://goerli.lineascan.build/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
+| Scroll Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://sepolia.scrollscan.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 
 
 </TabItem>
