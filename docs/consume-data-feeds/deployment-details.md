@@ -36,7 +36,7 @@ import TabItem from "@theme/TabItem";
 | opBNB       | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://testnet.opbnbscan.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 | Sepolia         | [0x328BAc5C2be4961252041EC589A22e55Ec132010](https://sepolia.etherscan.io/address/0x328BAc5C2be4961252041EC589A22e55Ec132010)                                         |
 | BNB       | [0xe4371caE0ab6Fb4875BB1002c0230CB0a1423616](https://testnet.bscscan.com/address/0xe4371caE0ab6Fb4875BB1002c0230CB0a1423616)                                         |
-| Polygon zkEVM         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84bn](https://testnet-zkevm.polygonscan.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
+| zkSync Era Goerli         | [0x47c475a69FF1F0AfBe74d6399D57Ef43E4245185](https://goerli.explorer.zksync.io/address/0x47c475a69FF1F0AfBe74d6399D57Ef43E4245185)                                         |
 | Meter         | [0xb08183402f96645b72Cf2d2969DA01bB25D590CD](https://scan-warringstakes.meter.io/address/0xb08183402f96645b72cf2d2969da01bb25d590cd)                                         |
 | OP Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://optimism-sepolia.blockscout.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 | Base Sepolia         | [0x03bD73afB6d3C5B86578010C099E5474aF1aABeF](https://base-sepolia.blockscout.com/address/0x03bD73afB6d3C5B86578010C099E5474aF1aABeF)                                         |
