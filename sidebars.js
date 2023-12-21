@@ -193,13 +193,13 @@ const sidebars = {
               },
               {
                 type: "doc",
-                label: "Merkle API",
-                id: "consume-data-feeds/api",
+                label: "Jobs and Collections",
+                id: "jobs-and-collections",
               },
               {
                 type: "doc",
-                label: "Deployment details",
-                id: "consume-data-feeds/deployment-details",
+                label: "Merkle API",
+                id: "consume-data-feeds/api",
               },
               {
                 type: "doc",
@@ -208,8 +208,8 @@ const sidebars = {
               },
               {
                 type: "doc",
-                label: "Jobs and Collections",
-                id: "jobs-and-collections",
+                label: "Deployment details",
+                id: "consume-data-feeds/deployment-details",
               }
         ],
       },
