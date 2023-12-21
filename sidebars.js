@@ -193,6 +193,11 @@ const sidebars = {
               },
               {
                 type: "doc",
+                label: "Merkle API",
+                id: "consume-data-feeds/api",
+              },
+              {
+                type: "doc",
                 label: "Deployment details",
                 id: "consume-data-feeds/deployment-details",
               },
