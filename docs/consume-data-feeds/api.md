@@ -1,6 +1,6 @@
 # Datafeed Merkle API
 
-The Datafeed Merkle API is a specialized service designed to facilitate the retrieval of call data essential for updating collection results on a destination blockchain. It offers endpoints to access information about active collections and their related calldata, ensuring seamless integration and data synchronization across blockchain networks. The call data provided should be used to call the `updateResult(bytes calldata)` function described here. 
+The Datafeed Merkle API is a specialized service designed to facilitate the retrieval of call data essential for updating collection results on a destination blockchain. It offers endpoints to access information about active collections and their related calldata, ensuring seamless integration and data synchronization across blockchain networks. The call data provided should be used to call the `fetchResult(bytes calldata _data)` function described here. 
 
 ## Endpoints
 
@@ -34,7 +34,7 @@ The Datafeed Merkle API is a specialized service designed to facilitate the retr
 ### 3. Calldata by Collection ID
 - **Endpoint:** `/col/:id`
 - **Method:** GET
-- **Description:** This endpoint fetches calldata for a collection based on its unique `id`. This `id` is typically a numerical identifier assigned to each collection within the protocol. This collection calldata should be passed into the `updateResult(bytes calldata)` function on the destination chains `ResultManager` contract which verifies and updates the collections latest result. This operation makes the price available for on-chain use.
+- **Description:** This endpoint fetches calldata for a collection based on its unique `id`. This `id` is typically a numerical identifier assigned to each collection within the protocol. This collection calldata should be passed into the `fetchResult(bytes calldata)` function on the destination chains `Transparent Forwarder` contract which verifies and updates the collections latest result. This operation makes the price available for on-chain use.
 - **Curl Example:**
   ```bash
   curl -X GET 'http://34.126.135.243/col/{id}'
