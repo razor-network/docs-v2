@@ -10,7 +10,7 @@ The Datafeed Merkle API is a specialized service designed to facilitate the retr
 - **Description:** This endpoint provides a list of active collections, detailing both their unique identifiers (`ids`) and their corresponding cryptographic name hashes (`nameHash`). It is intended to give an overview of all collections that are curently active in the protocol. The `lastUpdatedEpoch` tells us the last epoch the collections were updated on. For the current epoch check [Razorscan](https://razorscan.io/). 
 - **Curl Example:**
   ```bash
-  curl -X GET 'http://34.126.135.243/collections'
+  curl -X GET 'http://34.87.152.158/collections'
 
 
 - **Example Response**
@@ -24,7 +24,7 @@ The Datafeed Merkle API is a specialized service designed to facilitate the retr
 - **Description:** This endpoint retrieves the calldata associated with a specific collection, identified by its `nameHash`. The `nameHash` is a unique cryptographic identifier for each collection, ensuring that the data retrieved is specific and relevant to the requested collection. This endpoint is crucial for applications that need to update or verify collection data on a blockchain.
 - **Curl Example:**
   ```bash
-  curl -X GET 'http://34.126.135.243/collection/{nameHash}'
+  curl -X GET 'http://34.87.152.158/collection/{nameHash}'
 
 - **Example Response**
     ```bash
@@ -37,7 +37,7 @@ The Datafeed Merkle API is a specialized service designed to facilitate the retr
 - **Description:** This endpoint fetches calldata for a collection based on its unique `id`. This `id` is typically a numerical identifier assigned to each collection within the protocol. This collection calldata should be passed into the `fetchResult(bytes calldata)` function on the destination chains `Transparent Forwarder` contract which verifies and updates the collections latest result. This operation makes the price available for on-chain use.
 - **Curl Example:**
   ```bash
-  curl -X GET 'http://34.126.135.243/col/{id}'
+  curl -X GET 'http://34.87.152.158/col/{id}'
 
 - **Example Response**
     ```bash
