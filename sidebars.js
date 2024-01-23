@@ -215,6 +215,11 @@ const sidebars = {
                 type: "doc",
                 label: "Supported Job Return Types",
                 id: "job-return-types",
+              },
+              {
+                type: "doc",
+                label: "Authenticated Jobs",
+                id: "authenticated-jobs",
               }
         ],
       },
