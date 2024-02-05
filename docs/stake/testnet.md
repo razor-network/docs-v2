@@ -45,9 +45,9 @@ It is recommended to run a **Oracle Node** using **Docker**. This is because you
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Oracle-Node(github): You can download the Razor-go:1.0.7-alpha from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.7-alpha).
+Oracle-Node(github): You can check the Razor-go:dev at [develop branch](https://github.com/razor-network/oracle-node/tree/develop).
 
-You can download the docker image of Razor-go:1.0.7-alpha from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.7-alpha/images/sha256-ad9560ae3b8dd657d8bd6a1db03bdfcfc4473bd9607f2b4e35066bbb52a68175?context=explore).
+You can download the docker image of Razor-go:dev - `ab83868` from [here]https://hub.docker.com/layers/razornetwork/razor-go/ab83868/images/sha256-c3d9efc9cbb56fb30544d4eba7c264c7fdb176f3cb8b012e4873883c18394601?context=explore.
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -62,7 +62,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.7-alpha
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:ab83868
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).

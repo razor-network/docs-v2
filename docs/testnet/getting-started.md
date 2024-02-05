@@ -12,9 +12,9 @@ Use this guide [here](../delegate.md) for more information about delegating your
 
 ## Technical Links
 
-The docker image version is [v1.0.7-alpha](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.7-alpha/images/sha256-ad9560ae3b8dd657d8bd6a1db03bdfcfc4473bd9607f2b4e35066bbb52a68175?context=explore).
+The docker image version is [ab83868](https://hub.docker.com/layers/razornetwork/razor-go/ab83868/images/sha256-c3d9efc9cbb56fb30544d4eba7c264c7fdb176f3cb8b012e4873883c18394601?context=explore).
 
-The latest `oracle-node` release on GitHub is [v1.0.7-alpha](https://github.com/razor-network/oracle-node/releases/tag/v1.0.7-alpha).
+The latest `oracle-node` developmet on GitHub can be found at [develop branch](https://github.com/razor-network/oracle-node/tree/develop).
 
 The latest contracts npm package is [1.0.2](https://www.npmjs.com/package/@razor-network/contracts/v/1.0.2)
 
