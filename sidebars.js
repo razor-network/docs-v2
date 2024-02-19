@@ -198,16 +198,6 @@ const sidebars = {
               },
               {
                 type: "doc",
-                label: "Deployment details",
-                id: "consume-data-feeds/deployment-details",
-              },
-              {
-                type: "doc",
-                label: "Transparent Forwarder",
-                id: "consume-data-feeds/transparent-forwarder",
-              },
-              {
-                type: "doc",
                 label: "Jobs and Collections",
                 id: "jobs-and-collections",
               },
@@ -220,6 +210,21 @@ const sidebars = {
                 type: "doc",
                 label: "Authenticated Jobs",
                 id: "authenticated-jobs",
+              },
+              {
+                type: "doc",
+                label: "Merkle API",
+                id: "consume-data-feeds/api",
+              },
+              {
+                type: "doc",
+                label: "Transparent Forwarder",
+                id: "consume-data-feeds/transparent-forwarder",
+              },
+              {
+                type: "doc",
+                label: "Deployment details",
+                id: "consume-data-feeds/deployment-details",
               }
         ],
       },
