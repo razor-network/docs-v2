@@ -42,9 +42,9 @@ It is recommended to run a **Oracle Node** using **Docker**. This is because you
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
 
-Oracle-Node(github): You can download the Oracle-Node:1.0.6 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.0.6).
+Oracle-Node(github): You can download the Oracle-Node:1.1.0 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.1.0).
 
-You can download the docker image of Razor-go:v1.0.6 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.0.6/images/sha256-ce23ba6a19780ee7bf6e67fbf161b9ad89fae1c89b701054c5fb81bbff439c4e?context=explore).
+You can download the docker image of Razor-go:v1.1.0 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v1.1.0/images/sha256-c6933932113e8e7275780e8c79b712e1c0d011174ab1658391518660a5f73a17?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -59,7 +59,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.6
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.1.0
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
@@ -83,13 +83,13 @@ There are a set of parameters that are configurable. These include:
 - Maximum number of backups of log file: This is the maximum number of old log files to retain.
 - Maximum age of log file: This is the maximum number of days to retain old log files.
 
-**Note**: _Make sure you input your alternate provider value as a value to alternateProvider flag
-
 ```
-docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --alternateProvider [ALTERNATE_PROVIDER] --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
+docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 >**_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
+
+>**_NOTE:_**: _You can add an alternate provider by passing `--alternateProvider [ALTERNATE_PROVIDER]` in the above `setConfig` command which can act as the secondary RPC to your node._
 
 >**_NOTE:_**  You can automate all razor-go commands by providing password non-interactively. There are multiple ways to do that
 >1. Provide password via file, All the commands have an additional `--password` flag that you can provide with the file path from which the password must be picked.  To run a command with a password flag with the help of docker, the password file should present in `$HOME/.razor/` directory   
@@ -214,7 +214,7 @@ To update the razor-go node version
 2. Check your container is running via `docker ps`, you should get an output like:
     ```
     CONTAINER ID   IMAGE                                  COMMAND     CREATED         STATUS         PORTS     NAMES
-    5f0b7d99a71b   razornetwork/razor-go:v1.0.4           "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
+    5f0b7d99a71b   razornetwork/razor-go:v1.0.6           "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
     ```
 3. Stop the existing container  
     `docker stop razor-go`
@@ -225,14 +225,14 @@ To update the razor-go node version
     docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
     ```
 
-    example: If latest version is `v1.0.6` then the command would be:
+    example: If latest version is `v1.1.0` then the command would be:
     ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.0.6
+    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.1.0
     ```
 6. Check your container is running `docker ps`, you should get an output like: 
     ```
     CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
-    53ff3ce7c965   razornetwork/razor-go:v1.0.6   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+    53ff3ce7c965   razornetwork/razor-go:v1.1.0   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
     ```
 7. If you want to update your config file, you can run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
 
