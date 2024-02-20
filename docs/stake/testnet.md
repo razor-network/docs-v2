@@ -8,7 +8,7 @@ You will need some Skale Testnet Tokens to pay for transaction fees.
 You can get testnet ETH tokens from here:
 https://faucet.skale.network/
 
-- Skale Endpoint: https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar
+- Skale Endpoint: https://testnet.skalenodes.com/v1/juicy-low-small-testnet
 - Account: address which should receive the testnet tokens.
 
 In order to get started, you will also need some RAZORs on Skale Testnet chain. Drop a message in our [Discord server](https://discord.com/invite/Js4pBny2rw) for tokens.
@@ -19,13 +19,13 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain. 
 2. In metamask, click on top right account icon > Settings > Add Network.
 3. Fill in the following details:
 
-   | Particulars        | Value                                                                   |
-   | ------------------ | ----------------------------------------------------------------------- |
-   | Network Name       | staging-aware-chief-gianfar                                             |
-   | New RPC URL        | https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar        |
-   | Chain ID           | 1517929550                                                              |
-   | Currency Symbol    | ETH                                                                     |
-   | Block Explorer URL | https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/ |
+   | Particulars        | Value                                                            |
+   | ------------------ | ---------------------------------------------------------------- |
+   | Network Name       | juicy-low-small-testnet                                          |
+   | New RPC URL        | https://testnet.skalenodes.com/v1/juicy-low-small-testnet        |
+   | Chain ID           | 1444673419                                                       |
+   | Currency Symbol    | sFUEL                                                            |
+   | Block Explorer URL | https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/ |
 
    > **Note**: _You can also add network from https://staging.razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
@@ -87,7 +87,7 @@ There are a set of parameters that are configurable. These include:
 - Maximum age of log file: This is the maximum number of days to retain old log files.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
+docker exec -it razor-go razor setConfig --provider https://testnet.skalenodes.com/v1/juicy-low-small-testnet --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 > **Note**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
