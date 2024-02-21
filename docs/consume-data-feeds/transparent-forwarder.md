@@ -71,10 +71,9 @@ interface ITransparentForwarder {
     /**
      * @dev validates the result based on the provided data and returns the validity
      * @param _data bytes data required to validate the result
-     * @return validity of the result
+     * @return validity of the result and the result of the collection (value, power, timestamp)
      */
-    function validateResult(bytes calldata _data)
-        external view returns (bool);
+    function validateResult(bytes calldata _data) external returns (bool, uint256, int8, uint256);
 }
 
 contract Client {
@@ -113,7 +112,7 @@ contract Client {
 
     function validateResult(
         bytes calldata data
-    ) public view returns (bool) {
+    ) public view returns (bool, uint256, int8, uint256) {
         return
             transparentForwarder.validateResult(
                 data
