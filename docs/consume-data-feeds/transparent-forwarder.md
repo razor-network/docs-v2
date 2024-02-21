@@ -19,10 +19,13 @@ To consume the Razor Network price feeds, your contract should reference `ITrans
 
 
 
-- **`validateResult(bytes calldata _data)`**: This function requires `calldata` from the [Merkle API](./api.md) for a particular collection. The function only checks the validity of the calldata provided and returns a `boolean`, it does not update or return the collections result.
+- **`validateResult(bytes calldata _data)`**: This function requires `calldata` from the [Merkle API](./api.md) for a particular collection. The function checks the validity of the calldata provided and returns a boolean and the result of the collection from the calldata present.
 
     The function returns the following:
     - **valid** (bool): Indicates the validity of the calldata for a collection provided.
+    - **result** (uint256): Indicates the price of the collection.
+    - **power** (int8): Represents the power of the collection, which is utilized to determine the necessary decimal shifts on the result.
+    - **lastUpdatedTimestamp** (uint256): Marks the timestamp when the price feed was last updated.
 
 
 
@@ -43,8 +46,10 @@ The price of the collection can be calculated by the following formula: `result 
 Code snippet to integrate Datafeed with a `ITransparentForwarder` interface:
 
 ```solidity
+
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
+
 
 interface ITransparentForwarder {
     /**
@@ -52,35 +57,33 @@ interface ITransparentForwarder {
      * @dev The data will be updated only if the result is valid and is newer than the previous result.
      * Updation will be done by the clients, though once the result is updated, it wont be updated till the latest results
      * are sent again. Regardless of the updation, the result will be returned.
-     * @param _data bytes32 hash of the collection name
+     * @param _data bytes data required to update the result
      * @return result of the collection, its power and timestamp
      */
-    function fetchResult(
-        bytes calldata _data
-    ) external payable returns (uint256, int8, uint256);
+    function updateAndGetResult(bytes calldata _data) external payable returns (uint256, int8, uint256);
 
     /**
      * @dev using the hash of collection name, clients can query the result of that collection
      * @param _name bytes32 hash of the collection name
      * @return result of the collection and its power
      */
-    function getResult(
-        bytes32 _name
-    ) external view returns (uint256, int8, uint256);
+    function getResult(bytes32 _name) external returns (uint256, int8, uint256);
 
     /**
      * @dev validates the result based on the provided data and returns the validity
      * @param _data bytes data required to validate the result
-     * @return validity of the result and the result of the collection (value, power, timestamp)
+     * @return validity of the result
      */
     function validateResult(bytes calldata _data) external returns (bool, uint256, int8, uint256);
 }
+
 
 contract Client {
     ITransparentForwarder public transparentForwarder;
     uint256 public lastResult;
     int8 public lastPower;
     uint256 public lastTimestamp;
+    bool public isResultValid;
 
     constructor(address _transparentForwarder) {
         transparentForwarder = ITransparentForwarder(_transparentForwarder);
@@ -90,11 +93,8 @@ contract Client {
         transparentForwarder = ITransparentForwarder(_transparentForwarder);
     }
 
-    function updateResult(
-        bytes calldata data
-    ) public payable returns (uint256, int8, uint256) {
-        (uint256 result, int8 power, uint256 timestamp) = transparentForwarder
-            .fetchResult{value: msg.value}(data);
+    function updateAndGetResult(bytes calldata data) public payable returns (uint256, int8, uint256) {
+        (uint256 result, int8 power, uint256 timestamp) = transparentForwarder.updateAndGetResult{value: msg.value}(data);
 
         lastResult = result;
         lastPower = power;
@@ -102,23 +102,22 @@ contract Client {
         return (result, power, timestamp);
     }
 
-    function getResult(
-        bytes32 name
-    ) public view returns (uint256, int8, uint256) {
-        (uint256 result, int8 power, uint256 timestamp) = transparentForwarder
-            .getResult(name);
+    function getResult(bytes32 name) public returns (uint256, int8, uint256) {
+        (uint256 result, int8 power, uint256 timestamp) = transparentForwarder.getResult(name);
+
+        lastResult = result;
+        lastPower = power;
+        lastTimestamp = timestamp;
         return (result, power, timestamp);
     }
 
-    function validateResult(
-        bytes calldata data
-    ) public view returns (bool, uint256, int8, uint256) {
-        return
-            transparentForwarder.validateResult(
-                data
-            );
+    function validateResult(bytes calldata data) public returns (bool) {
+        (isResultValid, , , ) = transparentForwarder.validateResult(data);
+
+        return isResultValid;
     }
 }
+
 ```
 
 **Note**: This example can be deployed on chains where the Transparent Forwarder contract is deployed. Details regarding deployed contracts and chains can be found [here](/docs/consume-data-feeds/deployment-details#supported-chains). 
