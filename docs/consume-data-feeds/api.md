@@ -1,6 +1,6 @@
 # Datafeed Merkle API
 
-The Datafeed Merkle API is a specialized service designed to facilitate the retrieval of call data essential for updating collection results on a destination blockchain. It offers endpoints to access information about active collections and their related calldata, ensuring seamless integration and data synchronization across blockchain networks. The call data provided should be used to call the `fetchResult(bytes calldata _data)` function described here. 
+The Datafeed Merkle API is a specialized service designed to facilitate the retrieval of call data essential for updating collection results on a destination blockchain. It offers endpoints to access information about active collections and their related calldata, ensuring seamless integration and data synchronization across blockchain networks. The call data provided should be used to call the `updateAndGetResult(bytes calldata _data)` function described here. 
 
 ## Endpoints
 
