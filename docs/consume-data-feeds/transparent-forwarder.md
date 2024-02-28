@@ -4,7 +4,7 @@ title: Transparent Forwarder
 
 To consume the Razor Network price feeds, your contract should reference `ITransparentForwarder`. This is an interface that defines the external functions implemented by Data Feeds.
 
-- **`fetchResult(bytes calldata _data)`**: This function requires `calldata` from the [Merkle API](./api.md) for a particular collection. The function updates the collections results to the latest values reported by the API and makes them available on-chain. This calldata constructed is unique for each collection and consists of `(merkleRoot, proof, result, signature)`. Where each parameter is described as follows: 
+- **`updateAndGetResult(bytes calldata _data)`**: This function requires `calldata` from the [Merkle API](./api.md) for a particular collection. The function updates the collections results to the latest values reported by the API and makes them available on-chain. This calldata constructed is unique for each collection and consists of `(merkleRoot, proof, result, signature)`. Where each parameter is described as follows: 
     - `merkleRoot(bytes32)`: The root of the Merkle tree created by the API service for the particular collection.
     - `proof(bytes32[])`: The Merkle proof for the result of the particular collection within the Merkle tree created. 
     - `result(uint256 result, int8 power, uint256 lastUpdatedTimestamp)`: The result of the collection reported.
