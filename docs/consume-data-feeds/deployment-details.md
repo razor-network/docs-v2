@@ -44,7 +44,7 @@ import TabItem from "@theme/TabItem";
 | Arbitrum Sepolia         | [0xc97d1D3EF35b6Aeec14B287F4E282A63c546Bbc6](https://sepolia.arbiscan.io/address/0xc97d1D3EF35b6Aeec14B287F4E282A63c546Bbc6)                                         |
 | Scroll Sepolia         | [0xc40ce22f6aF1Cd3A8673De9e19C6e456DC762eB4](https://sepolia.scrollscan.com/address/0xc40ce22f6aF1Cd3A8673De9e19C6e456DC762eB4)                                         |
 | Blast Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://testnet.blastscan.io/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
-
+| Linea Goerli         | [0x5243836FB4365ceBaf7e984f28F7491E254c911e](https://explorer.goerli.linea.build//address/0x5243836FB4365ceBaf7e984f28F7491E254c911e)                                         |
 
 </TabItem>
 </Tabs>
