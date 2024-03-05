@@ -17,12 +17,10 @@ import TabItem from "@theme/TabItem";
 
 | Chain Name                           | Transparent Forwarder Address                                                                                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="/img/op-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Optimism | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://optimistic.etherscan.io/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
-| <img src="/img/polygon-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Polygon PoS | [0xa9f5E56320EED42051db050DfB73B5549c78BB3B](https://polygonscan.com/address/0xa9f5E56320EED42051db050DfB73B5549c78BB3B) |
-| <img src="/img/bnb-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> BNB Smart Chain | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://bscscan.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
-| <img src="/img/linea-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Linea | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://lineascan.build/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
-| <img src="/img/moonbeam-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Moonbeam | [0xFb69fCd6e7E7e45C60E5c7050429C424F76b8533](https://moonscan.io/address/0xFb69fCd6e7E7e45C60E5c7050429C424F76b8533) |
-| <img src="/img/base-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Base | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://basescan.org/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
+| Polygon PoS | [0xa9f5E56320EED42051db050DfB73B5549c78BB3B](https://polygonscan.com/address/0xa9f5E56320EED42051db050DfB73B5549c78BB3B) |
+| Calypso (honorable-steel-rasalhague) | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
+| Nebula (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://green-giddy-denebola.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)       |
+| Europa (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)            |
 
 
 </TabItem>
