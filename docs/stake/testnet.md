@@ -37,7 +37,7 @@ It is recommended to run a **Oracle Node** using **Docker**. This is because you
 
 ## Hardware Requirements {#hardware-requirements}
 
-16gb RAM
+16GB RAM
 
 4 Core (arm64 or amd64 architecture)
 
