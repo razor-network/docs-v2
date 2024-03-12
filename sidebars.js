@@ -213,7 +213,12 @@ const sidebars = {
               },
               {
                 type: "doc",
-                label: "Merkle API",
+                label: "Bridge",
+                id: "consume-data-feeds/bridge",
+              },
+              {
+                type: "doc",
+                label: "REST API",
                 id: "consume-data-feeds/api",
               },
               {
