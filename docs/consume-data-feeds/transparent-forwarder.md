@@ -43,7 +43,10 @@ If the result of the collection is **300050** and its power is **2**, this essen
 
 The price of the collection can be calculated by the following formula: `result * 10^-(power)`.
 
-Code snippet to integrate Datafeed with a `ITransparentForwarder` interface:
+
+### Example 
+
+The following is an example Client contract that will just return the price feed data queried for. Paste this contract in [remix](https://remix.ethereum.org/) and deploy it to any of the supported chains listed [here](./deployment-details.md).
 
 ```solidity
 
