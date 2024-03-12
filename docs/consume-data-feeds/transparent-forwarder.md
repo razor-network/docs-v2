@@ -46,6 +46,7 @@ The price of the collection can be calculated by the following formula: `result 
 
 ### Example 
 
+#### Remix
 The following is an example Client contract that will just return the price feed data queried for. Paste this contract in [remix](https://remix.ethereum.org/) and deploy it to any of the supported chains listed [here](./deployment-details.md).
 
 ```solidity
@@ -121,6 +122,26 @@ contract Client {
     }
 }
 
+```
+
+
+#### Foundry
+
+
+Install foundry [here](https://book.getfoundry.sh/getting-started/installation).
+
+To test the functionality use the following `cast` commands:
+
+This command will update the on-chain contract with the latest Oracle Block:
+
+```bash
+cast send $TRANSPARENT_FORWARDER_CONTRACT_ADDRESS "updateAndGetResult(bytes)" $CALLDATA --rpc-url $RPC --private-key $PRIV_KEY
+```
+
+
+To fetch the updated price data for the chosen collection:
+```bash
+cast call $TRANSPARENT_FORWARDER_CONTRACT_ADDRESS "getResult(bytes32)" $COLLECTION_NAME  --rpc-url $RPC --private-key $PRIV_KEY 
 ```
 
 **Note**: This example can be deployed on chains where the Transparent Forwarder contract is deployed. Details regarding deployed contracts and chains can be found [here](/docs/consume-data-feeds/deployment-details#supported-chains). 
