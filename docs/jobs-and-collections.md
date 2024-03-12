@@ -1,10 +1,10 @@
 # Jobs and Collections
 
-In Oracle's data feeds, a "job" represents a specific connection to a data source tasked with retrieving price feed information. A "collection", on the other hand, aggregates multiple jobs to provide a comprehensive representation of an asset's price. Together, jobs and collections are instrumental in delivering accurate and consistent data feeds within the network.
+In Oracle's data feeds, a `job` represents a specific connection to a data source tasked with retrieving price feed information. A `collection`, on the other hand, aggregates multiple jobs to provide a comprehensive representation of an asset's price. Together, jobs and collections are instrumental in delivering accurate and consistent data feeds within the network.
 
 ## What is a Job?
 
-A "job" is a critical element in establishing a connection to a data source for price feed information. The job's structure includes these parameters:
+A `job` is a critical element in establishing a connection to a data source for price feed information. The job's structure includes these parameters:
 
 - **ID:** A unique identifier for the job.
 - **Selector Type:** Defines the method for parsing the response from the URL, which can vary between JSON or XHTML, depending on the data source's output format.
@@ -16,7 +16,7 @@ A "job" is a critical element in establishing a connection to a data source for 
 
 ## What is a Collection?
 
-A collection is a group of jobs that collectively determine the price of an asset. It includes these parameters:
+A `collection` is a group of `jobs` that collectively determine the price of an asset. It includes these parameters:
 
 - **ID:** A unique identifier for the collection.
 - **Power:** Dictates the degree of decimal shifts applied to the collection's results, ensuring precision and consistency.

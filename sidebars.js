@@ -106,6 +106,11 @@ const sidebars = {
                     type: "category",
                     label: "Jobs and Collection",
                     items: [
+                    {
+                        type: "doc",
+                        label: "Introduction",
+                        id: "jobs-and-collections",
+                      },
                       {
                         type: "doc",
                         label: "Create Job",
@@ -145,6 +150,16 @@ const sidebars = {
                         type: "doc",
                         label: "Override Jobs",
                         id: "commands/jobs-and-collection/override-jobs",
+                      },
+                      {
+                        type: "doc",
+                        label: "Supported Job Return Types",
+                        id: "job-return-types",
+                      },
+                      {
+                        type: "doc",
+                        label: "Authenticated Jobs",
+                        id: "authenticated-jobs",
                       },
                     ],
                   },
@@ -195,21 +210,6 @@ const sidebars = {
                 type: "doc",
                 label: "Introduction",
                 id: "consume-data-feeds/introduction",
-              },
-              {
-                type: "doc",
-                label: "Jobs and Collections",
-                id: "jobs-and-collections",
-              },
-              {
-                type: "doc",
-                label: "Supported Job Return Types",
-                id: "job-return-types",
-              },
-              {
-                type: "doc",
-                label: "Authenticated Jobs",
-                id: "authenticated-jobs",
               },
               {
                 type: "doc",
