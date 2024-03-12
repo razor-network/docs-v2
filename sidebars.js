@@ -204,7 +204,7 @@ const sidebars = {
     },
       {
         type: "category",
-        label: "Consume DataFeeds",
+        label: "Use Pricefeeds",
         items: [
             {
                 type: "doc",
