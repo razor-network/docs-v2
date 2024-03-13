@@ -4,7 +4,7 @@ title: Transparent Forwarder
 
 To consume the Razor Network price feeds, your contract should reference `ITransparentForwarder`. This is an interface that defines the external functions implemented by Data Feeds.
 
-- **`updateAndGetResult(bytes calldata _data)`**: This function requires `calldata` from the [Merkle API](./api.md) for a particular collection. The function updates the collections results to the latest values reported by the API and makes them available on-chain. This calldata constructed is unique for each collection and consists of `(merkleRoot, proof, result, signature)`. Where each parameter is described as follows: 
+- **`updateAndGetResult(bytes calldata _data)`**: This function requires `calldata` from the [REST API](./api.md) for a particular collection. The function updates the collections results to the latest values reported by the API and makes them available on-chain. This calldata constructed is unique for each collection and consists of `(merkleRoot, proof, result, signature)`. Where each parameter is described as follows: 
     - `merkleRoot(bytes32)`: The root of the Merkle tree created by the API service for the particular collection.
     - `proof(bytes32[])`: The Merkle proof for the result of the particular collection within the Merkle tree created. 
     - `result(uint256 result, int8 power, uint256 lastUpdatedTimestamp)`: The result of the collection reported.
@@ -19,7 +19,7 @@ To consume the Razor Network price feeds, your contract should reference `ITrans
 
 
 
-- **`validateResult(bytes calldata _data)`**: This function requires `calldata` from the [Merkle API](./api.md) for a particular collection. The function checks the validity of the calldata provided and returns a boolean and the result of the collection from the calldata present.
+- **`validateResult(bytes calldata _data)`**: This function requires `calldata` from the [REST API](./api.md) for a particular collection. The function checks the validity of the calldata provided and returns a boolean and the result of the collection from the calldata present.
 
     The function returns the following:
     - **valid** (bool): Indicates the validity of the calldata for a collection provided.
@@ -43,7 +43,11 @@ If the result of the collection is **300050** and its power is **2**, this essen
 
 The price of the collection can be calculated by the following formula: `result * 10^-(power)`.
 
-Code snippet to integrate Datafeed with a `ITransparentForwarder` interface:
+
+### Example 
+
+#### Remix
+The following is an example Client contract that will just return the price feed data queried for. Paste this contract in [remix](https://remix.ethereum.org/) and deploy it to any of the supported chains listed [here](./deployment-details.md).
 
 ```solidity
 
@@ -118,6 +122,26 @@ contract Client {
     }
 }
 
+```
+
+
+#### Foundry
+
+
+Install foundry [here](https://book.getfoundry.sh/getting-started/installation).
+
+To test the functionality use the following `cast` commands:
+
+This command will update the on-chain contract with the latest Oracle Block:
+
+```bash
+cast send $TRANSPARENT_FORWARDER_CONTRACT_ADDRESS "updateAndGetResult(bytes)" $CALLDATA --rpc-url $RPC --private-key $PRIV_KEY
+```
+
+
+To fetch the updated price data for the chosen collection:
+```bash
+cast call $TRANSPARENT_FORWARDER_CONTRACT_ADDRESS "getResult(bytes32)" $COLLECTION_NAME  --rpc-url $RPC --private-key $PRIV_KEY 
 ```
 
 **Note**: This example can be deployed on chains where the Transparent Forwarder contract is deployed. Details regarding deployed contracts and chains can be found [here](/docs/consume-data-feeds/deployment-details#supported-chains). 
