@@ -11,6 +11,7 @@ import TabItem from "@theme/TabItem";
     defaultValue="mainnet"
     values={[
         {label: 'Mainnet', value: 'mainnet'},
+        {label: 'Mainnet V1 (Deprecated)', value: 'mainnetV1'},
         {label: 'Testnet', value: 'testnet'},
     ]}>
 <TabItem value="mainnet">
@@ -19,6 +20,15 @@ import TabItem from "@theme/TabItem";
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | XDC | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://explorer.xinfin.network/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 
+</TabItem>
+
+<TabItem value="mainnetV1">
+
+| Chain Name                           | Transparent Forwarder Address                                                                                                                                       |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Calypso (honorable-steel-rasalhague) | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
+| Nebula (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://green-giddy-denebola.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)       |
+| Europa (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)            |
 
 
 </TabItem>
