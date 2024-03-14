@@ -18,7 +18,6 @@ import TabItem from "@theme/TabItem";
 | Chain Name                           | Transparent Forwarder Address                                                                                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | XDC | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://explorer.xinfin.network/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
-| Polygon PoS | [0xa9f5E56320EED42051db050DfB73B5549c78BB3B](https://polygonscan.com/address/0xa9f5E56320EED42051db050DfB73B5549c78BB3B) |
 
 
 
