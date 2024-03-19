@@ -11,16 +11,24 @@ import TabItem from "@theme/TabItem";
     defaultValue="mainnet"
     values={[
         {label: 'Mainnet', value: 'mainnet'},
+        {label: 'Mainnet V1 (Deprecated)', value: 'mainnetV1'},
         {label: 'Testnet', value: 'testnet'},
     ]}>
 <TabItem value="mainnet">
 
 | Chain Name                           | Transparent Forwarder Address                                                                                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Polygon PoS | [0xa9f5E56320EED42051db050DfB73B5549c78BB3B](https://polygonscan.com/address/0xa9f5E56320EED42051db050DfB73B5549c78BB3B) |
-| Calypso (honorable-steel-rasalhague) | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
-| Nebula (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://green-giddy-denebola.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)       |
-| Europa (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)            |
+| <img src="/img/xdc-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> XDC | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://explorer.xinfin.network/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
+
+</TabItem>
+
+<TabItem value="mainnetV1">
+
+| Chain Name                           | Transparent Forwarder Address                                                                                                                                       |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Calypso (honorable-steel-rasalhague) | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
+| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Nebula (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://green-giddy-denebola.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)       |
+| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Europa (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)            |
 
 
 </TabItem>
