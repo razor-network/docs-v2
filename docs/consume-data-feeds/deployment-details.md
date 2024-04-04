@@ -20,6 +20,7 @@ import TabItem from "@theme/TabItem";
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="/img/xdc-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> XDC | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://explorer.xinfin.network/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 | <img src="/img/polygon-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Polygon PoS | [0xa9f5E56320EED42051db050DfB73B5549c78BB3B](https://polygonscan.com/address/0xa9f5E56320EED42051db050DfB73B5549c78BB3B) |
+| <img src="/img/moonbeam-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Moonbeam | [0xFb69fCd6e7E7e45C60E5c7050429C424F76b8533](https://moonscan.io/address/0xFb69fCd6e7E7e45C60E5c7050429C424F76b8533) |
 
 </TabItem>
 
