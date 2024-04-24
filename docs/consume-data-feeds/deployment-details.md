@@ -24,6 +24,7 @@ import TabItem from "@theme/TabItem";
 | <img src="/img/bnb-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> opBNB | [0x81Ba276ee0CCAEE9Af3a28c08ECEdB017a640294](https://opbnbscan.com/address/0x81Ba276ee0CCAEE9Af3a28c08ECEdB017a640294) |
 | <img src="/img/bnb-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> BNB | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://bscscan.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 | <img src="/img/xdc-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> XDC | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://explorer.xinfin.network/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
+| <img src="/img/linea-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Linea | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://lineascan.build/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 </TabItem>
 
 <TabItem value="mainnetV1">
