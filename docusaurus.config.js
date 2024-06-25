@@ -16,7 +16,6 @@ const config = {
   favicon: "img/favicon.png",
   organizationName: "razor-network", // Usually your GitHub org/user name.
   projectName: "docs-v2", // Usually your repo name.
-  // themes: ["@docusaurus/theme-search-algolia"],
 
   presets: [
     [
