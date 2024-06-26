@@ -38,45 +38,18 @@ const config = {
       }),
     ],
   ],
-
-  plugins: [require.resolve("docusaurus-lunr-search"),
-  [
-    require.resolve("@docusaurus/plugin-client-redirects"),
-    {
-      redirects: [
-        // /docs/oldDoc -> /docs/newDoc
-        {
-            to: '/docs/mainnet/deployment-details',
-            from: '/docs/mainnet/getting-started',
-        },
-        {
-            to: '/docs/testnet/deployment-details',
-            from: '/docs/testnet/getting-started',
-        },
-        {
-          to: '/docs/mainnet/deployment-details',
-          from: '/docs/mainnet/intro',
-        },
-        {
-            to: '/docs/testnet/deployment-details',
-            from: '/docs/testnet/intro',
-        },
-      ],
-      createRedirects(existingPath) {
-        if (existingPath.includes('/docs/')) {
-          // Redirect from /docs/razor-go/X to /docs/X
-          return [
-            existingPath.replace('/docs', '/docs/razor-go'),
-            existingPath.replace('/docs', '/docs/razor-go'),
-          ];
-        }
-      },
-    },
-  ],],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: "JZUSBYXBFF",
+        apiKey: "0170bec8ff2a904d2ff209bbacab9f96",
+        indexName: "razor",
+        contextualSearch: true,
+        searchParameters: {},
+        searchPagePath: "search",
+        insights: false,
+      },
       navbar: {
         title: "Razor Network",
         logo: {
@@ -84,37 +57,6 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
-        //   {
-        //     type: "doc",
-        //     docId: "what-is-an-oracle",
-        //     position: "left",
-        //     label: "Core Concepts",
-        //   },
-        //   {
-        //     to: "/docs/whitepaper/intro",
-        //     label: "Whitepaper",
-        //     position: "left",
-        //   },
-        //   {
-        //     to: "/docs/token-bridge/intro",
-        //     label: "Token Bridge",
-        //     position: "left",
-        //   },
-        //   {
-        //     to: "/docs/mainnet/intro",
-        //     label: "Mainnet",
-        //     position: "left",
-        //   },
-        //   {
-        //     to: "/docs/testnet/intro",
-        //     label: "Testnet",
-        //     position: "left",
-        //   },
-        //   {
-        //     to: "/docs/consume-data-feeds/introduction",
-        //     label: "Consume Data Feeds",
-        //     position: "left",
-        //   },
           {
             href: "https://github.com/razor-network/docs-v2",
             label: "GitHub",
