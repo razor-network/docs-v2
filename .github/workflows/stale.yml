@@ -1,4 +1,4 @@
-name: Stale CI
+name: Stale CI job
 
 on:
   schedule:
@@ -13,4 +13,3 @@ jobs:
     steps:
       - name: Close Stale Issues
         uses: actions/stale@v9.0.0
-        
