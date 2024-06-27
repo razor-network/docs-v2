@@ -1,4 +1,4 @@
-name: Stale CI job
+name: Stale CI
 
 on:
   schedule:
