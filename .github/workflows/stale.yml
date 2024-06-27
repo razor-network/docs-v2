@@ -1,9 +1,13 @@
-name: Stale CI
+name: 'Close stale issues and PRs'
+on:
+  schedule:
+    - cron: '30 1 * * *'
 
-on: [push]
 jobs:
-  build:
+  stale:
     runs-on: ubuntu-latest
     steps:
-      - name: Close Stale Issues
-        uses: actions/stale@v9.0.0
+      - uses: actions/stale@v9
+        with:
+          stale-issue-message: 'Stale issue'
+          stale-pr-message: 'Stale PR'
