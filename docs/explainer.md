@@ -51,15 +51,13 @@ We encourage decentralization in the protocol through the following ways:
 
 Razor can be used to make price feed queries:
 
-For automated mode queries, the client must provide a URL, specify how the response should be processed to get the result\. The assigned validators will automatically fetch the URL, parse the results and report it to the network\. Since no manual intervention is necessary, the automated mode queries are answered relatively faster\.
+For automated mode queries, the client must provide a URL (in this case the validator nodes themselves using the [datasources](https://github.com/razor-network/datasources/tree/master/mainnet) of the network), specify how the response should be processed to get the result\. The assigned validators will automatically fetch the URL, parse the results and report it to the network\. Since no manual intervention is necessary, the automated mode queries are answered relatively faster\.
 
 ##### Example of an automated mode query: {#example-of-an-automated-mode-query}
 
 URL: [https://api\.gemini\.com/v1/pubticker/ethusd](https://api.gemini.com/v1/pubticker/ethusd)
 
 Selector: “last”
-
-The manual mode queries, on the other hand, do not require a source URL\. The assigned validators must manually fetch the data and report it to the network\. Such queries are suitable for applications such as prediction markets, where the stakes are high and a longer resolution period is acceptable\. Also, a precise URL may not be available for such a query at the time the query is formed\.
 
 
 ### How are queries assigned to different validators? {#how-are-queries-assigned-to-different-validators}
