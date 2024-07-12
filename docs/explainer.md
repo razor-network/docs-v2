@@ -28,8 +28,7 @@ The various kinds of attacks that can be faced by a decentralized oracle such as
 2. Bribe attack
 3. Bribe signaling attack
 4. Providing invalid or compromised data source
-5. Making invalid queries to the oracle
-6. Censoring reports of honest validators\.
+5. Censoring reports of honest validators\.
 
 ### How does Razor Network compare to other oracles? {#how-does-razor-network-compare-to-other-oracles}
 
