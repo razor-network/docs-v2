@@ -28,6 +28,8 @@ import TabItem from "@theme/TabItem";
 | <img src="/img/base-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Base | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://basescan.org/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 | <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Titan AI Hub | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://parallel-stormy-spica.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 | <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Europa Liquidity Hub| [0xb28AE76CA80a461c633624F9764f37235800F533](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xb28AE76CA80a461c633624F9764f37235800F533)            |
+| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Calypso Hub| [0x951350581E842F85800cC8dA0b96192a71DfEc0d](https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/address/0x951350581E842F85800cC8dA0b96192a71DfEc0d)            |
+| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Nebula Gaming Hub| [0xa27a80D473a688A75469cb7Ef3bBDf1d250A5003](https://green-giddy-denebola.explorer.mainnet.skalenodes.com/address/0xa27a80D473a688A75469cb7Ef3bBDf1d250A5003)            |
 </TabItem>
 
 <TabItem value="mainnetV1">
@@ -36,7 +38,7 @@ import TabItem from "@theme/TabItem";
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Calypso NFT Hub | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://honorable-steel-rasalhague.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 | <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Nebula Gaming Hub | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://green-giddy-denebola.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)       |
-| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Europa (green-giddy-denebola)        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)            |
+| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Europa Liquidity Hub        | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9)            |
 
 
 </TabItem>
