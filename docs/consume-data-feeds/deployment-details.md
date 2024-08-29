@@ -62,6 +62,7 @@ import TabItem from "@theme/TabItem";
 | Scroll Sepolia         | [0xc40ce22f6aF1Cd3A8673De9e19C6e456DC762eB4](https://sepolia.scrollscan.com/address/0xc40ce22f6aF1Cd3A8673De9e19C6e456DC762eB4)                                         |
 | Blast Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://testnet.blastscan.io/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 | Linea Goerli         | [0x5243836FB4365ceBaf7e984f28F7491E254c911e](https://explorer.goerli.linea.build//address/0x5243836FB4365ceBaf7e984f28F7491E254c911e)                                         |
+| Zora Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://999999999.testnet.routescan.io/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 
 </TabItem>
 </Tabs>
