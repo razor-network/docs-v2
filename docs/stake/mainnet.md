@@ -87,19 +87,20 @@ There are a set of parameters that are configurable. These include:
 docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
->**_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
+> **_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
 
->**_NOTE:_**: _You can add an alternate provider by passing `--alternateProvider [ALTERNATE_PROVIDER]` in the above `setConfig` command which can act as the secondary RPC to your node._
+> **_NOTE:_**: _You can add an alternate provider by passing `--alternateProvider [ALTERNATE_PROVIDER]` in the above `setConfig` command which can act as the secondary RPC to your node._
 
->**_NOTE:_**  You can automate all razor-go commands by providing password non-interactively. There are multiple ways to do that
->1. Provide password via file, All the commands have an additional `--password` flag that you can provide with the file path from which the password must be picked.  To run a command with a password flag with the help of docker, the password file should present in `$HOME/.razor/` directory   
->**Example**: ```docker exec -it -d razor-go razor command  --password /root/.razor/<file_name>```
->2. Provide password via echo command.  
->**Example**: ```echo "your password" | docker exec -it -d razor-go razor command```  
-> Linux-based system keeps track of the previously executed command., anyone can get the detail of the previous command via the `history` command.  
-> To delete command from history:  
->       1. List the previously executed command: `history`
->       2. Delete command from history: `history -d <line-number>`
+> **_NOTE:_** You can automate all razor-go commands by providing password non-interactively. There are multiple ways to do that
+>
+> 1.  Provide password via file, All the commands have an additional `--password` flag that you can provide with the file path from which the password must be picked. To run a command with a password flag with the help of docker, the password file should present in `$HOME/.razor/` directory  
+>     **Example**: `docker exec -it -d razor-go razor command  --password /root/.razor/<file_name>`
+> 2.  Provide password via echo command.  
+>     **Example**: `echo "your password" | docker exec -it -d razor-go razor command`  
+>     Linux-based system keeps track of the previously executed command., anyone can get the detail of the previous command via the `history` command.  
+>     To delete command from history:
+>     1.  List the previously executed command: `history` 2. Delete command from history: `history -d <line-number>`
+
 ## Commands {#commands}
 
 Run the commands in following way:
@@ -200,52 +201,56 @@ For more details around all the commands of `razor-go`, please check out the `or
 
 If you would rather install from source, please follow Instructions here to [run a Razor Network node from source](https://github.com/razor-network/oracle-node#building-the-source).
 
-
-
 ## Update docker image
+
 To update the razor-go node version
 
 1. Get the latest docker image from [Docker Hub](https://hub.docker.com/r/razornetwork/razor-go/tags)
 
-> **Note**: - 
->1. _Make sure you don't use *-alpha and *-beta suffixed docker images those are only for internal testing._
->2. _Update the node in the Dispute state in order to reduce the chances of an inactivity penalty. The process of updating the node should be completed in less than 5 minutes. Do the following steps as quickly as possible to avoid any inactivity penalties._
+> **Note**: -
+>
+> 1.  _Make sure you don't use *-alpha and *-beta suffixed docker images those are only for internal testing._
+> 2.  _Update the node in the Dispute state in order to reduce the chances of an inactivity penalty. The process of updating the node should be completed in less than 5 minutes. Do the following steps as quickly as possible to avoid any inactivity penalties._
 
 2. Check your container is running via `docker ps`, you should get an output like:
-    ```
-    CONTAINER ID   IMAGE                                  COMMAND     CREATED         STATUS         PORTS     NAMES
-    5f0b7d99a71b   razornetwork/razor-go:v1.0.6           "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
-    ```
+   ```
+   CONTAINER ID   IMAGE                                  COMMAND     CREATED         STATUS         PORTS     NAMES
+   5f0b7d99a71b   razornetwork/razor-go:v1.0.6           "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
+   ```
 3. Stop the existing container  
-    `docker stop razor-go`
+   `docker stop razor-go`
 4. Remove the existing container  
-    `docker rm razor-go`
+   `docker rm razor-go`
 5. Run the staker with latest docker image:
-    ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
-    ```
 
-    example: If latest version is `v1.1.0-patch.1` then the command would be:
-    ```
-    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.1.0-patch.1
-    ```
-6. Check your container is running `docker ps`, you should get an output like: 
-    ```
-    CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
-    53ff3ce7c965   razornetwork/razor-go:v1.1.0-patch.1   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
-    ```
+   ```
+   docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
+   ```
+
+   example: If latest version is `v1.1.0-patch.1` then the command would be:
+
+   ```
+   docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.1.0-patch.1
+   ```
+
+6. Check your container is running `docker ps`, you should get an output like:
+   ```
+   CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
+   53ff3ce7c965   razornetwork/razor-go:v1.1.0-patch.1   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+   ```
 7. If you want to update your config file, you can run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
 
-> **Note**: _If you are running vote command in tmux session_    
->1. Check your razor-go session exists: `tmux ls`
->2. Attach existing session: `tmux a -t razor-go`
->3. To exit from tmux session: press `ctrl+b`, release those keys and press `d`
->4. To list your session: `tmux ls`
->5. To attach Session back: `tmux attach-session -t razor-go`
+> **Note**: _If you are running vote command in tmux session_
+>
+> 1.  Check your razor-go session exists: `tmux ls`
+> 2.  Attach existing session: `tmux a -t razor-go`
+> 3.  To exit from tmux session: press `ctrl+b`, release those keys and press `d`
+> 4.  To list your session: `tmux ls`
+> 5.  To attach Session back: `tmux attach-session -t razor-go`
 
-8. Start voting again 
-    ```
-    docker exec -it razor-go razor vote --address <account> --logFile <filename> --gasLimitOverride 50000000 
-    ```
+8. Start voting again
+   ```
+   docker exec -it razor-go razor vote --address <account> --logFile <filename> --gasLimitOverride 50000000
+   ```
 
 ---
