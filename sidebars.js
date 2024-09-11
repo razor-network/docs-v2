@@ -23,6 +23,16 @@ const sidebars = {
     "getting-started",
     {
       type: "category",
+      label: "Razor V1",
+      items: ["razor-v1/deployment-details"],
+    },
+    {
+      type: "category",
+      label: "Razor V2",
+      items: ["razor-v2/deployment-details"],
+    },
+    {
+      type: "category",
       label: "Staking",
       items: ["stake/mainnet", "stake/testnet"],
     },
