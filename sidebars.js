@@ -251,11 +251,27 @@ const sidebars = {
     "Governance",
     "Voting",
     {
-        type: "doc",
-        label: "Verify Validator",
-        id: "contribute-validators",
-      },
-    "token-bridge/intro",
+      type: "doc",
+      label: "Verify Validator",
+      id: "contribute-validators",
+    },
+    {
+      type: "category",
+      label: "Razor Token bridge",
+      items: [
+        {
+          type: "doc",
+          label: "Ethereum <-> Razor chain",
+          id: "token-bridge/ethereum-razor",
+        },
+        {
+          type: "doc",
+          label: "Ethereum <-> Europa Defi Hub",
+          id: "token-bridge/ethereum-europa",
+        },
+      ],
+    },
+    // "token-bridge/intro",
     "PenaltiesAndRewards",
     "whitepaper/intro",
     "FAQ",

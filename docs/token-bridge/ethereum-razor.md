@@ -1,8 +1,8 @@
-# Razor Token Bridge
+# Ethereum <-> Razor chain bridge
 
-[Razor Token Bridge](https://bridge.razorscan.io/) allows users to bridge $RAZOR tokens between Ethereum and Razor Schain.  The Token Bridge is powered by [Skale IMA](https://docs.skale.network/ima/1.3.x/).
+[Razor Token Bridge](https://bridge.razorscan.io/) allows users to bridge $RAZOR tokens between Ethereum and Razor Schain. The Token Bridge is powered by [Skale IMA](https://docs.skale.network/ima/1.3.x/).
 
-## Bridge tokens from Ethereum to RAZOR Schain
+## Bridge tokens from Ethereum to RAZOR chain
 
 1. Visit https://bridge.razorscan.io/
 2. Connect wallet and switch the network to Ethereum.
@@ -15,7 +15,7 @@
 
 ![Ethereum to Schain](/img/bridge/e2s.png)
 
-## Bridge tokens from RAZOR Schain to Ethereum
+## Bridge RAZOR tokens from Razor chain to Ethereum
 
 Before bridging tokens from RAZOR Schain to Ethereum, make sure you have enough balance in the Community Pool contract. Community Pool wallet is only on Ethereum.
 
@@ -23,7 +23,7 @@ Before bridging tokens from RAZOR Schain to Ethereum, make sure you have enough 
 
 ### What is Community Pool contract?
 
-Community Pool contract is part of the Skale IMA. When a user is bridging tokens from Schain to Ethereum the transaction needs to be verified and sent by IMA validators to unlock tokens for the user. The fees that validators have spent for the transactions needs to be reimbursed from the User Community Pool wallet balance. Keep in mind that any ETH deposited by the user to the Community Pool is only accessible by that user, and is **not** shared with a group of users. Any new address will need to deposit ETH to the Community Pool to be able to bridge from Razor Schain back to Ethereum. 
+Community Pool contract is part of the Skale IMA. When a user is bridging tokens from Schain to Ethereum the transaction needs to be verified and sent by IMA validators to unlock tokens for the user. The fees that validators have spent for the transactions needs to be reimbursed from the User Community Pool wallet balance. Keep in mind that any ETH deposited by the user to the Community Pool is only accessible by that user, and is **not** shared with a group of users. Any new address will need to deposit ETH to the Community Pool to be able to bridge from Razor Schain back to Ethereum.
 
 ### How to recharge Community Pool wallet balance?
 
