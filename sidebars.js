@@ -24,18 +24,40 @@ const sidebars = {
     {
       type: "category",
       label: "Razor V1",
-      items: ["razor-v1/deployment-details"],
+      items: [
+        {
+          type: "category",
+          label: "Mainnet",
+          items: ["razor-v1/mainnet/deployment-details"],
+        },
+        {
+          type: "category",
+          label: "Testnet",
+          items: ["razor-v1/testnet/deployment-details"],
+        },
+      ],
     },
     {
       type: "category",
       label: "Razor V2",
-      items: ["razor-v2/deployment-details"],
+      items: [
+        {
+          type: "category",
+          label: "Mainnet",
+          items: ["razor-v2/mainnet/deployment-details"],
+        },
+        {
+          type: "category",
+          label: "Testnet",
+          items: ["razor-v2/testnet/deployment-details"],
+        },
+      ],
     },
-    {
-      type: "category",
-      label: "Staking",
-      items: ["stake/mainnet", "stake/testnet"],
-    },
+    // {
+    //   type: "category",
+    //   label: "Staking",
+    //   items: ["stake/mainnet", "stake/testnet"],
+    // },
     {
       type: "category",
       label: "Actions",
