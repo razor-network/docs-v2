@@ -23,33 +23,33 @@ const sidebars = {
     "getting-started",
     {
       type: "category",
-      label: "Razor V1",
+      label: "Razor v1",
       items: [
         {
-          type: "category",
+          type: "doc",
           label: "Mainnet",
-          items: ["razor-v1/mainnet/deployment-details"],
+          id: "razor-v1/mainnet",
         },
         {
-          type: "category",
+          type: "doc",
           label: "Testnet",
-          items: ["razor-v1/testnet/deployment-details"],
+          id: "razor-v1/testnet",
         },
       ],
     },
     {
       type: "category",
-      label: "Razor V2",
+      label: "Razor v2",
       items: [
         {
-          type: "category",
+          type: "doc",
           label: "Mainnet",
-          items: ["razor-v2/mainnet/deployment-details"],
+          id: "razor-v2/mainnet",
         },
         {
-          type: "category",
+          type: "doc",
           label: "Testnet",
-          items: ["razor-v2/testnet/deployment-details"],
+          id: "razor-v2/testnet",
         },
       ],
     },

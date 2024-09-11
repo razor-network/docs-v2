@@ -1,4 +1,4 @@
-# Deployment Details
+# Razor v1 Testnet Deployment Details
 
 Razor Network details on Testnet are mentioned below:
 

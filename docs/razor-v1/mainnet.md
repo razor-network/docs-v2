@@ -1,4 +1,4 @@
-# Deployment Details
+# Razor v1 Mainnet Deployment Details
 
 Razor Network is currently live on Mainnet. Details regarding mainnet is mentioned below:
 
