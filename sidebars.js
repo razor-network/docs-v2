@@ -23,7 +23,7 @@ const sidebars = {
     "getting-started",
     {
       type: "category",
-      label: "Razor v1",
+      label: "Razor V1 (Deprecated)",
       items: [
         {
           type: "doc",
@@ -39,7 +39,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Razor v2",
+      label: "Razor V2",
       items: [
         {
           type: "doc",
@@ -279,20 +279,7 @@ const sidebars = {
     {
       type: "category",
       label: "Contracts",
-      items: [
-        "Contracts/intro",
-        "Contracts/p2-ACL",
-        {
-          type: "doc",
-          label: "Mainnet",
-          id: "mainnet/deployment-details",
-        },
-        {
-          type: "doc",
-          label: "Testnet",
-          id: "testnet/deployment-details",
-        },
-      ],
+      items: ["Contracts/intro", "Contracts/p2-ACL"],
     },
     "Governance",
     "Voting",

@@ -1,4 +1,4 @@
-# Razor v2 Testnet Deployment Details
+# Razor V2 Testnet Deployment Details
 
 Razor Network is currently live on Mainnet. Details regarding mainnet is mentioned below:
 
