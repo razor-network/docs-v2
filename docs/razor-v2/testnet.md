@@ -2,33 +2,29 @@
 
 Razor Network is currently live on Mainnet. Details regarding mainnet is mentioned below:
 
-| Variable                                                                                                          | Value                                                                                                                                                            |
-| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Chain name                                                                                                        | Europa Defi Hub                                                                                                                                                  |
-| ChainID                                                                                                           | 2046399126                                                                                                                                                       |
-| Chain currency                                                                                                    | sFUEL                                                                                                                                                            |
-| Faucet                                                                                                            | https://faucet.razorscan.io/                                                                                                                                     |
-| RPC Endpoint                                                                                                      | https://mainnet.skalenodes.com/v1/elated-tan-skat                                                                                                                |
-| Chain Explorer                                                                                                    | https://elated-tan-skat.explorer.mainnet.skalenodes.com/                                                                                                         |
-| Token type                                                                                                        | ERC-20                                                                                                                                                           |
-| Token name                                                                                                        | RAZOR                                                                                                                                                            |
-| <img src="/img/skale-logo.svg" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Razor Schain Token | [0xcbf70914Fae03B3acB91E953De60CfDAaCA8145f](https://turbulent-unique-scheat.explorer.mainnet.skalenodes.com/address/0xcbf70914Fae03B3acB91E953De60CfDAaCA8145f) |
-| <img src="/img/eth-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Ethereum Token       | [0x50de6856358cc35f3a9a57eaaa34bd4cb707d2cd](https://etherscan.io/token/0x50de6856358cc35f3a9a57eaaa34bd4cb707d2cd)                                              |
-| <img src="/img/polygon-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Polygon Token    | [0xc91c06db0f7bffba61e2a5645cc15686f0a8c828](https://polygonscan.com/address/0xc91c06db0f7bffba61e2a5645cc15686f0a8c828)                                         |
-| <img src="/img/base-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Base Token          | [0x6AF3cb766D6cd37449bfD321D961A61B0515c1BC](https://basescan.org/address/0x6AF3cb766D6cd37449bfD321D961A61B0515c1BC)                                            |
-| Explorer                                                                                                          | https://razorscan.io/                                                                                                                                            |
+| Variable       | Value                                                            |
+| -------------- | ---------------------------------------------------------------- |
+| Chain name     | Europa Defi Hub Testnet                                          |
+| ChainID        | 1444673419                                                       |
+| Chain currency | sFUEL                                                            |
+| Faucet         | https://www.sfuelstation.com/                                    |
+| RPC Endpoint   | https://testnet.skalenodes.com/v1/juicy-low-small-testnet        |
+| Chain Explorer | https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/ |
+| Token type     | ERC-20                                                           |
+| Token name     | RAZOR                                                            |
+| Explorer       | https://staging.razorscan.io/                                    |
 
 # Contract Addresses
 
-| Contract           | Address                                                                                                                                                   |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Governance         | [0xAc40E8dA38B5a381008059a38bb9bf45f0D3C4e2](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xAc40E8dA38B5a381008059a38bb9bf45f0D3C4e2/) |
-| BlockManager       | [0x11aB70d78f1Dd2c3F967180d8A64858Db03A0aBa](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0x11aB70d78f1Dd2c3F967180d8A64858Db03A0aBa/) |
-| CollectionManager  | [0x367962d1462C568A0dDd0e2448311469451bF5a3](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0x367962d1462C568A0dDd0e2448311469451bF5a3/) |
-| StakeManager       | [0xe0bC695203d9C9f379bcdE9260B9F71B64B85298](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xe0bC695203d9C9f379bcdE9260B9F71B64B85298/) |
-| RewardManager      | [0x301779E4c95f951D2E17B4c3EdDC717551df2EBb](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0x301779E4c95f951D2E17B4c3EdDC717551df2EBb/) |
-| VoteManager        | [0x641BAD0641eB5B94B19568C0a22a55AEbDAF1870](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0x641BAD0641eB5B94B19568C0a22a55AEbDAF1870/) |
-| Delegator          | [0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xC74745eA5a3fac1864FAcd8f48d72C21A4ab883D/) |
-| RAZOR              | [0xcbf70914Fae03B3acB91E953De60CfDAaCA8145f](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xcbf70914Fae03B3acB91E953De60CfDAaCA8145f/) |
-| StakedTokenFactory | [0xEffA78888Dc1b6033286E5dF9b170bc5223178AB](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEffA78888Dc1b6033286E5dF9b170bc5223178AB/) |
-| RandomNoManager    | [0xC6eF45F5Add040800D30FE6dEe01b4EBC4BfC467](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xC6eF45F5Add040800D30FE6dEe01b4EBC4BfC467/) |
+| Contract           | Address                                                                                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Governance         | [0x0C91e21D91510A1e95cd3507474c0ac1F620389d](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x0C91e21D91510A1e95cd3507474c0ac1F620389d/) |
+| BlockManager       | [0x1eB1aD4C24cf2CA2027C05a28e78A117fDACD9F9](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x1eB1aD4C24cf2CA2027C05a28e78A117fDACD9F9/) |
+| CollectionManager  | [0xAFC593871Ab8EE89fd79B2ebd9F1f502268732b9](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0xAFC593871Ab8EE89fd79B2ebd9F1f502268732b9/) |
+| StakeManager       | [0x7ce95141358FeF127d3F79f7a5C21C6c2afa1cA3](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x7ce95141358FeF127d3F79f7a5C21C6c2afa1cA3/) |
+| RewardManager      | [0xbaa2e7509AdB5762f33064Ad762dF1136184Ef7D](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0xbaa2e7509AdB5762f33064Ad762dF1136184Ef7D/) |
+| VoteManager        | [0x57a996015D831F6f4818ff962ffE405b6c6d4B21](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x57a996015D831F6f4818ff962ffE405b6c6d4B21/) |
+| Delegator          | [0x63F82745aBe00c43a71ff2A48E65B281f72Bb54D](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x63F82745aBe00c43a71ff2A48E65B281f72Bb54D/) |
+| RAZOR              | [0x91d07a181e2Fb787204Ae82B28c69e278C05ac70](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x91d07a181e2Fb787204Ae82B28c69e278C05ac70/) |
+| StakedTokenFactory | [0x047f5865e666DCc278ad3bd8de8503D35d5278Ea](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x047f5865e666DCc278ad3bd8de8503D35d5278Ea/) |
+| RandomNoManager    | [0x3A6bbfBBe24F5F5D20F6a7265A0F602d155C2471](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x3A6bbfBBe24F5F5D20F6a7265A0F602d155C2471/) |

@@ -2,8 +2,6 @@
 
 Razor Network details on Testnet are mentioned below:
 
-## staging-aware-chief-gianfar Schain:
-
 | Variable       | Value                                                                                                                                                                   |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chain name     | staging-aware-chief-gianfar                                                                                                                                             |

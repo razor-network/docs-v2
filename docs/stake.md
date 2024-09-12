@@ -1,4 +1,4 @@
-# Mainnet
+# Stake
 
 Razor network is a proof of stake network. In order to participate in the network as a validator, you will need to "Stake" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
 
@@ -6,9 +6,9 @@ Razor network is a proof of stake network. In order to participate in the networ
 
 You will need some sFUEL to pay for transaction fees.
 You can get sFUEL from here:
-https://faucet.razorscan.io/
+https://www.sfuelstation.com/
 
-In order to get started, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/ethereum-razor)
+In order to get started, you will also need some RAZORs on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Schain using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/ethereum-europa)
 
 ## Add Razor Schain network to metamask
 
@@ -16,13 +16,13 @@ In order to get started, you will also need some RAZORs on Razor Schain. You can
 2. In metamask, click on top right account icon > Settings > Add Network.
 3. Fill in the following details:
 
-   | Particulars        | Value                                                           |
-   | ------------------ | --------------------------------------------------------------- |
-   | Network Name       | Razor Schain                                                    |
-   | New RPC URL        | https://mainnet.skalenodes.com/v1/turbulent-unique-scheat       |
-   | Chain ID           | 278611351                                                       |
-   | Currency Symbol    | sFUEL                                                           |
-   | Block Explorer URL | https://turbulent-unique-scheat.explorer.mainnet.skalenodes.com |
+   | Particulars        | Value                                                   |
+   | ------------------ | ------------------------------------------------------- |
+   | Network Name       | Europa Defi Hub                                         |
+   | New RPC URL        | https://mainnet.skalenodes.com/v1/elated-tan-skat       |
+   | Chain ID           | 2046399126                                              |
+   | Currency Symbol    | sFUEL                                                   |
+   | Block Explorer URL | https://elated-tan-skat.explorer.mainnet.skalenodes.com |
 
    > **Note**: _You can also add network from https://razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
@@ -34,13 +34,13 @@ Now you are all set! Let's download the client and start staking!
 2. In metamask, click on top right account icon > Settings > Add Network.
 3. Fill in the following details:
 
-| Particulars        | Value                                                                   |
-| ------------------ | ----------------------------------------------------------------------- |
-| Network Name       | staging-aware-chief-gianfar                                             |
-| New RPC URL        | https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar        |
-| Chain ID           | 1517929550                                                              |
-| Currency Symbol    | ETH                                                                     |
-| Block Explorer URL | https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/ |
+| Particulars        | Value                                                            |
+| ------------------ | ---------------------------------------------------------------- |
+| Network Name       | juicy-low-small-testnet                                          |
+| New RPC URL        | https://testnet.skalenodes.com/v1/juicy-low-small-testnet        |
+| Chain ID           | 1444673419                                                       |
+| Currency Symbol    | sFUEL                                                            |
+| Block Explorer URL | https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/ |
 
 > **Note**: _You can also add network from https://staging.razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
@@ -62,6 +62,8 @@ It is recommended to run a **Oracle Node** using **Docker**. This is because you
 ## Software dependencies {#software-dependencies}
 
 Docker: You can find more information about installing docker [here](https://docs.docker.com/engine/install/).
+
+<!-- TODO: Update this after deployment -->
 
 Oracle-Node(github): You can download the Oracle-Node:1.1.0-patch.1 from [here](https://github.com/razor-network/oracle-node/releases/tag/v1.1.0-patch.1).
 
@@ -105,7 +107,7 @@ There are a set of parameters that are configurable. These include:
 - Maximum age of log file: This is the maximum number of days to retain old log files.
 
 ```
-docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/turbulent-unique-scheat --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
+docker exec -it razor-go razor setConfig --provider https://elated-tan-skat.explorer.mainnet.skalenodes.com --gasmultiplier 1 --buffer 20 --wait 30 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 50000000 --rpcTimeout 10 --httpTimeout 10 --logFileMaxSize 200 --logFileMaxBackups 52 --logFileMaxAge 365
 ```
 
 > **_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
@@ -232,6 +234,8 @@ To update the razor-go node version
 >
 > 1.  _Make sure you don't use *-alpha and *-beta suffixed docker images those are only for internal testing._
 > 2.  _Update the node in the Dispute state in order to reduce the chances of an inactivity penalty. The process of updating the node should be completed in less than 5 minutes. Do the following steps as quickly as possible to avoid any inactivity penalties._
+
+<!-- TODO: Update this after deployment -->
 
 2. Check your container is running via `docker ps`, you should get an output like:
    ```

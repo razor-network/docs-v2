@@ -23,18 +23,22 @@ const sidebars = {
     "getting-started",
     {
       type: "category",
-      label: "Razor V1 (Deprecated)",
+      label: "Razor V1 (Soon to be Deprecated)",
       items: [
         {
           type: "doc",
-          label: "Mainnet",
+          label: "Mainnet details",
           id: "razor-v1/mainnet",
         },
         {
           type: "doc",
-          label: "Testnet",
+          label: "Testnet details",
           id: "razor-v1/testnet",
         },
+        "razor-v1/unstake",
+        "razor-v1/initiate-withdraw",
+        "razor-v1/withdraw",
+        "razor-v1/reset-lock",
       ],
     },
     {
@@ -43,12 +47,12 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Mainnet",
+          label: "Mainnet details",
           id: "razor-v2/mainnet",
         },
         {
           type: "doc",
-          label: "Testnet",
+          label: "Testnet details",
           id: "razor-v2/testnet",
         },
       ],
