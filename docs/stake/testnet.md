@@ -8,7 +8,7 @@ You will need some Skale Testnet Tokens to pay for transaction fees.
 You can get testnet ETH tokens from here:
 https://faucet.skale.network/
 
-- Skale Endpoint: https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar
+- Skale Endpoint: https://testnet.skalenodes.com/v1/juicy-low-small-testnet
 - Account: address which should receive the testnet tokens.
 
 In order to get started, you will also need some RAZORs on Skale Testnet chain. Drop a message in our [Discord server](https://discord.com/invite/Js4pBny2rw) for tokens.
@@ -21,11 +21,11 @@ In order to get started, you will also need some RAZORs on Skale Testnet chain. 
 
    | Particulars        | Value                                                                   |
    | ------------------ | ----------------------------------------------------------------------- |
-   | Network Name       | staging-aware-chief-gianfar                                             |
-   | New RPC URL        | https://staging-v3.skalenodes.com/v1/staging-aware-chief-gianfar        |
-   | Chain ID           | 1517929550                                                              |
+   | Network Name       | juicy-low-small-testnet                                             |
+   | New RPC URL        | https://testnet.skalenodes.com/v1/juicy-low-small-testnet        |
+   | Chain ID           | 0x561bf78b                                                              |
    | Currency Symbol    | ETH                                                                     |
-   | Block Explorer URL | https://staging-aware-chief-gianfar.explorer.staging-v3.skalenodes.com/ |
+   | Block Explorer URL | https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/ |
 
    > **Note**: _You can also add network from https://staging.razorscan.io/ by clicking on "Connect wallet" and switching network to Skale._
 
@@ -47,7 +47,7 @@ Docker: You can find more information about installing docker [here](https://doc
 
 Oracle-Node(github): You can check the Razor-go:dev at [develop branch](https://github.com/razor-network/oracle-node/tree/develop).
 
-You can download the docker image of Razor-go:dev - `ab83868` from [here]https://hub.docker.com/layers/razornetwork/razor-go/ab83868/images/sha256-c3d9efc9cbb56fb30544d4eba7c264c7fdb176f3cb8b012e4873883c18394601?context=explore.
+You can download the docker image of Razor-go:dev - `7f77a9f` from [here]https://hub.docker.com/layers/razornetwork/razor-go/7f77a9f/images/sha256-99409212071104eab59fe5c35d5968ddeb16d9a034d4e4d77de5b95e5dadeb5f?context=explore.
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -62,7 +62,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:ab83868
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:7f77a9f
 ```
 
 This spins up a razor-go docker image. You can find all the images on the [Razor Network dockerhub](https://hub.docker.com/u/razornetwork).
