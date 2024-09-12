@@ -23,7 +23,7 @@ const sidebars = {
     "getting-started",
     {
       type: "category",
-      label: "Razor V1 (Soon to be Deprecated)",
+      label: "Razor V1 (Deprecated Soon)",
       items: [
         {
           type: "doc",
