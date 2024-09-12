@@ -27,14 +27,15 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Mainnet details",
-          id: "razor-v1/mainnet",
-        },
-        {
-          type: "doc",
           label: "Testnet details",
           id: "razor-v1/testnet",
         },
+        {
+          type: "doc",
+          label: "Mainnet details",
+          id: "razor-v1/mainnet",
+        },
+
         "razor-v1/unstake",
         "razor-v1/initiate-withdraw",
         "razor-v1/withdraw",
@@ -47,13 +48,13 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Mainnet details",
-          id: "razor-v2/mainnet",
+          label: "Testnet details",
+          id: "razor-v2/testnet",
         },
         {
           type: "doc",
-          label: "Testnet details",
-          id: "razor-v2/testnet",
+          label: "Mainnet details",
+          id: "razor-v2/mainnet",
         },
       ],
     },
