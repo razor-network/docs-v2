@@ -27,11 +27,6 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Testnet details",
-          id: "razor-v1/testnet",
-        },
-        {
-          type: "doc",
           label: "Mainnet details",
           id: "razor-v1/mainnet",
         },
