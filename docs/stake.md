@@ -1,6 +1,6 @@
 # Stake
 
-Razor network is a proof of stake network. In order to participate in the network as a validator, you will need to "Stake" your RAZORs. RAZORs are the native tokens in the network and they are compatible with the ERC20 tokens standard.
+Razor network is a proof of stake network. In order to participate in the network as a validator, you will need to "Stake" your RAZORs. RAZOR tokens are the native tokens in the network and they are compatible with the ERC20 tokens standard.
 
 ## Get tokens {#get-tokens}
 
@@ -8,7 +8,7 @@ You will need some sFUEL to pay for transaction fees.
 You can get sFUEL from here:
 https://www.sfuelstation.com/
 
-In order to get started, you will also need some RAZORs on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Schain using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/ethereum-europa)
+In order to get started, you will also need some RAZOR tokens on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Schain using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/ethereum-europa)
 
 ## Add Razor Schain network to metamask
 
@@ -156,7 +156,7 @@ An example of this command would be:
 
 _Note: --weiRazor flag can be passed to provide values in wei_
 
-If you have a 1000.25 razors in your account, you can stake those using the stake command with weiRazor flag.
+If you have a 1000.25 RAZOR tokens in your account, you can stake those using the stake command with weiRazor flag.
 
 Example:
 
@@ -164,7 +164,7 @@ Example:
 $ razor addStake --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 1000250000000000000000 --weiRazor true
 ```
 
-If you have a 5678.1001 razors in your account, you can stake those using the stake command with weiRazor flag.
+If you have a 5678.1001 RAZOR tokens in your account, you can stake those using the stake command with weiRazor flag.
 
 Example:
 
