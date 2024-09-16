@@ -1,6 +1,6 @@
 # Razor V2 Testnet Deployment Details
 
-Razor Network is currently live on Mainnet. Details regarding mainnet is mentioned below:
+Razor Network details on Testnet are mentioned below:
 
 | Variable       | Value                                                            |
 | -------------- | ---------------------------------------------------------------- |
