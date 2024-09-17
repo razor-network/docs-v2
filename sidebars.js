@@ -290,11 +290,11 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Razor Token bridge",
+      label: "Razor Token Bridge",
       items: [
         {
           type: "doc",
-          label: "Ethereum <-> Razor chain",
+          label: "Ethereum <-> Razor Chain",
           id: "token-bridge/ethereum-razor",
         },
         {

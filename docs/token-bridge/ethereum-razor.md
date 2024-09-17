@@ -1,4 +1,4 @@
-# Ethereum <-> Razor chain bridge
+# Ethereum <-> Razor Chain Bridge
 
 [Razor Token Bridge](https://bridge.razorscan.io/) allows users to bridge $RAZOR tokens between Ethereum and Razor Schain. The Token Bridge is powered by [Skale IMA](https://docs.skale.network/ima/1.3.x/).
 

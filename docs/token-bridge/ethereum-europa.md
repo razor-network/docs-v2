@@ -1,4 +1,4 @@
-# Ethereum <-> Europa DeFi Hub bridge
+# Ethereum <-> Europa DeFi Hub Bridge
 
 ## Bridging RAZOR tokens from Ethereum to Europa
 
