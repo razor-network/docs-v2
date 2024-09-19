@@ -1,8 +1,8 @@
-# Ethereum <-> Razor Chain Bridge
+# Razor Chain
 
-## Bridge tokens from Ethereum to RAZOR chain
+<!-- ## Ethereum to Razor Chain
 
-1. Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=turbulent-unique-scheat&token=razor&type=erc20)
+1. Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=turbulent-unique-scheat&token=razor&type=erc20).
 2. Connect wallet and switch the network to Ethereum.
 3. Once connected to Ethereum, Enter amount of RAZOR tokens to bridge in the From "Ethereum" card and then click on "Transfer". If you have .This will trigger 2 transactions for the user to confirm:
 
@@ -11,9 +11,9 @@
 
 > **_NOTE:_** Bridge transfer typically takes 3-5 minutes.
 
-![Ethereum to Schain](/img/bridge/portal-e2s.png)
+![Ethereum to Razor Chain](/img/bridge/portal-e2s.png) -->
 
-## Bridge RAZOR tokens from Razor chain to Ethereum
+## Razor Chain to Ethereum
 
 Before bridging tokens from Razor Skale Chain to Ethereum, make sure you have enough balance in Skale Exit Gas Wallet.
 
@@ -34,12 +34,12 @@ A Skale Exit Gas Wallet is used to pay for gas fees on transactions sent to the 
 
 ### Bridge
 
-1. Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=turbulent-unique-scheat&to=mainnet&token=razor&type=erc20&from-app=razor-network)
+1. Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=turbulent-unique-scheat&to=mainnet&token=razor&type=erc20&from-app=razor-network).
 2. Connect wallet and switch the network to Razor SKALE Chain.
 3. Enter amount of RAZOR tokens to be sent and click "Transfer". This will trigger 2 transactions for the user to confirm:
    - Allow amount of RAZOR tokens to be spent by Skale IMA DepositBoxERC20 contract.
    - Depositing RAZOR tokens to DepositBoxERC20 contract to bridge tokens from Razor SKALE Chain to Ethereum. Tokens will be burnt on the Razor SKALE Chain and unlocked and sent to the users address on Ethereum Mainnet.
 
-> **_NOTE:_** Bridge transfer typically takes 3-5 minutes
+> **_NOTE:_** Once tokens are successfully bridged from Razor to the Ethereum mainnet, make sure to claim any unused gas from the **Exit Gas Wallet**. The bridge transfer typically takes 3-5 minutes.
 
 ![Schain to Ethereum](/img/bridge/portal-s2e.png)
