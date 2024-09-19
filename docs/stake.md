@@ -8,7 +8,7 @@ You will need some sFUEL to pay for transaction fees.
 You can get sFUEL from here:
 https://www.sfuelstation.com/
 
-In order to get started, you will also need some RAZOR tokens on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Schain using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/ethereum-europa)
+In order to get started, you will also need some RAZOR tokens on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Schain using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/europa-defi-hub)
 
 ## Add Razor Schain network to metamask
 

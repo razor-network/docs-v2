@@ -294,13 +294,13 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Ethereum <-> Razor Chain",
-          id: "token-bridge/ethereum-razor",
+          label: "Razor Chain",
+          id: "token-bridge/razor-chain",
         },
         {
           type: "doc",
-          label: "Ethereum <-> Europa Defi Hub",
-          id: "token-bridge/ethereum-europa",
+          label: "Europa Defi Hub",
+          id: "token-bridge/europa-defi-hub",
         },
       ],
     },

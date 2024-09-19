@@ -4,7 +4,7 @@ title: Delegate
 
 Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
-In order to delegate, you will also need some RAZOR tokens on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](docs/token-bridge/ethereum-razor). To pay transaction fees on Razor Schain you will require sFUEL to pay for gas, you can get sFUEL from [Faucet](https://faucet.razorscan.io/).
+In order to delegate, you will also need some RAZOR tokens on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=elated-tan-skat&token=razor&type=erc20). More info regarding RAZOR Token bridge can be found [here](docs/token-bridge/europa-defi-hub). To pay transaction fees on Razor Schain you will require sFUEL to pay for gas, you can get sFUEL from [Faucet](https://www.sfuelstation.com/).
 
 <!-- > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only. -->
 
