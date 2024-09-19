@@ -21,9 +21,11 @@ Before bridging tokens from Razor Skale Chain to Ethereum, make sure you have en
 
 ### What is Skale Exit Gas Wallet?
 
-A Skale Exit Gas Wallet is used to pay for gas fees on transactions sent to the Ethereum Mainnet. It ensures that users have the necessary funds to cover transaction costs. You can withdraw funds from your Skale Exit Gas Wallet at any time.
+To bridge funds from SKALE Chain to Ethereum Mainnet, you must first deposit funds into your SKALE Exit Gas Wallet. This wallet covers the transaction costs on Ethereum Mainnet when your funds are transferred to you.
 
-### How to Recharge Your Skale Exit Gas Wallet Balance
+The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas fees on transactions sent to Ethereum Mainnet. It's important to note that any unused gas in this wallet should be manually claimed by you after your tokens have been received on Ethereum Mainnet.
+
+### How to fund the Skale Exit Gas Wallet
 
 1. Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=turbulent-unique-scheat&to=mainnet&token=razor&type=erc20) and connect your wallet.
 2. In the "Recharge Exit Gas Wallet" section, enter the amount of ETH you'd like to add to your Gas Wallet. Ensure the amount is above the recommended minimum, then click "Recharge Exit Gas Wallet." You can withdraw your Gas Wallet balance anytime after the token bridging process is completed.
