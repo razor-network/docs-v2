@@ -18,13 +18,15 @@
 
 Before bridging tokens from Europa Defi Hub to Ethereum, make sure you have enough balance in Skale Exit Gas Wallet.
 
-### What is Skale Exit Gas Wallet?
-
+<details><summary>What is Skale Exit Gas Wallet?</summary>
+<p>
 To bridge funds from SKALE Chain to Ethereum Mainnet, you must first deposit funds into your SKALE Exit Gas Wallet. This wallet covers the transaction costs on Ethereum Mainnet when your funds are transferred to you.
-
+<br />
+<br />
 The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas fees on transactions sent to Ethereum Mainnet. It's important to note that any unused gas in this wallet should be manually claimed by you after your tokens have been received on Ethereum Mainnet.
 
-### Bridge
+</p>
+</details>
 
 **Step 1:** Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=elated-tan-skat&to=mainnet&token=razor&type=erc20). Connect your wallet and switch the network to Europa Defi Hub. Make sure selected token is RAZOR.
 
