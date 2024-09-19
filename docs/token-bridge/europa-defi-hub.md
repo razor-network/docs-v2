@@ -2,13 +2,17 @@
 
 ## Ethereum to Europa Defi Hub
 
-1. Go to the [SKALE Portal Bridge](https://portal.skale.space/bridge).
-2. Set the "From" chain to Ethereum and the "To" chain to Europa. Select the token as **RAZOR** and input the amount you wish to bridge.
-3. Click **Transfer**. This will trigger two transactions for the user to confirm:
-   - Approve the amount of **RAZOR** tokens to be spent by the SKALE IMA DepositBox contract.
-   - Deposit the **RAZOR** tokens into the DepositBox contract to bridge tokens from Ethereum to Europa Schain.
-4. Once both transactions are confirmed, the bridging process will begin.
-   > **_NOTE:_** Bridge transfer typically takes 3-5 minutes.
+**Step 1**:Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=turbulent-unique-scheat&token=razor&type=erc20).Connect wallet and switch the network to Ethereum.
+
+**Step 2**: Click **Transfer**. This will trigger two transactions for the user to confirm:
+
+- Approve the amount of **RAZOR** tokens to be spent by the Skale IMA contract.
+- Deposit the **RAZOR** tokens into the Skale IMA contract to bridge tokens from Ethereum to Europa Schain.
+- Once both transactions are confirmed, the bridging process will begin.
+
+> **_NOTE:_** Bridge transfer typically takes 3-5 minutes.
+
+![Ethereum to Europa Defi Hub](/img/bridge/portal-ethereum2europa.png)
 
 ## Europa Defi Hub to Ethereum
 
@@ -37,7 +41,7 @@ The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas
 **Step 3:** Enter the amount of RAZOR tokens to be sent and click "Transfer." This will trigger 2 transactions for the user to confirm:
 
 - Approve the spending of RAZOR tokens by the Skale IMA contract.
-- Deposit RAZOR tokens to the Skale IMA contract to bridge tokens from Europa Defi Hub to Ethereum. The tokens will be burnt on the Razor SKALE Chain and unlocked on Ethereum Mainnet to the user's address.
+- Deposit RAZOR tokens to the Skale IMA contract to bridge tokens from Europa Defi Hub to Ethereum. The tokens will be burnt on the Europa Defi Hub and unlocked on Ethereum Mainnet to the user's address.
 
 ![Schain to Ethereum](/img/bridge/portal-europa2ethereum.png)
 
