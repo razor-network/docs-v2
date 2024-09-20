@@ -46,6 +46,6 @@ The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas
 
 ![Schain to Ethereum](/img/bridge/portal-s2e.png)
 
-**Step 4:** Once tokens are successfully bridged from Razor to Ethereum Mainnet, make sure to withdraw any unused gas from the **Exit Gas Wallet**.
+**Step 4:** Once tokens are successfully bridged from Razor Chain to Ethereum, make sure to withdraw any unused gas from the **Exit Gas Wallet** on Ethereum.
 
 > **_NOTE:_** The bridge transfer typically takes 3-5 minutes.
