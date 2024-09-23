@@ -37,7 +37,7 @@ Example:
 **Note**: _Make sure you input your alternate provider value as a value to alternateProvider flag
 
 ```
-$ ./razor setConfig --provider https://elated-tan-skat.explorer.mainnet.skalenodes.com --gasmultiplier 1 --buffer 5 --wait 1 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 30000000 --rpcTimeout 5 --httpTimeout 5 --logFileMaxSize 200 --logFileMaxBackups 10 --logFileMaxAge 60
+$ ./razor setConfig --provider https://mainnet.skalenodes.com/v1/elated-tan-skat --gasmultiplier 1 --buffer 5 --wait 1 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 30000000 --rpcTimeout 5 --httpTimeout 5 --logFileMaxSize 200 --logFileMaxBackups 10 --logFileMaxAge 60
 ```
 
 Other than setting these parameters in the config, you can use different values of these parameters in different command. Just add the same flag to any command you want to use and the new config changes will appear for that command.

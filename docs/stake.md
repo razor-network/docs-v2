@@ -240,7 +240,7 @@ For more details around all the commands of `razor-go`, please check out the `or
 If you would rather install from source, please follow Instructions here to [run a Razor Network node from source](https://github.com/razor-network/oracle-node#building-the-source).
 
 ## Update docker image
-> **_NOTE:_**: _If you are updating to `v2` in the same machine where `v1` node was running, make sure you delete all the files in ` .razor/data_files` directory.
+> **_NOTE:_**: _If you are updating to `v2` on the same machine where the `v1` node was running, make sure to delete all the the files in the `.razor/data_files` directory.
 
 To update the razor-go node version
 
