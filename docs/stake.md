@@ -86,9 +86,9 @@ docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -
 ```
 <details><summary>For testnet use the following command</summary>
 <p>
-```
+<pre><code>
 docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:54371f1
-```
+</code></pre>
 
 </p>
 </details>
@@ -119,9 +119,9 @@ docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.c
 ```
 <details><summary>For testnet use the following command</summary>
 <p>
-```
+<pre><code>
 docker exec -it razor-go razor setConfig --provider https://testnet.skalenodes.com/v1/juicy-low-small-testnet --gasmultiplier 1 --buffer 5 --wait 1 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 30000000 --rpcTimeout 5 --httpTimeout 5 --logFileMaxSize 200 --logFileMaxBackups 10 --logFileMaxAge 60
-```
+</code></pre>
 
 </p>
 </details>
