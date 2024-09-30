@@ -40,5 +40,5 @@ $ docker exec -it razor-go razor updateCommission --address 0x5a0b54d5dc17e0aadc
 
 Enable delegation:
 ```
-$ docker exec -it razor-go razor --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --status true --logFile logs
+$ docker exec -it razor-go razor setDelegation --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --status true --logFile logs
 ```
