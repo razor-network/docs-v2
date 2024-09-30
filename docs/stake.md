@@ -87,7 +87,7 @@ docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -
 <details><summary>For testnet use the following command</summary>
 <p>
 <pre><code>
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:54371f1
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:d9c8f51
 </code></pre>
 
 </p>
@@ -125,6 +125,7 @@ docker exec -it razor-go razor setConfig --provider https://testnet.skalenodes.c
 
 </p>
 </details>
+
 > **_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
 
 > **_NOTE:_**: _You can add an alternate provider by passing `--alternateProvider [ALTERNATE_PROVIDER]` in the above `setConfig` command which can act as the secondary RPC to your node._
