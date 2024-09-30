@@ -187,7 +187,7 @@ Example:
 $ ./razor addStake --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 5678100100000000000000 --weiRazor true
 ```
 
-To start accepting delegation, use the delegation command in a new terminal which mentioned in the [set delegation documentation](https://docs.razor.network/docs/commands/staker/set-delegation)
+To start accepting delegation, use the delegation command in a new terminal which is mentioned in the [set delegation documentation](https://docs.razor.network/docs/commands/staker/set-delegation)
 
 It will enable delegation, and participants can delegate RAZOR tokens to your staker's account.
 
