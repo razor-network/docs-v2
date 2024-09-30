@@ -187,15 +187,7 @@ Example:
 $ ./razor addStake --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 5678100100000000000000 --weiRazor true
 ```
 
-To start accepting delegation, use the delegation command in a new terminal:
-
-    docker exec -it razor-go razor setDelegation --address <address> --status <bool> --commission <commission> --logFile <filename>
-
-where `address` is the address that contains RAZOR tokens, `status` is true or false to turn on or off delegation, and `commission` is the percentage of commission that you can set.
-
-An example of this command would be:
-
-    docker exec -it razor-go razor setDelegation --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --status true --commission 20 --logFile logs
+To start accepting delegation, use the delegation command in a new terminal which mentioned in the [set delegation documentation](https://docs.razor.network/docs/commands/staker/set-delegation)
 
 It will enable delegation, and participants can delegate RAZOR tokens to your staker's account.
 
