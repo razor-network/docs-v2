@@ -8,9 +8,9 @@ You will need some sFUEL to pay for transaction fees.
 You can get sFUEL from here:
 https://www.sfuelstation.com/
 
-In order to get started, you will also need some RAZOR tokens on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Schain using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/europa-defi-hub)
+In order to get started, you will also need some RAZOR tokens on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Defi Hub using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/europa-defi-hub)
 
-## Add Razor Schain network to metamask
+## Add Europa Defi Hub network to metamask
 
 1. Use an ethereum compatible browser (e.g. Chrome browser with Metamask plugin)
 2. In metamask, click on top right account icon > Settings > Add Network.
@@ -84,6 +84,7 @@ docker network create razor_network
 ```
 docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v2.0.0
 ```
+
 <details><summary>For testnet use the following command</summary>
 <p>
 <pre><code>
@@ -117,6 +118,7 @@ There are a set of parameters that are configurable. These include:
 ```
 docker exec -it razor-go razor setConfig --provider https://mainnet.skalenodes.com/v1/elated-tan-skat --gasmultiplier 1 --buffer 5 --wait 1 --gasprice 0 --logLevel debug --gasLimit 2 --gasLimitOverride 30000000 --rpcTimeout 5 --httpTimeout 5 --logFileMaxSize 200 --logFileMaxBackups 10 --logFileMaxAge 60
 ```
+
 <details><summary>For testnet use the following command</summary>
 <p>
 <pre><code>
@@ -188,7 +190,7 @@ Example:
 $ ./razor addStake --address 0x5a0b54d5dc17e0aadc383d2db43b0a0d3e029c4c --value 5678100100000000000000 --weiRazor true
 ```
 
-To start accepting delegation, use the delegation command in a new terminal which is mentioned in the [set delegation documentation](https://docs.razor.network/docs/commands/staker/set-delegation)
+To start accepting delegation, use the delegation command in a new terminal which is mentioned in the [set delegation documentation](./commands/staker/set-delegation)
 
 It will enable delegation, and participants can delegate RAZOR tokens to your staker's account.
 
@@ -233,7 +235,8 @@ For more details around all the commands of `razor-go`, please check out the `or
 If you would rather install from source, please follow Instructions here to [run a Razor Network node from source](https://github.com/razor-network/oracle-node#building-the-source).
 
 ## Update docker image
-> **_NOTE:_**: _If you are updating to `v2` on the same machine where the `v1` node was running, make sure to delete all the the files in the `.razor/data_files` directory.
+
+> **_NOTE:_**: \_If you are updating to `v2` on the same machine where the `v1` node was running, make sure to delete all the the files in the `.razor/data_files` directory.
 
 To update the razor-go node version
 
