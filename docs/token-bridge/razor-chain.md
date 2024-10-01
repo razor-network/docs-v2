@@ -24,8 +24,6 @@ The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas
 
 ![Gas wallet](/img/bridge/portal-gas-wallet.png)
 
-> **_Note:_** The Gas Wallet balance is capped at a maximum of 1 ETH per address. If you withdraw the entire balance, you will need to redeposit ETH to bridge tokens again.
-
 **Step 3:** Enter the amount of RAZOR tokens to be sent and click "Transfer." This will trigger 2 transactions for the user to confirm:
 
 - Approve the spending of RAZOR tokens by the Skale IMA contract.
