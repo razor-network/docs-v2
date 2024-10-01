@@ -2,7 +2,7 @@
 title: Oracle Node installation
 ---
 
-**Note**: _If you're upgrading your node to version v2.0.0 on the same machine where a v1.x node was running, be sure to delete the files inside the .`razor/data_files` directory. This is necessary because v2.0.0 introduces a hard fork, which includes a new epoch length that requires fresh data syncing._
+**Important**: _If you're upgrading your node to version v2.0.0 on the same machine where a v1.x node was running, **take a backup of the Keystore files in `.razor/keystore_files` and then delete the files inside the `.razor/data_files` directory**. This is necessary because v2.0.0 introduces a hard fork, which includes a new epoch length that requires fresh data syncing._
 
 ### Linux quick start
 
