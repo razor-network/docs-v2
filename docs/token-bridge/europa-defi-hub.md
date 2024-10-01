@@ -43,7 +43,7 @@ The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas
 **Step 3:** Enter the amount of RAZOR tokens to be sent and click "Transfer." This will trigger 2 transactions for the user to confirm:
 
 - Approve the spending of RAZOR tokens by the Skale IMA contract.
-- Deposit RAZOR tokens to the Skale IMA contract to bridge tokens from Europa Defi Hub to Ethereum. The tokens will be burnt on the Europa Defi Hub and unlocked on Ethereum Mainnet to the user's address.
+- Deposit RAZOR tokens to the Skale IMA contract to bridge tokens from Europa Defi Hub to Ethereum. The tokens will be burnt on the Europa Defi Hub and sent to the users address on Ethereum Mainnet.
 
 ![Schain to Ethereum](/img/bridge/portal-europa2ethereum.png)
 

@@ -1,18 +1,5 @@
 # Razor Chain
 
-<!-- ## Ethereum to Razor Chain
-
-1. Visit [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=turbulent-unique-scheat&token=razor&type=erc20).
-2. Connect wallet and switch the network to Ethereum.
-3. Once connected to Ethereum, Enter amount of RAZOR tokens to bridge in the From "Ethereum" card and then click on "Transfer". If you have .This will trigger 2 transactions for the user to confirm:
-
-   - Allow amount of RAZOR tokens set to be spent by Skale IMA DepositBox contract. (Approve RAZOR tokens)
-   - Depositing RAZOR tokens to DepositBox contract to bridge tokens from Ethereum to Schain. (Send RAZOR tokens to Bridge Contract)
-
-> **_NOTE:_** Bridge transfer typically takes 3-5 minutes.
-
-![Ethereum to Razor Chain](/img/bridge/portal-e2s.png) -->
-
 ## Razor Chain to Ethereum
 
 Before bridging tokens from Razor Skale Chain to Ethereum, make sure you have enough balance in Skale Exit Gas Wallet.
