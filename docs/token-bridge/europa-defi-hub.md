@@ -23,7 +23,7 @@ Before bridging tokens from Europa Defi Hub to Ethereum, make sure you have enou
 To bridge funds from Europa Defi Hub chain to Ethereum Mainnet, you must first deposit funds into your SKALE Exit Gas Wallet. This wallet covers the transaction costs on Ethereum Mainnet when your funds are transferred to you.
 <br />
 <br />
-The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas fees on transactions sent to Ethereum Mainnet. <b>It's important to note that any unused gas in this wallet should be manually claimed by you after your tokens have been received on Ethereum Mainnet.</b>
+The SKALE Exit Gas Wallet ensures that there are sufficient funds to pay for gas fees on transactions sent to Ethereum Mainnet. <b>Important: Once your tokens are received on Ethereum Mainnet, immediately claim all unused gas from this wallet.</b>
 
 </p>
 </details>
