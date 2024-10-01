@@ -29,7 +29,7 @@ Visit <https://razorscan.io/>
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to "Razor Schain". Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to "Europa Defi Hub". Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
 
 **Note**: _This can also be done from the particular staker or delegator page._
 ![Screenshot](/img/unstake/unstake_step2.png)
