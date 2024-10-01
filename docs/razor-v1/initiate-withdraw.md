@@ -6,7 +6,7 @@ Before withdrawing, user needs to initiate withdraw to lock the RAZOR amount tha
 
 ### Step 1 {#step-1}
 
-Visit <https://razorscan.io/>
+Visit <https://v1.razorscan.io/>
 
 **Note**: _We recommend that all Delegators bookmark this specific URL to prevent any phishing attacks_.
 
@@ -14,7 +14,7 @@ Visit <https://razorscan.io/>
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to "Europa Defi Hub". Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to "Razor Schain". Next, visit https://v1.razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
 
 ![Screenshot](/img/initiate-withdraw/Initiate_Withdraw_step2.png)
 
@@ -38,4 +38,4 @@ Once the transaction is successful, [Withdraw](./withdraw.md) will need to be ca
 
 ![Screenshot](/img/initiate-withdraw/Initiate_Withdraw_step5.png)
 
-**Note**: _To get the exact values of the lock periods check Governance [here](https://razorscan.io/governance/values)_.
+**Note**: _To get the exact values of the lock periods check Governance [here](https://v1.razorscan.io/governance/values)_.

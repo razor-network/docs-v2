@@ -2,6 +2,8 @@
 title: Oracle Node installation
 ---
 
+**Note**: _If you're upgrading your node to version v2.0.0 on the same machine where a v1.x node was running, be sure to delete the files inside the .`razor/data_files` directory. This is necessary because v2.0.0 introduces a hard fork, which includes a new epoch length that requires fresh data syncing._
+
 ### Linux quick start
 
 Install `razor-go` pre build binary directly from github and configure into host.
@@ -45,7 +47,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v1.1.0-patch.1
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v2.0.0
 ```
 
 > **_NOTE:_** we are leveraging docker bind-mounts to mount `.razor` directory so that we have a shared mount of `.razor` directory between the host and the container. The `.razor` directory holds keys to the addresses that we use in `razor-go`, along with logs and config. We do this to persist data in the host machine, otherwise you would lose your keys once you delete the container.

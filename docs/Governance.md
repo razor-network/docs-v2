@@ -64,7 +64,7 @@ These are the network parameters that govern our protocol. A thorough understand
 
 ### Withdraw Lock Period
 
-The Withdraw Lock Period is the number of epochs for which the RAZORs are locked after initiating a withdraw request.
+The Withdraw Lock Period is the number of epochs for which the RAZOR tokens are locked after initiating a withdraw request.
 
 ### Max Alt Blocks
 

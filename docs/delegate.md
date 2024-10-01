@@ -4,16 +4,16 @@ title: Delegate
 
 Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
-In order to delegate, you will also need some RAZORs on Razor Schain. You can bridge RAZOR tokens from Ethereum to Razor Schain using [Razor Token Bridge](https://bridge.razorscan.io/). More info regarding RAZOR Token bridge can be found [here](docs/token-bridge/intro). To pay transaction fees on Razor Schain you will require sFUEL to pay for gas, you can get sFUEL from [Faucet](https://faucet.razorscan.io/).
+In order to delegate, you will also need some RAZOR tokens on Europa Defi Hub. You can bridge RAZOR tokens from Ethereum to Europa Defi Hub using [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=elated-tan-skat&token=razor&type=erc20). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/europa-defi-hub#ethereum-to-europa-defi-hub). To pay transaction fees on Europa Defi Hub you will require sFUEL to pay for gas, you can get sFUEL from [Faucet](https://www.sfuelstation.com/).
 
 <!-- > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only. -->
 
 ## Metamask Setup {#metamask-setup}
 
 1. Click on `Connect Wallet` on the official Razor Network client <https://razorscan.io/>.
-2. Switch to the Razor Schain Network and connect Metamask wallet.
+2. Switch to the Europa Defi Hub Network and connect Metamask wallet.
 3. Click on the `+` icon to add the RAZOR contract address.
-4. Alternatively, contract addresses and network details can be found [here](./mainnet/deployment-details.md) if you would like to verify the addresses manually.
+4. Alternatively, contract addresses and network details can be found [here](./razor-v2/mainnet.md) if you would like to verify the addresses manually.
 
 **Note**: _You can get the stakers sRAZOR address by clicking on the `+` icon on that stakers delegate/unstake modal._
 
@@ -29,7 +29,7 @@ Visit <https://razorscan.io/>
 
 ### Step 2 {#step-2}
 
-Now, click on “Connect Wallet” from the top right corner and make sure your network is set to "Razor Schain". Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
+Now, click on “Connect Wallet” from the top right corner and make sure your network is set to "Europa Defi Hub". Next, visit https://razorscan.io/staking or click on “Staking” from the menu bar on the header and you should see the screen below:
 
 ![Screenshot](/img/delegate/delegation_step2.png)
 
