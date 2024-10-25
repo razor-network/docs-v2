@@ -23,18 +23,13 @@ const sidebars = {
     "getting-started",
     {
       type: "category",
-      label: "Razor V1 (Deprecated Soon)",
+      label: "Razor V1 (Deprecated)",
       items: [
         {
           type: "doc",
           label: "Mainnet details",
           id: "razor-v1/mainnet",
         },
-
-        "razor-v1/unstake",
-        "razor-v1/initiate-withdraw",
-        "razor-v1/withdraw",
-        "razor-v1/reset-lock",
       ],
     },
     {
@@ -292,11 +287,6 @@ const sidebars = {
       type: "category",
       label: "Razor Token Bridge",
       items: [
-        {
-          type: "doc",
-          label: "Razor Chain",
-          id: "token-bridge/razor-chain",
-        },
         {
           type: "doc",
           label: "Europa Defi Hub",
