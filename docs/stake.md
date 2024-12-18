@@ -101,7 +101,6 @@ This spins up a razor-go docker image. You can find all the images on the [Razor
 There are a set of parameters that are configurable. These include:
 
 - Provider: The RPC URL of the provider you are using to connect to the blockchain.
-- Alternate Provider: This is the secondary RPC URL of the provider used to connect to the blockchain if the primary one is not working.
 - Gas Multiplier: The value with which the gas price will be multiplied while sending every transaction.
 - Buffer Size: Buffer size determines, out of all blocks in a state, in how many blocks the voting or any other operation can be performed.
 - Wait Time: This is the number of seconds the system will wait while voting.
@@ -129,8 +128,6 @@ docker exec -it razor-go razor setConfig --provider https://testnet.skalenodes.c
 </details>
 
 > **_NOTE:_**: _This will create `razor.yaml` with all necessary parameter at `$HOME/.razor` directory. We can view that via command:`cat $HOME/.razor/razor.yaml` ._
-
-> **_NOTE:_**: _You can add an alternate provider by passing `--alternateProvider [ALTERNATE_PROVIDER]` in the above `setConfig` command which can act as the secondary RPC to your node._
 
 > **_NOTE:_** You can automate all razor-go commands by providing password non-interactively. There are multiple ways to do that
 >
