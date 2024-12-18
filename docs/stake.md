@@ -155,6 +155,10 @@ Import an account using the following command:
 
     docker exec -it razor-go razor import
 
+Staker needs to import the list of endpoints using `importEndpoints` command"
+
+    docker exec -it razor-go razor importEndpoints
+
 Fund this account with sFUEL and RAZOR tokens to start participating in the network.
 
 You can use the full commands (stake) or the short form (s) as shown below.
@@ -274,6 +278,12 @@ To update the razor-go node version
    ```
 7. If you want to update your config file, you can run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
 
+8. Staker needs to run `importEndpoints` command to import the list of endpoints present in the updated release, the command would be like:
+
+   ```
+   docker exec -it razor-go razor importEndpoints
+   ```
+
 > **Note**: _If you are running vote command in tmux session_
 >
 > 1.  Check your razor-go session exists: `tmux ls`
@@ -284,7 +294,7 @@ To update the razor-go node version
 
 8. Start voting again
    ```
-   docker exec -it razor-go razor vote --address <account> --logFile <filename> --gasLimitOverride 50000000
+   docker exec -it razor-go razor vote --address <account> --logFile <filename>
    ```
 
 ---
