@@ -65,9 +65,9 @@ Docker: You can find more information about installing docker [here](https://doc
 
 <!-- TODO: Update this after deployment -->
 
-Oracle-Node(github): You can download the Oracle-Node:2.0.0 from [here](https://github.com/razor-network/oracle-node/releases/tag/v2.0.0).
+Oracle-Node(github): You can download the Oracle-Node:2.0.1 from [here](https://github.com/razor-network/oracle-node/releases/tag/v2.0.1).
 
-You can download the docker image of Razor-go:v2.0.0 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v2.0.0/images/sha256-104308511ff24765475ec78646b8e5de316feb5b510b044d7b6893da2915cba4?context=explore).
+You can download the docker image of Razor-go:v2.0.1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v2.0.0/images/sha256-104308511ff24765475ec78646b8e5de316feb5b510b044d7b6893da2915cba4?context=explore).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
@@ -82,7 +82,7 @@ docker network create razor_network
 2. Start razor-go container
 
 ```
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v2.0.0
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v2.0.1
 ```
 
 <details><summary>For testnet use the following command</summary>
@@ -253,7 +253,7 @@ To update the razor-go node version
 2. Check your container is running via `docker ps`, you should get an output like:
    ```
    CONTAINER ID   IMAGE                                  COMMAND     CREATED         STATUS         PORTS     NAMES
-   5f0b7d99a71b   razornetwork/razor-go:v1.1.0-patch.1           "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
+   5f0b7d99a71b   razornetwork/razor-go:v2.0.0           "/bin/sh"   3 weeks ago     Up 3 weeks               razor-go
    ```
 3. Stop the existing container  
    `docker stop razor-go`
@@ -265,16 +265,16 @@ To update the razor-go node version
    docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:<version>
    ```
 
-   example: If latest version is `v2.0.0` then the command would be:
+   example: If latest version is `v2.0.1` then the command would be:
 
    ```
-   docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v2.0.0
+   docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:v2.0.1
    ```
 
 6. Check your container is running `docker ps`, you should get an output like:
    ```
    CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
-   53ff3ce7c965   razornetwork/razor-go:v2.0.0   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
+   53ff3ce7c965   razornetwork/razor-go:v2.0.1   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
    ```
 7. If you want to update your config file, you can run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
 
