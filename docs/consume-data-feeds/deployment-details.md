@@ -19,6 +19,7 @@ import TabItem from "@theme/TabItem";
 | Chain Name                           | Transparent Forwarder Address                                                                                                                                       |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img src="/img/op-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Optimism | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://optimistic.etherscan.io/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
+| <img src="/img/arbitrum.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Arbitrum One | [0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9](https://arbiscan.io/address/0xEb9324f0d17e4dEa7371f6dddf361D9bB453BEb9) |
 | <img src="/img/polygon-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Polygon PoS | [0xa9f5E56320EED42051db050DfB73B5549c78BB3B](https://polygonscan.com/address/0xa9f5E56320EED42051db050DfB73B5549c78BB3B) |
 | <img src="/img/moonbeam-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> Moonbeam | [0xFb69fCd6e7E7e45C60E5c7050429C424F76b8533](https://moonscan.io/address/0xFb69fCd6e7E7e45C60E5c7050429C424F76b8533) |
 | <img src="/img/bnb-logo.png" width="20px" height="20px" style={{verticalAlign: 'middle'}} /> opBNB | [0x81Ba276ee0CCAEE9Af3a28c08ECEdB017a640294](https://opbnbscan.com/address/0x81Ba276ee0CCAEE9Af3a28c08ECEdB017a640294) |
@@ -63,6 +64,10 @@ import TabItem from "@theme/TabItem";
 | Blast Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://testnet.blastscan.io/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 | Linea Goerli         | [0x5243836FB4365ceBaf7e984f28F7491E254c911e](https://explorer.goerli.linea.build//address/0x5243836FB4365ceBaf7e984f28F7491E254c911e)                                         |
 | Zora Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://999999999.testnet.routescan.io/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
+| Avalanche Testnet         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://testnet.avascan.info/blockchain/c/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
+| Fraxtal Testnet         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://holesky.fraxscan.com/address/0xbf5c5ad799b2245ba36562bebfcbabc5d508eb84)                                         |
+| Gnosis Chiado Testnet         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://gnosis-chiado.blockscout.com/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
+| Mode Sepolia         | [0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84](https://sepolia.explorer.mode.network/address/0xbF5c5AD799b2245BA36562BebfcbAbc5D508Eb84)                                         |
 
 </TabItem>
 </Tabs>
