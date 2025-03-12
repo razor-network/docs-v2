@@ -155,7 +155,7 @@ Import an account using the following command:
 
     docker exec -it razor-go razor import
 
-Staker needs to import the list of endpoints using `importEndpoints` command"
+Staker needs to import the list of endpoints using `importEndpoints` command
 
     docker exec -it razor-go razor importEndpoints
 
