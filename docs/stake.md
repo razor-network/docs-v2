@@ -67,7 +67,7 @@ Docker: You can find more information about installing docker [here](https://doc
 
 Oracle-Node(github): You can download the Oracle-Node:2.1.1 from [here](https://github.com/razor-network/oracle-node/releases/tag/v2.1.1).
 
-You can download the docker image of Razor-go:v2.1.1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v2.0.0/images/sha256-104308511ff24765475ec78646b8e5de316feb5b510b044d7b6893da2915cba4?context=explore).
+You can download the docker image of Razor-go:v2.1.1 from [here](https://hub.docker.com/layers/razornetwork/razor-go/v2.1.1/images/sha256-36db454f7a3fd6cca2fc7d46ba3f5470a29c8b549be3dc16218de982b3125338).
 
 ### Run the Razor Network Docker Node {#run-the-razor-network-docker-node}
 
