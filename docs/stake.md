@@ -276,7 +276,7 @@ To update the razor-go node version
    CONTAINER ID   IMAGE                          COMMAND     CREATED          STATUS          PORTS     NAMES
    53ff3ce7c965   razornetwork/razor-go:v2.1.1   "/bin/sh"   17 seconds ago   Up 16 seconds             razor-go
    ```
-7. If you want to update your config file, you can run [SetConfig](https://docs.razor.to/docs/stake/mainnet#set-config) command
+7. If you want to update your config file, you can run [SetConfig](https://docs.razor.network/docs/stake/#set-config) command
 
 8. Staker needs to run `importEndpoints` command to import the list of endpoints present in the updated release, the command would be like:
 
