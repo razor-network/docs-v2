@@ -88,7 +88,7 @@ docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -
 <details><summary>For testnet use the following command</summary>
 <p>
 <pre><code>
-docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:068d798
+docker run -d -it --entrypoint /bin/sh --network=razor_network --name razor-go -v "$(echo $HOME)"/.razor:/root/.razor razornetwork/razor-go:6f59ca8
 </code></pre>
 
 </p>
