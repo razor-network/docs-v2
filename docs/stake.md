@@ -297,4 +297,192 @@ To update the razor-go node version
    docker exec -it razor-go razor vote --address <account> --logFile <filename>
    ```
 
+## Using SKALE Block Explorer (Alternative method) {#staking-block-explorer}
+
+This method allows you to stake directly by interacting with the StakeManager smart contract through the SKALE Block Explorer. This is an alternative to running the Oracle Node CLI and is recommended for advanced users who are comfortable with direct contract interaction.
+
+**Note**: This method only covers the staking transaction itself. To run as a validator and participate in voting, you still need to run the Oracle Node software as described in the sections above.
+
+### Prerequisites {#block-explorer-prerequisites}
+
+Before staking via the block explorer, ensure you have:
+
+1. **Metamask wallet** installed and configured
+2. **Europa Defi Hub network** added to Metamask (see [network details](./razor-v2/mainnet.md))
+3. **RAZOR tokens** on Europa Defi Hub (bridge from Ethereum via [SKALE Portal](https://portal.skale.space/bridge?from=mainnet&to=elated-tan-skat&token=razor&type=erc20))
+4. **sFUEL tokens** for gas fees (get from [faucet](https://www.sfuelstation.com/))
+5. **Minimum 100,000 RAZOR** tokens (minSafeRazor requirement for new stakers)
+
+### Contract Addresses {#contract-addresses-stake}
+
+**Mainnet (Europa Defi Hub):**
+- StakeManager: [`0xd492408e4901CF658c7874285984F6D5Db648D1E`](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xd492408e4901CF658c7874285984F6D5Db648D1E)
+- BlockManager: [`0xEa74913E6Ed2dce4c89c89F5A328b507AfD86c0e`](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEa74913E6Ed2dce4c89c89F5A328b507AfD86c0e)
+- RAZOR Token: [`0xCA46B70cA3c510Ce9D0c43D25817032e2F5354c0`](https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xCA46B70cA3c510Ce9D0c43D25817032e2F5354c0)
+
+**Testnet (Europa Defi Hub Testnet):**
+- StakeManager: [`0xbeCf5d1b74d0C2A6388c65491BBb4aD3880cD012`](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0xbeCf5d1b74d0C2A6388c65491BBb4aD3880cD012)
+- BlockManager: [`0x3FD90d39d6f6f9EB39E5B0cf733e0aD02241f345`](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x3FD90d39d6f6f9EB39E5B0cf733e0aD02241f345)
+- RAZOR Token: [`0x99Be5a5749bA2bccfC4Bb6584cA0E405A16586C4`](https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x99Be5a5749bA2bccfC4Bb6584cA0E405A16586C4)
+
+### Step-by-Step Instructions {#block-explorer-steps-stake}
+
+#### Step 1: Calculate Current Epoch {#calculate-current-epoch}
+
+The stake function requires the current epoch number to prevent replay attacks. The current epoch must be calculated manually using the formula: `block.timestamp / EPOCH_LENGTH (rounded down)`
+
+**Method 1: Using Block Explorer (Recommended)**
+
+1. Visit the **BlockManager contract** on the block explorer:
+   - **Mainnet**: https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xEa74913E6Ed2dce4c89c89F5A328b507AfD86c0e
+   - **Testnet**: https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0x3FD90d39d6f6f9EB39E5B0cf733e0aD02241f345
+
+2. Navigate to the **"Read Contract"** tab
+
+3. Get the **EPOCH_LENGTH** constant:
+   - Find the **`EPOCH_LENGTH`** function
+   - Click "Query" - note this value (e.g., `300` seconds)
+
+4. Get the current **block timestamp**:
+   - Look at the top of the page for the latest block number
+   - Click on the block number to view block details
+   - Note the "Timestamp" value
+
+5. Calculate the current epoch:
+   ```
+   Current Epoch = block.timestamp / EPOCH_LENGTH (rounded down)
+   ```
+
+   **Example:**
+   - If block timestamp = 1234567890
+   - And EPOCH_LENGTH = 450
+   - Then current epoch = 1234567890 / 450 = 2743484 (after rounding down)
+
+**Method 2: Using Razorscan (Easier)**
+
+Alternatively, you can see the current epoch displayed on [Razorscan](https://razorscan.io/) homepage.
+
+**Important**:
+- Epochs change every EPOCH_LENGTH seconds
+- Calculate the epoch right before staking to avoid transaction failures
+- If your transaction fails with an epoch mismatch, recalculate and try again immediately
+
+#### Step 2: Approve RAZOR Tokens {#approve-tokens-stake}
+
+Before staking, you must approve the StakeManager contract to spend your RAZOR tokens:
+
+1. Visit the **RAZOR Token contract** on the block explorer (use links above)
+2. Click "Connect Wallet" and approve the Metamask connection
+3. Verify your wallet is connected and you're on the correct network (Europa Defi Hub)
+4. Navigate to the **"Write Contract"** tab
+5. Find the **`approve`** function
+6. Fill in the parameters:
+   - **spender (address)**: Enter the StakeManager contract address:
+     - Mainnet: `0xd492408e4901CF658c7874285984F6D5Db648D1E`
+     - Testnet: `0xbeCf5d1b74d0C2A6388c65491BBb4aD3880cD012`
+   - **amount (uint256)**: Enter the amount in wei (e.g., for 100,000 RAZOR, enter `100000000000000000000000`)
+7. Click "Write" and confirm the transaction in Metamask
+8. Wait for the transaction to be confirmed
+
+**Note**: _1 RAZOR = 10^18 wei. For the minimum stake of 100,000 RAZOR = 100000000000000000000000 wei_
+
+#### Step 3: Navigate to StakeManager Contract {#navigate-stakemanager-stake}
+
+1. Visit the **StakeManager contract** on the block explorer:
+   - **Mainnet**: https://elated-tan-skat.explorer.mainnet.skalenodes.com/address/0xd492408e4901CF658c7874285984F6D5Db648D1E
+   - **Testnet**: https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/address/0xbeCf5d1b74d0C2A6388c65491BBb4aD3880cD012
+
+2. Ensure your wallet is still connected (if not, click "Connect Wallet" again)
+
+#### Step 4: Execute Stake Function {#execute-stake}
+
+1. Navigate to the **"Write Contract"** tab
+2. Scroll down and find the **`stake`** function
+3. Fill in the parameters:
+   - **epoch (uint32)**: Enter the current epoch number from Step 1 (e.g., `42`)
+   - **amount (uint256)**: Enter the stake amount in wei (e.g., for 100,000 RAZOR, enter `100000000000000000000000`)
+
+4. Click "Write" to submit the transaction
+5. Review the transaction details in the Metamask popup
+6. Click "Confirm" in Metamask
+
+**Important Notes:**
+- **First-time stakers**: Minimum stake is 100,000 RAZOR (100000000000000000000000 wei)
+- **Adding stake**: If you're already a staker, you can add any amount
+- The epoch must match the current epoch, otherwise the transaction will fail
+- Ensure you've completed the token approval in Step 2
+
+#### Step 5: Verify Transaction {#verify-transaction-stake}
+
+1. After confirming in Metamask, wait for the transaction to be processed
+2. Once confirmed, you'll see a success message in the block explorer
+3. Click on the transaction hash to view transaction details
+4. You can verify your stake by:
+   - Checking the transaction logs for a `Staked` event
+   - Visiting your wallet on [Razorscan](https://razorscan.io/) to see your staker information
+   - Querying `getStakerId` with your address on the StakeManager contract
+
+#### Step 6: Set Up Oracle Node (Required for validators) {#setup-oracle-node}
+
+**Important**: Staking tokens is only the first step. To participate as a validator and earn rewards, you must:
+
+1. Run the Oracle Node software (see [Using Docker](#using-docker) section above)
+2. Start voting with the `vote` command
+3. Keep your node online and operational
+
+Without running the Oracle Node, you'll only be staking tokens but won't be participating in the network or earning rewards.
+
+### Common Issues and Troubleshooting {#troubleshooting-stake}
+
+**Transaction fails with "less than minimum safe Razor"**
+- Your stake amount is below the 100,000 RAZOR minimum requirement for new stakers
+- Increase your stake amount to at least 100,000 RAZOR
+
+**Transaction fails with "ERC20: insufficient allowance"**
+- You didn't complete Step 2 (token approval), or approved an insufficient amount
+- Go back to Step 2 and approve the correct amount
+
+**Transaction fails with "Staker is slashed"**
+- Your staker account has been slashed for malicious behavior
+- You cannot add stake to a slashed account
+
+**Transaction fails due to epoch mismatch**
+- The epoch you provided doesn't match the current epoch
+- Epochs change approximately every X hours
+- Go back to Step 1, get the current epoch, and try again immediately
+
+**Transaction fails with "Nonpositive Amount"**
+- The amount parameter is 0 or invalid
+- Check your wei conversion is correct
+
+### Wei Conversion Helper {#wei-conversion-stake}
+
+To convert RAZOR amounts to wei for the smart contract:
+
+- 100,000 RAZOR (minimum) = `100000000000000000000000` wei
+- 200,000 RAZOR = `200000000000000000000000` wei
+- 500,000 RAZOR = `500000000000000000000000` wei
+- 1,000,000 RAZOR = `1000000000000000000000000` wei
+
+Formula: **RAZOR amount × 1,000,000,000,000,000,000**
+
+You can also use online converters or tools like `web3.utils.toWei()` in JavaScript.
+
+### Setting Delegation Acceptance {#setting-delegation}
+
+After staking, if you want to accept delegations from other users:
+
+1. First, set your commission rate using the [`updateCommission`](./commands/staker/update-commission) command
+2. Then enable delegation acceptance using the [`setDelegationAcceptance`](./commands/staker/set-delegation) command
+
+These operations are currently only available via the Oracle Node CLI, not through the block explorer.
+
+### Related Operations {#related-operations-stake}
+
+After staking, you may want to:
+- [Set Delegation](./commands/staker/set-delegation) - Enable accepting delegations
+- [Update Commission](./commands/staker/update-commission) - Set commission rate
+- [Unstake](./unstake.md) - Begin the unstaking process
+- [Claim Commission](./commands/staker/claim-commission) - Claim earned commissions
+
 ---
