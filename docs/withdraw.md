@@ -50,7 +50,7 @@ Before withdrawing via the block explorer, ensure you have:
 
 1. **Metamask wallet** installed and configured
 2. **Europa Defi Hub network** added to Metamask (see [network details](./razor-v2/mainnet.md))
-3. **sFUEL tokens** for gas fees (get from [faucet](https://www.sfuelstation.com/))
+3. **sFUEL tokens** for gas fees (get from [SKALE Portal](https://portal.skale.space/chains/europa) after connecting wallet)
 4. **Completed initiate withdraw** - You must have called [Initiate Withdraw](./initiate-withdraw.md) previously
 5. **Withdraw lock expired** - The `withdrawLockPeriod` must have passed
 

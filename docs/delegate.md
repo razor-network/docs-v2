@@ -4,7 +4,7 @@ title: Delegate
 
 Razor network is a proof of stake network. In order to participate in the network as a delegator, you will need to "Delegate" your RAZORs. RAZOR is (`ERC20` token standard) the native token in Razor Network.
 
-In order to delegate, you will also need some RAZOR tokens on Europa Defi Hub. You can bridge RAZOR tokens from Ethereum to Europa Defi Hub using [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=elated-tan-skat&token=razor&type=erc20). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/europa-defi-hub#ethereum-to-europa-defi-hub). To pay transaction fees on Europa Defi Hub you will require sFUEL to pay for gas, you can get sFUEL from [Faucet](https://www.sfuelstation.com/).
+In order to delegate, you will also need some RAZOR tokens on Europa Defi Hub. You can bridge RAZOR tokens from Ethereum to Europa Defi Hub using [SKALE Portal Bridge](https://portal.skale.space/bridge?from=mainnet&to=elated-tan-skat&token=razor&type=erc20). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/europa-defi-hub#ethereum-to-europa-defi-hub). To pay transaction fees on Europa Defi Hub you will require sFUEL to pay for gas. Get sFUEL from [SKALE Portal](https://portal.skale.space/chains/europa) after connecting your wallet.
 
 <!-- > Warning: Razor network is in alpha state and is deployed on Skale v2 Testnet. Please use Testnet tokens only. -->
 
@@ -72,7 +72,7 @@ Before delegating via the block explorer, ensure you have:
 1. **Metamask wallet** installed and configured
 2. **Europa Defi Hub network** added to Metamask (see [network details](./razor-v2/mainnet.md))
 3. **RAZOR tokens** on Europa Defi Hub (bridge from Ethereum via [SKALE Portal](https://portal.skale.space/bridge?from=mainnet&to=elated-tan-skat&token=razor&type=erc20))
-4. **sFUEL tokens** for gas fees (get from [faucet](https://www.sfuelstation.com/))
+4. **sFUEL tokens** for gas fees (get from [SKALE Portal](https://portal.skale.space/chains/europa) after connecting wallet)
 5. **Staker ID** of the validator you want to delegate to
 
 ### Contract Addresses {#contract-addresses}

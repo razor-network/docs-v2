@@ -5,8 +5,7 @@ Razor network is a proof of stake network. In order to participate in the networ
 ## Get tokens {#get-tokens}
 
 You will need some sFUEL to pay for transaction fees.
-You can get sFUEL from here:
-https://www.sfuelstation.com/
+You can get sFUEL from [SKALE Portal](https://portal.skale.space/chains/europa) after connecting your wallet.
 
 In order to get started, you will also need some RAZOR tokens on Europa chain. You can bridge RAZOR tokens from Ethereum to Europa Defi Hub using [Skale Portal](https://portal.skale.space/bridge). More info regarding RAZOR Token bridge can be found [here](/docs/token-bridge/europa-defi-hub)
 
@@ -310,7 +309,7 @@ Before staking via the block explorer, ensure you have:
 1. **Metamask wallet** installed and configured
 2. **Europa Defi Hub network** added to Metamask (see [network details](./razor-v2/mainnet.md))
 3. **RAZOR tokens** on Europa Defi Hub (bridge from Ethereum via [SKALE Portal](https://portal.skale.space/bridge?from=mainnet&to=elated-tan-skat&token=razor&type=erc20))
-4. **sFUEL tokens** for gas fees (get from [faucet](https://www.sfuelstation.com/))
+4. **sFUEL tokens** for gas fees (get from [SKALE Portal](https://portal.skale.space/chains/europa) after connecting wallet)
 5. **Minimum 100,000 RAZOR** tokens (minSafeRazor requirement for new stakers)
 
 ### Contract Addresses {#contract-addresses-stake}

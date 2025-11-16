@@ -70,7 +70,7 @@ Before unstaking via the block explorer, ensure you have:
 1. **Metamask wallet** installed and configured
 2. **Europa Defi Hub network** added to Metamask (see [network details](./razor-v2/mainnet.md))
 3. **sRZR tokens** (staked RAZOR tokens) in your wallet
-4. **sFUEL tokens** for gas fees (get from [faucet](https://www.sfuelstation.com/))
+4. **sFUEL tokens** for gas fees (get from [SKALE Portal](https://portal.skale.space/chains/europa) after connecting wallet)
 5. **Staker ID** for the staker you want to unstake from
 6. **No existing locks** - you cannot have an existing unstake or withdraw lock
 

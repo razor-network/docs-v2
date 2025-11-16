@@ -7,7 +7,7 @@ Razor Network details on Testnet are mentioned below:
 | Chain name     | Europa Defi Hub Testnet                                          |
 | ChainID        | 1444673419                                                       |
 | Chain currency | sFUEL                                                            |
-| Faucet         | https://www.sfuelstation.com/                                    |
+| Faucet         | https://testnet.portal.skale.space/chains/europa                 |
 | RPC Endpoint   | https://testnet.skalenodes.com/v1/juicy-low-small-testnet        |
 | Chain Explorer | https://juicy-low-small-testnet.explorer.testnet.skalenodes.com/ |
 | Token type     | ERC-20                                                           |
